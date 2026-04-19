@@ -1,0 +1,266 @@
+.hero {
+  height: calc(100vh - var(--header-height));
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 133, 66, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.heroContent {
+  color: white;
+  z-index: 1;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.heroContent h1 span {
+  color: var(--secondary-color);
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.btnOutline {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.btnOutline:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.services {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,133,0.1);
+}
+
+.cardIcon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.cardImgContainer {
+  height: 200px;
+  margin: -40px -40px 20px -40px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+.card:hover .cardImg {
+  transform: scale(1.05);
+}
+
+.cardBody {
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.price {
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.feature {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+}
+
+.readMore {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.products {
+  padding: 80px 0;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.productCard {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.productCard:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.productImgContainer {
+  height: 200px;
+  overflow: hidden;
+}
+
+.newsThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.productCard:hover .newsThumb {
+  transform: scale(1.05);
+}
+
+.productInfo {
+  padding: 20px;
+}
+
+.productInfo h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.viewDetail {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.viewDetail:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Floating Buttons */
+.floatingButtons {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.floatPhone, .floatZalo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50px;
+  color: white;
+  transition: var(--transition);
+}
+
+.floatPhone {
+  background-color: var(--accent-color);
+  padding: 10px 20px;
+}
+
+.floatZalo {
+  background-color: #0084ff;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+}
+
+.floatLabel {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.floatIcon {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+}

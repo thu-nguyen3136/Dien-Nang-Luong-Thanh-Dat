@@ -1,0 +1,133 @@
+.section {
+  background-color: #f9fafb;
+}
+
+.flexWrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.content {
+  flex: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid #f3f4f6;
+}
+
+.item:hover {
+  transform: translateX(10px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  background: rgba(0, 133, 66, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.itemContent h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.itemContent p {
+  color: #6b7280;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.imageSide {
+  flex: 1;
+  position: relative;
+}
+
+.mainImage {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.mainImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.mainImage:hover img {
+  transform: scale(1.05);
+}
+
+.experienceBox {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  background: var(--primary-color);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 133, 66, 0.3);
+  text-align: center;
+}
+
+.expNumber {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.expText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .flexWrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .experienceBox {
+    left: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

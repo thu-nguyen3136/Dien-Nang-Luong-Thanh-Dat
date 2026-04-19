@@ -1,0 +1,183 @@
+.wrapper {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.leftGroup,
+.rightGroup {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftGroup,
+.rightGroup {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rightGroup {
+  transform: translateY(40px);
+}
+
+/* Base style for all buttons */
+.btnBase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.btnBase:hover {
+  transform: scale(1.1);
+}
+
+.iconBox {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pulsingEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulse 1.8s infinite;
+}
+
+/* Specific Colors and Animations */
+.zaloBox {
+  background: #0084ff;
+}
+
+.zaloPulse {
+  background: #0084ff;
+  animation-delay: 0.2s;
+}
+
+.smsBox {
+  background: #ff9800;
+}
+
+.smsPulse {
+  background: #ff9800;
+  animation-delay: 0.4s;
+}
+
+.phoneBox {
+  background: white;
+  color: #e62117;
+  animation: phoneRing 0.5s infinite;
+}
+
+.phonePulse {
+  background: #e62117;
+}
+
+/* Right side Phone Button */
+.phoneBtn {
+  background: #e62117;
+  color: white;
+  padding: 5px 15px 5px 5px;
+  border-radius: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(230, 33, 23, 0.4);
+}
+
+.phoneLabel {
+  font-size: 0.95rem;
+}
+
+/* Icon SVGs */
+.zaloIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.smsIcon {
+  font-size: 1.2rem;
+  color: white;
+}
+
+@keyframes phoneRing {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  10% {
+    transform: rotate(-25deg) scale(1);
+  }
+
+  20% {
+    transform: rotate(25deg) scale(1);
+  }
+
+  30% {
+    transform: rotate(-25deg) scale(1);
+  }
+
+  40% {
+    transform: rotate(25deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(0) scale(1);
+  }
+
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 15px;
+    bottom: 20px;
+  }
+
+  .phoneLabel {
+    display: none;
+  }
+
+  .phoneBtn {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}

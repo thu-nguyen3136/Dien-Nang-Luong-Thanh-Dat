@@ -1,0 +1,109 @@
+.contactPage {
+  padding-bottom: 80px;
+}
+
+.pageHeader {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pageHeader h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+}
+
+.infoCard {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.infoCard h3 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.infoItem {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.infoItem p {
+  margin-bottom: 2px;
+  color: #555;
+}
+
+.contactForm {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.contactForm h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contactForm p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup input, .formGroup textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.submitBtn:hover {
+  background-color: #c61a20;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

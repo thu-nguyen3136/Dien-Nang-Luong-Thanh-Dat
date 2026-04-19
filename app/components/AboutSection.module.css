@@ -1,0 +1,166 @@
+.about {
+  padding: 5px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.aboutImage {
+  position: relative;
+}
+
+.imagePlaceholder {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 20px rgba(227, 30, 36, 0.2);
+  z-index: 2;
+}
+
+.years {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.expText {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.subTitle {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.mainTitle {
+  color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.featureList {
+  margin: 20px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.featureList li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.featureList li:hover {
+  transform: translateX(5px);
+}
+
+.checkIcon {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.contactMini {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactMini span {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.contactMini a {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .aboutContent {
+    order: 2;
+  }
+
+  .aboutImage {
+    order: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .experienceBadge {
+    right: 0;
+    padding: 15px 20px;
+  }
+
+  .years {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,162 @@
+.section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.featuredReview {
+  background: linear-gradient(135deg, var(--primary-color), #006b35);
+  border-radius: 24px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 30px rgba(0, 133, 66, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.featuredAvatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.featuredContent {
+  position: relative;
+  z-index: 1;
+}
+
+.featuredTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.featuredText {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.featuredUser h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.featuredUser span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid #f3f4f6;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary-color);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.avatarWrapper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.topInfo h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.topInfo span {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.rating {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+.feedback {
+  color: #4b5563;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .featuredReview {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

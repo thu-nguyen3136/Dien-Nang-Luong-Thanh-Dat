@@ -1,0 +1,83 @@
+.serviceDetail {
+  padding-bottom: 80px;
+}
+
+.breadcrumb {
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  margin-bottom: 40px;
+  font-size: 13px;
+  color: #888;
+}
+
+.mainWrapper {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.featuredImage {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.featuredImage img {
+  width: 100%;
+  display: block;
+}
+
+.bodyText {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.contactSection {
+  background-color: #f0f7f3;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+}
+
+.contactSection h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.phoneBtn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.zaloBtn {
+  background-color: #0084ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .mainWrapper {
+    grid-template-columns: 1fr;
+  }
+}

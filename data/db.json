@@ -1,0 +1,133 @@
+{
+  "posts": [
+    {
+      "id": "kinh-nghiem-mua-pin-nang-luong-mat-troi-tot-va-chat-luong",
+      "slug": "kinh-nghiem-mua-pin-nang-luong-mat-troi-tot-va-chat-luong",
+      "title": "KINH NGHIỆM MUA PIN NĂNG LƯỢNG MẶT TRỜI TỐT VÀ CHẤT LƯỢNG",
+      "excerpt": "Nắm rõ những kinh nghiệm quan trọng khi mua pin năng lượng mặt trời giúp bạn có hệ thống hiệu suất cao.",
+      "content": "Để mua được pin mặt trời tốt, bạn cần lưu ý đến thương hiệu sản phẩm (Jinko, Longi, Canadian), công nghệ tế bào quang điện (Mono half-cell), hiệu suất tấm pin và uy tín của đơn vị thi công...",
+      "image": "/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp",
+      "date": "2024-04-18",
+      "status": "published"
+    },
+    {
+      "id": "dien-mat-troi-la-gi-va-duoc-tao-ra-nhu-the-nao",
+      "slug": "dien-mat-troi-la-gi-va-duoc-tao-ra-nhu-the-nao",
+      "title": "ĐIỆN MẶT TRỜI LÀ GÌ VÀ ĐƯỢC TẠO RA NHƯ THẾ NÀO?",
+      "excerpt": "Tìm hiểu chi tiết về nguyên lý quang điện và quy trình tạo ra dòng điện từ ánh sáng mặt trời.",
+      "content": "Điện mặt trời là nguồn năng lượng tái tạo sạch. Nó hoạt động dựa trên hiệu ứng quang điện trong vật lý. Khi ánh sáng mặt trời chiếu vào bề mặt pin, nó sinh ra dòng điện một chiều DC...",
+      "image": "/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-7.webp",
+      "date": "2024-04-17",
+      "status": "published"
+    },
+    {
+      "id": "cach-phan-biet-cac-he-thong-dien-nang-luong-mat-troi",
+      "slug": "cach-phan-biet-cac-he-thong-dien-nang-luong-mat-troi",
+      "title": "CÁCH PHÂN BIỆT CÁC HỆ THỐNG ĐIỆN NĂNG LƯỢNG MẶT TRỜI",
+      "excerpt": "Phân biệt hệ thống điện mặt trời hòa lưới, độc lập và Hybrid để có sự lựa chọn phù hợp nhất.",
+      "content": "Có 3 loại hình phổ biến: Hệ thống hòa lưới (Grid-tie), Hệ thống độc lập (Off-grid) và Hệ thống Hybrid có lưu trữ. Mỗi hệ thống có ưu nhược điểm và ứng dụng khác nhau tùy vào nhu cầu...",
+      "image": "/images/ap-mai.png",
+      "date": "2024-04-16",
+      "status": "published"
+    },
+    {
+      "id": "thi-cong-lap-dat-dien-nang-luong-mat-troi-tai-bac-ninh",
+      "slug": "thi-cong-lap-dat-dien-nang-luong-mat-troi-tai-bac-ninh",
+      "title": "THI CÔNG LẮP ĐẶT ĐIỆN NĂNG LƯỢNG MẶT TRỜI TẠI BẮC NINH",
+      "excerpt": "Thành Đạt Solar tự hào là đơn vị hàng đầu chuyên thi công điện mặt trời uy tín tại khu vực phía Bắc.",
+      "content": "Chúng tôi vừa hoàn thành dự án lắp đặt hệ thống 10kWp cho hộ gia đình tại Bắc Ninh. Hệ thống sử dụng pin Jinko và Inverter Deye, vận hành ổn định và tiết kiệm 3-4 triệu tiền điện mỗi tháng...",
+      "image": "/images/gioi-thieu-thanh-dat.png",
+      "date": "2024-04-15",
+      "status": "published"
+    }
+  ],
+  "services": [],
+  "products": [
+    {
+      "id": "1",
+      "slug": "20kwh-co-luu-tru",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 20Kwh Có Lưu Trữ",
+      "price": "270,000,000₫",
+      "feature": "-Sản Lượng 2400 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "2",
+      "slug": "15kwh-co-luu-tru",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 15Kwh Có Lưu Trữ",
+      "price": "175,000,000₫",
+      "feature": "-Sản Lượng 1800 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "3",
+      "slug": "15kwh-ban-tai",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 15Kwh Bán Tải",
+      "price": "115,000,000₫",
+      "feature": "-Sản Lượng 1800 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "4",
+      "slug": "12kwh-co-luu-tru",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 12 kWh Có Lưu Trữ",
+      "price": "155,000,000₫",
+      "feature": "-Sản Lượng 1500 kwh / Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "5",
+      "slug": "12kwp-ban-tai",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 12kWp Bán Tải",
+      "price": "100,000,000₫",
+      "feature": "-Sản Lượng 1500 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "6",
+      "slug": "10kwp-co-luu-tru",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 10 kWp Có Lưu Trữ",
+      "price": "145,000,000₫",
+      "feature": "-Sản Lượng 1200 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "7",
+      "slug": "10kwp-ban-tai",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 10 kWp Bán Tải",
+      "price": "95,000,000₫",
+      "feature": "-Sản Lượng 1200 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "8",
+      "slug": "8kwp-co-luu-tru",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 8 kWp Có Lưu Trữ",
+      "price": "120,000,000₫",
+      "feature": "-Sản Lượng 1000 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "9",
+      "slug": "8kwp-ban-tai",
+      "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 8 kWp Bán Tải",
+      "price": "75,000,000₫",
+      "feature": "-Sản Lượng 800 kwh/ Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    },
+    {
+      "id": "10",
+      "slug": "6kwp-co-luu-tru",
+      "title": "Lắp Đặt điện Năng Lượng Mặt Trời 6kWp Có Lưu Trữ",
+      "price": "75,000,000₫",
+      "feature": "-Sản Lượng 700 kWh/Tháng",
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+    }
+  ],
+  "config": {
+    "siteName": "Thành Đạt Solar",
+    "hotline": "0368.444.567",
+    "email": "ctythanhdat6886@gmail.com",
+    "address": "Thôn Liễu Trì, Mê Linh, Hà Nội"
+  }
+}
