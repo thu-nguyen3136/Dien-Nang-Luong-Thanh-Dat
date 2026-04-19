@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web-local:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3010:3010"
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - PORT=3010
+      - NODE_ENV=development
+      - TZ=Asia/Ho_Chi_Minh
