@@ -9,6 +9,7 @@ FROM base AS dev
 RUN npm ci || npm install
 COPY . .
 ENV PORT=3010
+ENV PORT=3010
 CMD ["npm", "run", "dev"]
 
 # Stage 3: Builder for production
