@@ -25,6 +25,7 @@ RUN apk add --no-cache nginx tzdata busybox-extras && \
 ENV TZ=Asia/Ho_Chi_Minh
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
 
 WORKDIR /app
 
