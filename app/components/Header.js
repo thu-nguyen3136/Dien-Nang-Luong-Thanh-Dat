@@ -1,8 +1,16 @@
+'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className={styles.headerWrapper}>
       {/* Top Bar */}
@@ -24,13 +32,13 @@ const Header = () => {
       <header className={styles.header}>
         <div className={`container ${styles.headerContainer}`}>
           <div className={styles.logoContainer}>
-            <Link href="/" className={styles.logoWrapper}>
+            <Link href="/" className={styles.logoWrapper} onClick={() => setIsMenuOpen(false)}>
               <div className={styles.logoImageContainer}>
                 <Image
                   src="/images/logo.png"
                   alt="Thành Đạt Solar"
-                  width={100}
-                  height={45}
+                  width={80}
+                  height={35}
                   className={styles.logoImg}
                   priority
                 />
@@ -47,35 +55,52 @@ const Header = () => {
             </Link>
           </div>
 
-          <nav className={styles.nav}>
+          {/* Hamburger Menu Button */}
+          <button className={styles.hamburger} onClick={toggleMenu} aria-label="Menu">
+            <div className={`${styles.bar} ${isMenuOpen ? styles.barOpen : ''}`}></div>
+            <div className={`${styles.bar} ${isMenuOpen ? styles.barOpen : ''}`}></div>
+            <div className={`${styles.bar} ${isMenuOpen ? styles.barOpen : ''}`}></div>
+          </button>
+
+          {/* Navigation Overlay */}
+          {isMenuOpen && <div className={styles.overlay} onClick={() => setIsMenuOpen(false)}></div>}
+
+          <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
             <ul className={styles.navList}>
-              <li><Link href="/" className={styles.active}>TRANG CHỦ</Link></li>
-              <li><Link href="/gioi-thieu">GIỚI THIỆU</Link></li>
+              <li className={styles.mobileOnly}><h3 className={styles.menuTitle}>DANH MỤC</h3></li>
+              <li><Link href="/" onClick={() => setIsMenuOpen(false)}>TRANG CHỦ</Link></li>
+              <li><Link href="/gioi-thieu" onClick={() => setIsMenuOpen(false)}>GIỚI THIỆU</Link></li>
 
               <li className={styles.hasDropdown}>
-                <Link href="/san-pham">SẢN PHẨM <span className={styles.arrowIcon}>▾</span></Link>
+                <div className={styles.mobileLinkRow}>
+                  <Link href="/san-pham" onClick={() => setIsMenuOpen(false)}>SẢN PHẨM</Link>
+                  <span className={styles.arrowIcon}>▾</span>
+                </div>
                 <ul className={styles.dropdown}>
-                  <li><Link href="/san-pham?cat=tam-pin">Tấm pin mặt trời</Link></li>
-                  <li><Link href="/san-pham?cat=bien-tan">Biến tần (Inverter)</Link></li>
-                  <li><Link href="/san-pham?cat=pin-luu-tru">Pin lưu trữ Lithium</Link></li>
-                  <li><Link href="/san-pham?cat=phu-kien">Phụ kiện điện mặt trời</Link></li>
+                  <li><Link href="/san-pham?cat=tam-pin" onClick={() => setIsMenuOpen(false)}>Tấm pin mặt trời</Link></li>
+                  <li><Link href="/san-pham?cat=bien-tan" onClick={() => setIsMenuOpen(false)}>Biến tần (Inverter)</Link></li>
+                  <li><Link href="/san-pham?cat=pin-luu-tru" onClick={() => setIsMenuOpen(false)}>Pin lưu trữ Lithium</Link></li>
+                  <li><Link href="/san-pham?cat=phu-kien" onClick={() => setIsMenuOpen(false)}>Phụ kiện điện mặt trời</Link></li>
                 </ul>
               </li>
               <li className={styles.hasDropdown}>
-                <Link href="/dich-vu">DỊCH VỤ <span className={styles.arrowIcon}>▾</span></Link>
+                <div className={styles.mobileLinkRow}>
+                  <Link href="/dich-vu" onClick={() => setIsMenuOpen(false)}>DỊCH VỤ</Link>
+                  <span className={styles.arrowIcon}>▾</span>
+                </div>
                 <ul className={styles.dropdown}>
-                  <li><Link href="/dich-vu?cat=thi-cong">Thi công lắp đặt</Link></li>
-                  <li><Link href="/dich-vu?cat=tu-van">Tư vấn giải pháp</Link></li>
-                  <li><Link href="/dich-vu?cat=bao-tri">Bảo trì hệ thống</Link></li>
+                  <li><Link href="/dich-vu?cat=thi-cong" onClick={() => setIsMenuOpen(false)}>Thi công lắp đặt</Link></li>
+                  <li><Link href="/dich-vu?cat=tu-van" onClick={() => setIsMenuOpen(false)}>Tư vấn giải pháp</Link></li>
+                  <li><Link href="/dich-vu?cat=bao-tri" onClick={() => setIsMenuOpen(false)}>Bảo trì hệ thống</Link></li>
                 </ul>
               </li>
-              <li><Link href="/tin-tuc">TIN TỨC</Link></li>
-              <li><Link href="/lien-he">LIÊN HỆ</Link></li>
+              <li><Link href="/tin-tuc" onClick={() => setIsMenuOpen(false)}>TIN TỨC</Link></li>
+              <li><Link href="/lien-he" onClick={() => setIsMenuOpen(false)}>LIÊN HỆ</Link></li>
             </ul>
           </nav>
 
           <div className={styles.searchContainer}>
-            <input type="text" placeholder="Tìm sản phẩm..." className={styles.searchInput} />
+            <input type="text" placeholder="Tìm kiếm..." className={styles.searchInput} />
             <button className={styles.searchButton} aria-label="Tìm kiếm">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8"></circle>
