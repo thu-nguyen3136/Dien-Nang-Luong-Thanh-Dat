@@ -67,7 +67,6 @@ const Header = () => {
 
           <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
             <ul className={styles.navList}>
-              <li className={styles.mobileOnly}><h3 className={styles.menuTitle}>DANH MỤC</h3></li>
               <li><Link href="/" onClick={() => setIsMenuOpen(false)}>TRANG CHỦ</Link></li>
               <li><Link href="/gioi-thieu" onClick={() => setIsMenuOpen(false)}>GIỚI THIỆU</Link></li>
 
@@ -99,15 +98,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className={styles.searchContainer}>
-            <input type="text" placeholder="Tìm kiếm..." className={styles.searchInput} />
-            <button className={styles.searchButton} aria-label="Tìm kiếm">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </button>
-          </div>
+
         </div>
       </header>
     </div>
