@@ -314,123 +314,235 @@
       "slug": "canadian-550w-780w",
       "title": "Tấm Pin CANADIAN 550W - 780W",
       "price": "Giá: Liên Hệ",
-      "features": ["Hiệu suất cao vượt trội", "Công nghệ Mono half-cell", "Bảo hành 25 năm"],
+      "features": [
+        "Hiệu suất cao vượt trội",
+        "Công nghệ Mono half-cell",
+        "Bảo hành 25 năm"
+      ],
       "feature": "Thương hiệu: Canadian Solar",
       "image": "/images/8841z6394868637238-bdc3e09702ccfbc1266d7c9d32931a5-300x300.webp",
-      "images": ["/images/8841z6394868637238-bdc3e09702ccfbc1266d7c9d32931a5-300x300.webp"]
+      "images": [
+        "/images/8841z6394868637238-bdc3e09702ccfbc1266d7c9d32931a5-300x300.webp"
+      ]
     },
     {
       "id": "solar-longi",
       "slug": "longi-600w-670w",
       "title": "Tấm Pin Longi 600W - 670W",
       "price": "Giá: Liên Hệ",
-      "features": ["Hiệu suất ổn định", "Kháng PID tuyệt vời", "Chịu tải gió & tuyết cao"],
+      "features": [
+        "Hiệu suất ổn định",
+        "Kháng PID tuyệt vời",
+        "Chịu tải gió & tuyết cao"
+      ],
       "feature": "Thương hiệu: Longi Solar",
       "image": "/images/316z6394868802320-23cba65007c885cd52703c0dcea40308-300x300.webp",
-      "images": ["/images/316z6394868802320-23cba65007c885cd52703c0dcea40308-300x300.webp"]
+      "images": [
+        "/images/316z6394868802320-23cba65007c885cd52703c0dcea40308-300x300.webp"
+      ]
     },
     {
       "id": "solar-jinko",
       "slug": "jinko-tiger-pro-550w-700w",
       "title": "Tấm Pin Jinko Tiger Pro 550W - 700W",
       "price": "Giá: Liên Hệ",
-      "features": ["Công nghệ Tiger Pro", "Độ bền cực cao", "Hiệu suất quang năng tối ưu"],
+      "features": [
+        "Công nghệ Tiger Pro",
+        "Độ bền cực cao",
+        "Hiệu suất quang năng tối ưu"
+      ],
       "feature": "Thương hiệu: Jinko Solar",
       "image": "/images/2537z6394868543983-8d5ed988fa8b84ba240ff66ebde6d06-300x300.webp",
-      "images": ["/images/2537z6394868543983-8d5ed988fa8b84ba240ff66ebde6d06-300x300.webp"]
+      "images": [
+        "/images/2537z6394868543983-8d5ed988fa8b84ba240ff66ebde6d06-300x300.webp"
+      ]
     },
     {
       "id": "solar-full-cell",
       "slug": "tam-pin-nang-luong-full-cell",
       "title": "Tấm Pin Năng Lượng Full-Cell",
       "price": "Giá: Liên Hệ",
-      "features": ["Diện tích hấp thụ tối đa", "Độ bền khung nhôm cao", "Phù hợp mọi địa hình"],
+      "features": [
+        "Diện tích hấp thụ tối đa",
+        "Độ bền khung nhôm cao",
+        "Phù hợp mọi địa hình"
+      ],
       "feature": "Thương hiệu: Công Nghệ Mới",
       "image": "/images/z6713411960215-db4d9fe8f6b945a3f060784f8b35cb6f-300x300.jpg",
-      "images": ["/images/z6713411960215-db4d9fe8f6b945a3f060784f8b35cb6f-300x300.jpg"]
+      "images": [
+        "/images/z6713411960215-db4d9fe8f6b945a3f060784f8b35cb6f-300x300.jpg"
+      ]
     },
     {
       "id": "solar-half-cell",
       "slug": "tam-pin-nang-luong-half-cell",
       "title": "Tấm Pin Năng Lượng Half-Cell",
       "price": "Giá: Liên Hệ",
-      "features": ["Giảm tổn hao dòng điện", "Hoạt động tốt khi bị che bóng", "Tối ưu hóa nhiệt độ"],
+      "features": [
+        "Giảm tổn hao dòng điện",
+        "Hoạt động tốt khi bị che bóng",
+        "Tối ưu hóa nhiệt độ"
+      ],
       "feature": "Thương hiệu: Hiệu Suất Cao",
       "image": "/images/z6713414403022-c170ad8bf404fc7b52171464ff4d3107.jpg",
-      "images": ["/images/z6713414403022-c170ad8bf404fc7b52171464ff4d3107.jpg"]
+      "images": [
+        "/images/z6713414403022-c170ad8bf404fc7b52171464ff4d3107.jpg"
+      ]
+    },
+    {
+      "id": "battery-143k",
+      "slug": "pin-luu-tru-143k-bh-10-nam",
+      "title": "Pin lưu trữ 14,3k BH 10 năm",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Bảo hành: 10 năm"
+      ],
+      "feature": "Pin lưu trữ 14,3k",
+      "image": "/images/tampinluutru-1.jpg",
+      "images": [
+        "/images/tampinluutru-1.jpg"
+      ]
+    },
+    {
+      "id": "battery-powerbox-512kwh",
+      "slug": "lithium-powerbox-512kwh",
+      "title": "Lithium POWERBOX 5.12kWH, model ES-BOX12 PLUS",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Thương hiệu: POWERBOX",
+        "Mã sản phẩm: ES-BOX12 PLUS – WIFI",
+        "Công suất: 5.12KWH",
+        "Dung Lượng: 51,2V 100Ah",
+        "Trọng Lượng: 63kg",
+        "Số lượng tế bào: 16 cell",
+        "Giám sát: WIFI – ỨNG DỤNG",
+        "Bảo Hành Vật Lý: 05 năm",
+        "Vòng đời sản phẩm: 15 năm",
+        "Dòng pin lưu trữ áp thấp 51,2V – 16 cell thế hệ mới nhất, kiểu dáng treo tường hiện đại, dòng sạc – xả đến 1C.",
+        "Cho phép kết nối song song đến 16 packs/chuỗi, công suất lưu trữ đến 5120Ah.",
+        "Tương thích hầu hết biến tần HYBRID qua BMS thông minh.",
+        "Vòng đời 6000 lần sạc xả tại DOD 80%, đạt chứng nhận CE, TUV, UL."
+      ],
+      "feature": "Thương hiệu: POWERBOX",
+      "image": "/images/tampinluutru-2.jpg",
+      "images": [
+        "/images/tampinluutru-2.jpg"
+      ]
+    },
+    {
+      "id": "battery-powerbox-1034kwh",
+      "slug": "lithium-powerbox-1034kwh",
+      "title": "Lithium POWERBOX 10,34kWh model ES-BOX12 PLUS",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Mô tả chi tiết: Dòng Pin lưu trữ áp thấp 51,2V – 16 cell thế hệ mới nhất với tính năng nổi trội, kiểu dáng treo tường hiện đại, dòng sạc – xả đến 1C.",
+        "Mở rộng: Cho phép kết nối song song đến 16 packs/chuỗi, công suất lưu trữ lên đến 4480Ah.",
+        "Tương thích: Phù hợp với hầu hết các loại biến tần HYBRID trên thị trường qua hệ thống giao tiếp BMS thông minh.",
+        "Độ bền: Dòng đời sản phẩm lên tới 6000 lần sạc xả tại DOD 80%. Đạt nhiều chứng nhận chất lượng CE, TUV, UL."
+      ],
+      "feature": "Thương hiệu: POWERBOX",
+      "image": "/images/tampinluutru-3.jpg",
+      "images": [
+        "/images/tampinluutru-3.jpg"
+      ]
+    },
+    {
+      "id": "battery-bettenergy-16kwh",
+      "slug": "pin-luu-tru-16kwh-pin-lithium-bettenergy-51-2v-314ah",
+      "title": "Pin Lưu Trữ 16KWH | PIN LITHIUM BETTENERGY 51.2V-314AH",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Pin lưu trữ lithium BETTENERGY 16kWh điện áp thấp sở hữu thiết kế nguyên khối cao cấp, sang trọng.",
+        "Lõi pin Lithium Sắt Photphat đảm bảo tuổi thọ cao, bền bỉ và an toàn trên 10.000 lần sạc xả.",
+        "Pin lưu trữ BETTENERGY 51.2V-314Ah 16kW cung cấp nguồn điện ổn định cho các hệ thống Điện mặt trời dân dụng và thương mại có nhu cầu sử dụng điện năng cao.",
+        "Model: ELESHELL-16K / ELESHELL-16.3K-T",
+        "Kích thước: 1169.5*640*197 mm",
+        "Trọng lượng: 158 Kgs",
+        "Chỉ số bảo vệ: IP65",
+        "Nhiệt độ hoạt động: 0 đến 55℃ / 0 đến 131℉",
+        "Chu kỳ sống (80% DoD @0,5C, 25℃): ≥ 10000 lần",
+        "Cổng giao tiếp: RS232 / RS485 / CAN",
+        "Độ cao hoạt động: ＜3000 m",
+        "Điều kiện độ ẩm: 5% đến 95%",
+        "Bảo hành: 5/10 năm",
+        "Lắp đặt: Gắn trên mặt đất / Treo tường",
+        "Công suất năng lượng danh nghĩa: 16.07kWh",
+        "Điện áp danh định: 51,2V",
+        "Phạm vi điện áp hoạt động: 48 – 57V",
+        "Dòng điện sạc/xả tối đa: 280A",
+        "Dòng điện sạc/xả liên tục: 200A",
+        "Độ sâu xả (DoD): 80%",
+        "Vật liệu pin: Lithium (LiFePO4)"
+      ],
+      "feature": "Thương hiệu: BETTENERGY",
+      "image": "/images/tampinluutru-4.jpg",
+      "images": [
+        "/images/tampinluutru-4.jpg"
+      ]
+    },
+    {
+      "id": "battery-lifepo4-200ah",
+      "slug": "pin-luu-tru-lifepo4-51-2v-200ah",
+      "title": "Pin Lưu Trữ LIFEPO4 51,2V 200AH",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Pin 51,2V 200AH, thiết kế dạng pin giá đỡ máy chủ, bảo hành 5 năm.",
+        "Tùy chọn điện áp: Có sẵn ở điện áp chuẩn 48V DC và 51,2V DC.",
+        "Lựa chọn dung lượng: Các tùy chọn 100Ah, 200Ah và 280Ah đáp ứng nhu cầu năng lượng đa dạng.",
+        "Hiệu suất năng lượng: Đạt mức ấn tượng 98% ở 0,5 độ C, đảm bảo sử dụng năng lượng tối ưu.",
+        "Giao thức truyền thông: Hỗ trợ kết nối đa dạng bao gồm CAN, RS485, RS232, WIFI, 4G và Bluetooth giúp giám sát và kiểm soát nâng cao.",
+        "Tuổi thọ chu kỳ dài: Đạt 6000 chu kỳ ở độ sâu xả (DoD) 80%, mang lại độ bền bỉ và tuổi thọ kéo dài.",
+        "Bảo vệ mạnh mẽ: Cơ chế bảo vệ toàn diện chống quá nhiệt, quá dòng, ngắn mạch, sạc quá mức, xả quá mức và điện áp thấp.",
+        "Thông số kỹ thuật sạc và xả: Cho phép điều chỉnh mức sử dụng năng lượng theo dòng điện và điện áp sạc/xả tối đa được khuyến nghị.",
+        "Cơ học và thiết kế: Kết cấu sắt cấp công nghiệp siêu bền, thiết kế gắn trên giá đỡ giúp dễ dàng lắp đặt gọn gàng trong tủ.",
+        "Chứng nhận và tuân thủ: Đạt chuẩn CE, FCC, CCC và tuân thủ UN 38.3, UN 3480 (Lớp 9) đảm bảo an toàn vận chuyển và sử dụng.",
+        "Nhiệt độ hoạt động: Hoạt động ổn định trong dải nhiệt độ rộng từ -20°C đến 65°C."
+      ],
+      "feature": "Hiệu suất ấn tượng 98%",
+      "image": "/images/tampinluutru-5.jpg",
+      "images": [
+        "/images/tampinluutru-5.jpg"
+      ]
     },
     {
       "id": "battery-lvtopsun",
       "slug": "pin-lithium-lvtopsun-51-2v-300ah",
-      "title": "Pin Lithium LVTOPSUN 51.2V - 300AH (Power Wall)",
+      "title": "Pin Lithium LVTOPSUN 51.2V-300AH (LVTS 512300)",
       "price": "Giá: Liên Hệ",
       "features": [
-        "Công nghệ: LiFePO4 (Lithium Sắt Phốt Phát) cực kỳ an toàn, chống cháy nổ.",
-        "Điện áp danh định: 51.2V",
-        "Dung lượng: 300Ah",
-        "Tổng năng lượng lưu trữ: 15.36 kWh",
-        "Tuổi thọ thiết kế (Cycle Life): > 6000 chu kỳ sạc xả ở DOD 80% (tương đương hơn 15 năm sử dụng).",
-        "Mạch quản lý pin (BMS) thông minh: Bảo vệ quá tải, quá áp, ngắn mạch, kiểm soát nhiệt độ chặt chẽ.",
-        "Cổng giao tiếp đa dạng: RS485 / CAN, tương thích tốt với các Inverter Hybrid phổ biến như Deye, Luxpower, Growatt, SMA...",
-        "Thiết kế: Dạng Power Wall hoặc tủ đứng nguyên khối, thẩm mỹ cao cho không gian hiện đại.",
-        "Dòng xả/sạc tối đa (Max Charge/Discharge Current): 100A / 150A",
-        "Khả năng mở rộng: Hỗ trợ đấu nối song song nhiều khối để tăng dung lượng lưu trữ tối đa.",
-        "Ứng dụng: Lưu trữ điện mặt trời độc lập hoặc hòa lưới có lưu trữ cho Hộ gia đình, Biệt thự, Resort.",
-        "Chế độ bảo hành: Lên tới 5 năm chính hãng."
+        "Điện áp danh định: 51,2 Vdc",
+        "Dung lượng: 300 Ah",
+        "Tổng năng lượng: 15,12 kWh",
+        "Loại cell: Pin LiFePO₄ 3.2V – Hãng EVE",
+        "Dòng sạc/xả tiêu chuẩn: 100A (Tối đa lên đến 150A)",
+        "Số lượng kết nối song song tối đa: 15 bộ",
+        "Giao tiếp: RS485 / CAN",
+        "Tương thích Inverter: Deye, Luxpower, Growatt, Goodwe, Sofar…",
+        "Chu kỳ sạc/xả: ≥ 6000 lần (90% DOD)",
+        "Tuổi thọ thiết kế: Trên 10 năm",
+        "Nhiệt độ hoạt động: -20°C đến 60°C",
+        "Kiểu lắp đặt: Treo tường / Để sàn",
+        "Kích thước: 680 × 480 × 180 mm (tham khảo)",
+        "Trọng lượng: ~48kg",
+        "Bảo hành: 5 năm chính hãng"
       ],
       "feature": "Thương hiệu: LVTOPSUN",
       "image": "/images/tampinluutru-6.jpg",
-      "images": ["/images/tampinluutru-6.jpg"]
+      "images": [
+        "/images/tampinluutru-6.jpg"
+      ]
     },
     {
-      "id": "battery-bettenergy-16kwh",
-      "slug": "pin-lithium-bettenergy-51-2v-314ah",
-      "title": "Pin Lithium BETTENERGY 51.2V - 314AH (16kWh)",
+      "id": "battery-ja625",
+      "slug": "pin-JA625",
+      "title": "Pin JA625",
       "price": "Giá: Liên Hệ",
-      "feature": "Thương hiệu: BETTENERGY",
-      "features": ["Thương hiệu: BETTENERGY", "Dung lượng lớn", "Chu kỳ sạc sâu"],
-      "image": "/images/tampinluutru-1.jpg",
-      "images": ["/images/tampinluutru-1.jpg"]
-    },
-    {
-      "id": "battery-powerbox-14-34kwh",
-      "slug": "lithium-powerbox-14-34kwh",
-      "title": "Lithium POWERBOX 14.34kWh (Model ES-BOX12 MAX)",
-      "price": "Giá: Liên Hệ",
-      "feature": "Thương hiệu: POWERBOX",
-      "features": ["Thương hiệu: POWERBOX", "Dòng cao cấp", "Vận hành ổn định"],
-      "image": "/images/tampinluutru-3.jpg",
-      "images": ["/images/tampinluutru-3.jpg"]
-    },
-    {
-      "id": "battery-powerbox-5-12kwh",
-      "slug": "lithium-powerbox-5-12kwh",
-      "title": "Lithium POWERBOX 5.12kWh (Model ES-BOX2)",
-      "price": "Giá: Liên Hệ",
-      "feature": "Thương hiệu: POWERBOX",
-      "features": ["Thương hiệu: POWERBOX", "Phổ biến", "Tiết kiệm chi phí"],
-      "image": "/images/tampinluutru-2.jpg",
-      "images": ["/images/tampinluutru-2.jpg"]
-    },
-    {
-      "id": "battery-deye",
-      "slug": "he-thong-pin-luu-tru-deye",
-      "title": "Hệ Thống Pin Lưu Trữ Deye (Lithium Battery)",
-      "price": "Giá: Liên Hệ",
-      "feature": "Thương hiệu: Deye",
-      "features": ["Thương hiệu: Deye", "Độ bền vượt trội", "Hiệu suất cao"],
-      "image": "/images/tampinluutru-5.jpg",
-      "images": ["/images/tampinluutru-5.jpg"]
-    },
-    {
-      "id": "battery-bettenergy-compact",
-      "slug": "pin-luu-tru-lithium-bettenergy-compact",
-      "title": "Pin Lưu Trữ Lithium BETTENERGY (Compact Model)",
-      "price": "Giá: Liên Hệ",
-      "feature": "Thương hiệu: BETTENERGY",
-      "features": ["Thương hiệu: BETTENERGY", "Thiết kế nhỏ gọn", "Dễ dàng lắp đặt"],
-      "image": "/images/tampinluutru-4.jpg",
-      "images": ["/images/tampinluutru-4.jpg"]
+      "features": [],
+      "feature": "Thương hiệu: Khác",
+      "image": "/images/pin-JA625.jpg",
+      "images": [
+        "/images/pin-JA625.jpg"
+      ]
     }
   ],
   "config": {
