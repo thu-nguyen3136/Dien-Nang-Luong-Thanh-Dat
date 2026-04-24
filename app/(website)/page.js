@@ -14,6 +14,7 @@ import NewsSection from '@/app/components/NewsSection';
 export default function Home() {
   const data = getData();
   const products = data.products || [];
+  const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-'));
   const posts = data.posts?.slice(0, 4) || [];
 
   return (
@@ -49,7 +50,7 @@ export default function Home() {
         <div className="container">
           <h2 className="section-title">CÁC GÓI <span>HỆ THỐNG ĐIỆN MẶT TRỜI</span></h2>
           <div className={styles.grid}>
-            {products.map((product) => (
+            {systemProducts.map((product) => (
               <div key={product.id} className={styles.card}>
                 <div className={styles.cardImgContainer}>
                   <img src={product.image} alt={product.title} className={styles.cardImg} />

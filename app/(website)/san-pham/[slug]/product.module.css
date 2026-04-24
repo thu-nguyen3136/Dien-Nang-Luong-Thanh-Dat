@@ -14,6 +14,11 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 40px;
+  min-width: 0;
+}
+
+.contentColumn {
+  min-width: 0;
 }
 
 .mainLayout {
@@ -21,6 +26,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 60px;
+  min-width: 0;
+}
+
+.imageGallery {
+  min-width: 0;
+}
+
+.productInfo {
+  min-width: 0;
 }
 
 .mainImage img {
@@ -33,6 +47,7 @@
   font-size: 1.8rem;
   margin-bottom: 15px;
   line-height: 1.2;
+  color: var(--primary-color);
 }
 
 .price {
@@ -43,9 +58,26 @@
 }
 
 .shortDesc {
-  color: #666;
+  color: #555;
   margin-bottom: 30px;
   line-height: 1.6;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureList li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.featureList li:last-child {
+  margin-bottom: 0;
 }
 
 .actions {
@@ -64,46 +96,52 @@
   font-weight: 700;
 }
 
-.policy {
+.advantagesGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-top: 25px;
   border-top: 1px solid #eee;
 }
 
-.policyItem {
-  text-align: center;
-  font-size: 12px;
+
+
+.advItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
 }
 
-.policyItem span {
-  font-size: 20px;
-  display: block;
-  margin-bottom: 5px;
+.advIconWrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.description {
-  margin-bottom: 60px;
+.advIcon {
+  width: 28px;
+  height: 28px;
+  color: #008848;
 }
 
-.tabs {
-  border-bottom: 2px solid #eee;
-  margin-bottom: 20px;
+.advText h4 {
+  font-size: 15px;
+  color: #006838; /* Darker green */
+  margin: 0 0 4px 0;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
-.activeTab {
-  padding: 12px 25px;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: 700;
-  border: none;
-}
-
-.tabContent {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #444;
+.advText p {
+  font-size: 14px;
+  color: #222; /* Darker gray for better contrast */
+  margin: 0;
+  line-height: 1.5;
 }
 
 @media (max-width: 992px) {
@@ -112,5 +150,34 @@
   }
   .mainLayout {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .productInfo h1 {
+    font-size: 1.5rem;
+  }
+  .price {
+    font-size: 1.5rem;
+  }
+  .advantagesGrid {
+    grid-template-columns: 1fr;
+  }
+  .advItem {
+    padding: 10px;
+  }
+  .advIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .advText h4 {
+    font-size: 14px;
+  }
+  .advText p {
+    font-size: 13px;
+  }
+  .breadcrumb p {
+    white-space: normal;
+    word-break: break-word;
   }
 }

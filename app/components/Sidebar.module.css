@@ -2,35 +2,62 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: sticky;
+  top: 90px;
 }
 
 .searchBox {
   display: flex;
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.searchBox:focus-within {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary-color);
 }
 
 .searchBox input {
   flex: 1;
-  padding: 12px;
+  padding: 14px 16px;
   border: none;
   outline: none;
+  font-size: 15px;
 }
 
 .searchBox button {
-  padding: 0 15px;
-  background-color: #f5f5f5;
-  border-left: 1px solid #ddd;
+  padding: 0 18px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBox button:hover {
+  background-color: var(--primary-dark-color, #0056b3);
+}
+
+.widget {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
 }
 
 .widget h3 {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 20px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .widget h3::after {
@@ -38,9 +65,10 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
+  width: 50px;
   height: 3px;
-  background-color: var(--accent-color);
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+  border-radius: 2px;
 }
 
 .navList {
@@ -48,19 +76,37 @@
 }
 
 .navList li {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navList li:last-child {
+  border-bottom: none;
 }
 
 .navList li a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 12px 0;
   font-weight: 600;
-  transition: var(--transition);
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.navList li a::before {
+  content: '›';
+  margin-right: 8px;
+  font-size: 18px;
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
 }
 
 .navList li a:hover {
   color: var(--primary-color);
-  padding-left: 10px;
+  transform: translateX(5px);
+}
+
+.navList li a:hover::before {
+  transform: translateX(3px);
 }
 
 .recentList {
@@ -68,8 +114,23 @@
 }
 
 .recentList li {
-  margin-bottom: 15px;
-  font-size: 14px;
+  margin-bottom: 16px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 12px;
+}
+
+.recentList li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.recentList li a {
+  color: #555;
+  transition: color 0.3s ease;
+  display: block;
 }
 
 .recentList li a:hover {
@@ -77,20 +138,55 @@
 }
 
 .adWidget {
-  background-color: var(--accent-color);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
   color: white;
-  padding: 30px;
-  border-radius: 8px;
+  padding: 35px 20px;
+  border-radius: 12px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.adWidget::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+  opacity: 0.5;
+}
+
+.hotlineBox {
+  position: relative;
+  z-index: 1;
 }
 
 .hotlineBox p {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
 }
 
 .hotlineNum {
-  font-size: 24px;
+  display: inline-block;
+  font-size: 26px;
   font-weight: 800;
   color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hotlineNum:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
 }
