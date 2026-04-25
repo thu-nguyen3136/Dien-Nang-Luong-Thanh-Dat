@@ -285,12 +285,16 @@
 }
 
 @media (max-width: 768px) {
+  .welcomeSection {
+    padding: 20px 0;
+  }
   .welcomeContent h1 {
     font-size: 2rem;
   }
   .welcomeBtns {
     flex-direction: column;
     align-items: center;
+    gap: 12px;
   }
 }
 

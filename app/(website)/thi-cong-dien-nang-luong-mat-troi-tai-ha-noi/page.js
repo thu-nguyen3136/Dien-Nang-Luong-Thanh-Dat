@@ -43,7 +43,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
 
       <div className="container serviceLayout" style={{ marginTop: '40px' }}>
         <div className="serviceContent">
-          <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem' }}>Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội</h2>
+
           <p style={{ marginBottom: '15px', lineHeight: '1.8' }}>
             Là đơn vị tiên phong trong lĩnh vực năng lượng tái tạo tại Hà Nội, <strong>Thành Đạt Solar</strong> chuyên cung cấp dịch vụ trọn gói từ tư vấn, thiết kế, thi công lắp đặt đến bảo trì hệ thống điện năng lượng mặt trời cho hộ gia đình, doanh nghiệp và nhà máy. Thành Đạt Solar tự hào là đơn vị hàng đầu chuyên cung cấp dịch vụ thi công lắp đặt điện năng lượng mặt trời tại Hà Nội. Chúng tôi cam kết mang đến những giải pháp năng lượng sạch tối ưu, giúp khách hàng tiết kiệm chi phí điện năng, nâng cao hiệu suất sử dụng và chung tay bảo vệ môi trường.
           </p>
@@ -59,6 +59,20 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             Với mỗi loại hệ thống, chúng tôi đều tối ưu thiết kế theo mục tiêu sử dụng điện, ngân sách đầu tư và điều kiện công trình, giúp khách hàng đạt hiệu quả tiết kiệm điện tối đa và vận hành ổn định lâu dài.
           </p>
 
+          {/* Bắt đầu phần chèn ảnh */}
+          <div style={{ margin: '40px 0', textAlign: 'center' }}>
+            <img
+              src="/images/lap-va-ban-dien-nang-luong-mat-t.png"
+              alt="Thi công điện năng lượng mặt trời, điện gió"
+              style={{
+                width: '100%',
+                maxWidth: '800px',
+                height: 'auto',
+                borderRadius: '12px',
+                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) object:contain'
+              }}
+            />
+          </div>
           <h3 style={{ marginTop: '30px', marginBottom: '15px', color: '#111827' }}>Các hệ thống điện năng lượng mặt trời theo công suất</h3>
           <p style={{ marginBottom: '15px', lineHeight: '1.8' }}>
             Thành Đạt Solar cung cấp và thi công đa dạng các hệ thống điện năng lượng mặt trời theo nhiều mức công suất khác nhau, phù hợp cho hộ gia đình, doanh nghiệp và nhà xưởng:

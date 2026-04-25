@@ -14,13 +14,13 @@ export default function LapDatApMaiHaNoiPage() {
 
   return (
     <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>
-      <section style={{ 
-        background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/ap-mai.png")', 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        padding: '100px 0', 
-        textAlign: 'center', 
-        color: 'white' 
+      <section style={{
+        background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/ap-mai.png")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '100px 0',
+        textAlign: 'center',
+        color: 'white'
       }}>
         <div className="container">
           <h1 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '20px', textTransform: 'uppercase' }}>Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội</h1>
@@ -39,7 +39,7 @@ export default function LapDatApMaiHaNoiPage() {
 
       <div className="container serviceLayout" style={{ marginTop: '40px' }}>
         <div className="serviceContent">
-          <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem' }}>Giải Pháp Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội</h2>
+
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hà Nội là khu vực có mật độ dân cư và các công trình xây dựng dày đặc. Việc tận dụng không gian mái nhà để lắp đặt hệ thống điện năng lượng mặt trời (ĐNLMT) áp mái đang trở thành giải pháp ưu việt giúp các hộ gia đình và doanh nghiệp tự chủ về nguồn điện, giảm thiểu chi phí sinh hoạt hàng tháng và chung tay bảo vệ môi trường.
           </p>

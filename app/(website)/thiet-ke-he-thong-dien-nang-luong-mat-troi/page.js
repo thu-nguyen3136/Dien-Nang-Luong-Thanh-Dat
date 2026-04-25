@@ -24,10 +24,10 @@ export default function ThietKeHeThongPage() {
         textAlign: 'center',
         color: 'white'
       }}>
-        <Image 
-          src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp" 
-          alt="Thiết kế hệ thống điện mặt trời" 
-          fill 
+        <Image
+          src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp"
+          alt="Thiết kế hệ thống điện mặt trời"
+          fill
           sizes="100vw"
           style={{ objectFit: 'cover', zIndex: 1 }}
           priority
@@ -59,21 +59,21 @@ export default function ThietKeHeThongPage() {
 
       <div className="container serviceLayout" style={{ marginTop: '40px' }}>
         <div className="serviceContent">
-          <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Thiết Kế Hệ Thống Điện Năng Lượng Mặt Trời</h2>
-          <p style={{ marginBottom: '20px', lineHeight: '1.8', textAlign: 'justify' }}>
+
+          <p style={{ marginBottom: '20px', marginTop: '10px', lineHeight: '1.8', textAlign: 'justify' }}>
             Trong bối cảnh chi phí điện sinh hoạt và sản xuất ngày càng gia tăng, điện năng lượng mặt trời đang trở thành xu hướng tất yếu giúp tiết kiệm chi phí và hỗ trợ bảo vệ môi trường. Tuy nhiên, nhiều hộ gia đình và doanh nghiệp vẫn chưa tối ưu hóa hệ thống để đạt được hiệu suất tốt nhất. Đó chính là lý do Điện Năng Lượng Mặt Trời Thành Đạt ra đời để cung cấp giải pháp thiết kế và thi công hệ thống điện mặt trời đồng bộ, tối ưu, ăn khớp với từng nhu cầu của khách hàng.
           </p>
 
           <div className="imageBox">
-            <Image 
-              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp" 
-              alt="Thiết kế hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp"
+              alt="Thiết kế hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 992px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
           </div>
-          <p style={{ fontStyle: 'italic', color: '#6b7280', marginTop: '-20px', marginBottom: '30px', textAlign: 'center' }}>Thiết kế hệ thống điện mặt trời tối ưu</p>
+          <p style={{ fontStyle: 'italic', color: '#6b7280', marginTop: '20px', marginBottom: '20px', textAlign: 'center' }}>Thiết kế hệ thống điện mặt trời tối ưu</p>
 
           <h2 style={{ marginTop: '40px', marginBottom: '15px', color: 'var(--primary-color)', fontSize: '1.5rem' }}>Lý Do Nên Chọn Điện Năng Lượng Mặt Trời: Xu Hướng Tương Lai Cho Gia Đình Và Doanh Nghiệp</h2>
           <p style={{ marginBottom: '20px', lineHeight: '1.8', textAlign: 'justify' }}>
@@ -90,10 +90,10 @@ export default function ThietKeHeThongPage() {
           </ul>
 
           <div className="imageBox">
-            <Image 
-              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-2.png" 
-              alt="Lý do chọn điện mặt trời" 
-              fill 
+            <Image
+              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-2.png"
+              alt="Lý do chọn điện mặt trời"
+              fill
               sizes="(max-width: 992px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
@@ -112,10 +112,10 @@ export default function ThietKeHeThongPage() {
           </ul>
 
           <div className="imageBox">
-            <Image 
-              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-7.webp" 
-              alt="Lý do chọn điện mặt trời" 
-              fill 
+            <Image
+              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-7.webp"
+              alt="Lý do chọn điện mặt trời"
+              fill
               sizes="(max-width: 992px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
@@ -140,10 +140,10 @@ export default function ThietKeHeThongPage() {
           </ul>
 
           <div className="imageBox">
-            <Image 
-              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png" 
-              alt="Thiết kế hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png"
+              alt="Thiết kế hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 992px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
@@ -160,10 +160,10 @@ export default function ThietKeHeThongPage() {
           </ol>
 
           <div className="imageBox">
-            <Image 
-              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-1.jpg" 
-              alt="Thiết kế hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-1.jpg"
+              alt="Thiết kế hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 992px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
