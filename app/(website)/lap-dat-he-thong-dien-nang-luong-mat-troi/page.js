@@ -24,10 +24,10 @@ export default function LapDatHeThongPage() {
         textAlign: 'center',
         color: 'white'
       }}>
-        <Image 
-          src="/images/lap-he-thong-dien-nang-luong-mat-troi.jpg" 
-          alt="Lắp đặt hệ thống điện mặt trời" 
-          fill 
+        <Image
+          src="/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+          alt="Lắp đặt hệ thống điện mặt trời"
+          fill
           sizes="100vw"
           style={{ objectFit: 'cover', zIndex: 1 }}
           priority
@@ -70,10 +70,10 @@ export default function LapDatHeThongPage() {
             Bạn cần một giải pháp tiết kiệm điện hiệu quả, bền vững và thân thiện với môi trường? Bạn muốn giảm hóa đơn tiền điện mỗi tháng mà vẫn đảm bảo nguồn điện ổn định cho gia đình, doanh nghiệp hay nhà xưởng?
           </p>
           <div className="imageBox">
-            <Image 
-              src="/images/dich-vu-lap-dat-he-thong-dien-mt.png" 
-              alt="Lắp đặt hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/dich-vu-lap-dat-he-thong-dien-mt.png"
+              alt="Lắp đặt hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 1024px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
@@ -85,13 +85,18 @@ export default function LapDatHeThongPage() {
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hệ thống này áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban ngày. Hệ thống giúp giảm chi phí tiền điện. Lưu ý không thể dùng được khi mất điện lưới.
           </p>
-          <div className="imageBox">
-            <Image 
-              src="/images/lap-he-thong-dien-mat-troi-hoa-luoi-bam-tai-2.jpg" 
-              alt="Lắp đặt hệ thống điện mặt trời" 
-              fill 
-              sizes="(max-width: 1024px) 100vw, 800px"
-              style={{ objectFit: 'cover' }}
+          <div style={{ margin: '30px 0', textAlign: 'center' }}>
+            <img
+              src="/images/image-bang-chi-phi-1.png"
+              alt="Bảng giá lắp điện mặt trời trọn gói"
+              style={{
+                width: '100%',
+                maxWidth: '900px',
+                height: 'auto',
+                borderRadius: '8px',
+                border: '1px solid #e5e7eb',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
             />
           </div>
           <h4 style={{ fontWeight: 'bold', marginBottom: '15px' }}>Nên lắp đặt hệ thống điện mặt trời 3Kw hay 5Kw cho gia đình?</h4>
@@ -110,13 +115,18 @@ export default function LapDatHeThongPage() {
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hệ thống này áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban đêm, mang lại sự tiện nghi vì có thể dùng được khi mất điện lưới.
           </p>
-          <div className="imageBox">
-            <Image 
-              src="/images/lap-nang-luong-mat-troi-co-luu-tru-1.jpg" 
-              alt="Lắp đặt hệ thống điện mặt trời" 
-              fill 
-              sizes="(max-width: 1024px) 100vw, 800px"
-              style={{ objectFit: 'cover' }}
+          <div style={{ margin: '30px 0', textAlign: 'center' }}>
+            <img
+              src="/images/bang-chi-phi-2-new.png"
+              alt="Bảng giá điện mặt trời có lưu trữ (Hybrid)"
+              style={{
+                width: '100%',
+                maxWidth: '900px',
+                height: 'auto',
+                borderRadius: '8px',
+                border: '1px solid #e5e7eb',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
             />
           </div>
           <div style={{ background: '#f8fafc', padding: '25px', borderRadius: '8px', border: '1px solid #e2e8f0', marginBottom: '30px' }}>
@@ -137,10 +147,10 @@ export default function LapDatHeThongPage() {
           <h3 className="blueTitle">Hộ gia đình có hóa đơn điện cao mỗi tháng</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Nếu gia đình bạn thường xuyên có hóa đơn tiền điện từ 1 triệu đồng trở lên, việc lắp đặt hệ thống điện mặt trời sẽ giúp tiết kiệm đáng kể chi phí hàng tháng. Đồng thời, đây cũng là bước đầu để gia đình tiếp cận với nguồn năng lượng xanh, sạch và bền vững.</p>
           <div className="imageBox">
-            <Image 
-              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png" 
-              alt="Lắp đặt hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png"
+              alt="Lắp đặt hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 1024px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
@@ -176,10 +186,10 @@ export default function LapDatHeThongPage() {
           <h3 className="blueTitle">Tự chủ nguồn điện – sẵn sàng mọi tình huống</h3>
           <p style={{ marginBottom: '40px', lineHeight: '1.8' }}>Không còn phụ thuộc hoàn toàn vào điện lưới. Bạn có thể tích hợp thêm hệ thống lưu trữ điện (battery) để sử dụng vào ban đêm hoặc khi mất điện, đảm bảo dòng điện luôn ổn định cho sinh hoạt và sản xuất.</p>
           <div className="imageBox">
-            <Image 
-              src="/images/aa.png" 
-              alt="Lắp đặt hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/aa.png"
+              alt="Lắp đặt hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 1024px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />
@@ -203,10 +213,10 @@ export default function LapDatHeThongPage() {
           ))}
 
           <div className="imageBox">
-            <Image 
-              src="/images/lap-dat-nang-luong-mat-troi-giai.png" 
-              alt="Lắp đặt hệ thống điện mặt trời" 
-              fill 
+            <Image
+              src="/images/lap-dat-nang-luong-mat-troi-giai.png"
+              alt="Lắp đặt hệ thống điện mặt trời"
+              fill
               sizes="(max-width: 1024px) 100vw, 800px"
               style={{ objectFit: 'cover' }}
             />

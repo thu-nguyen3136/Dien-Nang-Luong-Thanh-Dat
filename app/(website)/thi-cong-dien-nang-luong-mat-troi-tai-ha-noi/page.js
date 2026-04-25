@@ -126,7 +126,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
           {/* Bắt đầu phần chèn Bảng giá số 2 */}
           <div style={{ margin: '30px 0', textAlign: 'center' }}>
             <img
-              src="/images/image-bang-chi-phi-2.png"
+              src="/images/bang-chi-phi-2-new.png"
               alt="Bảng giá điện mặt trời có lưu trữ (Hybrid)"
               style={{
                 width: '100%',
