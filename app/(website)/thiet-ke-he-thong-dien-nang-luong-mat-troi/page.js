@@ -5,8 +5,8 @@ import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
 
 export const metadata = {
-  title: 'Thiết Kế Hệ Thống Điện Năng Lượng Mặt Trời | Thành Đạt Solar',
-  description: 'Thành Đạt Solar cung cấp giải pháp thiết kế và thi công hệ thống điện mặt trời đồng bộ, tối ưu, ăn khớp với từng nhu cầu của khách hàng.',
+  title: 'Thiết Kế Hệ Thống Điện Năng Lượng Mặt Trời Tối Ưu | Thành Đạt Solar',
+  description: 'Thành Đạt Solar chuyên thiết kế hệ thống điện mặt trời đồng bộ cho gia đình, nhà xưởng, doanh nghiệp. Tư vấn giải pháp năng lượng sạch, tiết kiệm chi phí tối đa.',
 };
 
 export default function ThietKeHeThongPage() {
@@ -61,7 +61,7 @@ export default function ThietKeHeThongPage() {
         <div className="serviceContent">
 
           <p style={{ marginBottom: '20px', marginTop: '10px', lineHeight: '1.8', textAlign: 'justify' }}>
-            Trong bối cảnh chi phí điện sinh hoạt và sản xuất ngày càng gia tăng, điện năng lượng mặt trời đang trở thành xu hướng tất yếu giúp tiết kiệm chi phí và hỗ trợ bảo vệ môi trường. Tuy nhiên, nhiều hộ gia đình và doanh nghiệp vẫn chưa tối ưu hóa hệ thống để đạt được hiệu suất tốt nhất. Đó chính là lý do Điện Năng Lượng Mặt Trời Thành Đạt ra đời để cung cấp giải pháp thiết kế và thi công hệ thống điện mặt trời đồng bộ, tối ưu, ăn khớp với từng nhu cầu của khách hàng.
+            Trong bối cảnh chi phí điện sinh hoạt và sản xuất ngày càng gia tăng, điện năng lượng mặt trời đang trở thành xu hướng tất yếu giúp tiết kiệm chi phí và hỗ trợ bảo vệ môi trường. Tuy nhiên, nhiều hộ gia đình và doanh nghiệp vẫn chưa tối ưu hóa hệ thống để đạt được hiệu suất tốt nhất. Đó chính là lý do <strong>Thành Đạt Solar</strong> ra đời để cung cấp giải pháp thiết kế và <Link href="/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi" style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>thi công hệ thống điện mặt trời</Link> đồng bộ, tối ưu, ăn khớp với từng nhu cầu của khách hàng.
           </p>
 
           <div className="imageBox">

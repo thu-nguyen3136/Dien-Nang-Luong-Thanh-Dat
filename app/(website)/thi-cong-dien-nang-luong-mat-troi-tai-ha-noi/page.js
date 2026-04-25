@@ -43,6 +43,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
 
       <div className="container serviceLayout" style={{ marginTop: '40px' }}>
         <div className="serviceContent">
+          <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Dịch Vụ Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội Uy Tín</h2>
 
           <p style={{ marginBottom: '15px', lineHeight: '1.8' }}>
             Là đơn vị tiên phong trong lĩnh vực năng lượng tái tạo tại Hà Nội, <strong>Thành Đạt Solar</strong> chuyên cung cấp dịch vụ trọn gói từ tư vấn, thiết kế, thi công lắp đặt đến bảo trì hệ thống điện năng lượng mặt trời cho hộ gia đình, doanh nghiệp và nhà máy. Thành Đạt Solar tự hào là đơn vị hàng đầu chuyên cung cấp dịch vụ thi công lắp đặt điện năng lượng mặt trời tại Hà Nội. Chúng tôi cam kết mang đến những giải pháp năng lượng sạch tối ưu, giúp khách hàng tiết kiệm chi phí điện năng, nâng cao hiệu suất sử dụng và chung tay bảo vệ môi trường.
@@ -63,7 +64,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
           <div style={{ margin: '40px 0', textAlign: 'center' }}>
             <img
               src="/images/lap-va-ban-dien-nang-luong-mat-t.png"
-              alt="Thi công điện năng lượng mặt trời, điện gió"
+              alt="Thi công lắp đặt điện năng lượng mặt trời chuyên nghiệp tại Hà Nội"
               style={{
                 width: '100%',
                 maxWidth: '800px',
@@ -97,7 +98,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
           <div style={{ margin: '40px 0', textAlign: 'center' }}>
             <img
               src="/images/solar_1.jpeg"
-              alt="Thi công điện năng lượng mặt trời, điện gió"
+              alt="Dự án thi công điện mặt trời thực tế bởi Thành Đạt Solar"
               style={{
                 width: '100%',
                 maxWidth: '800px',

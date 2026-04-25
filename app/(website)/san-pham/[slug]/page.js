@@ -1,9 +1,21 @@
-export const dynamic = "force-dynamic";
 import { getData } from '@/lib/db';
 import styles from './product.module.css';
 import { notFound } from 'next/navigation';
 import Sidebar from '@/app/components/Sidebar';
 import ProductGallery from '@/app/components/ProductGallery';
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const data = getData();
+  const product = data.products.find(p => p.slug.toLowerCase() === slug.toLowerCase());
+
+  if (!product) return { title: 'Sản phẩm không tồn tại' };
+
+  return {
+    title: `${product.title} | Thành Đạt Solar`,
+    description: product.features?.join(', ').substring(0, 160) || `Mua ${product.title} uy tín, chất lượng tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu.`,
+  };
+}
 
 export default async function ProductDetail({ params }) {
   const { slug } = await params;

@@ -39,6 +39,7 @@ export default function LapDatApMaiHaNoiPage() {
 
       <div className="container serviceLayout" style={{ marginTop: '40px' }}>
         <div className="serviceContent">
+          <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Dịch Vụ Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội</h2>
 
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hà Nội là khu vực có mật độ dân cư và các công trình xây dựng dày đặc. Việc tận dụng không gian mái nhà để lắp đặt hệ thống điện năng lượng mặt trời (ĐNLMT) áp mái đang trở thành giải pháp ưu việt giúp các hộ gia đình và doanh nghiệp tự chủ về nguồn điện, giảm thiểu chi phí sinh hoạt hàng tháng và chung tay bảo vệ môi trường.
