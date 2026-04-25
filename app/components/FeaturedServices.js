@@ -30,13 +30,14 @@ export default function FeaturedServices() {
         <h2 className="section-title">DỊCH VỤ <span>NỔI BẬT</span></h2>
 
         <div className={styles.grid}>
-          {services.map((service, index) => (
-            <div key={index} className={styles.card}>
+          {services.map((service) => (
+            <div key={service.link} className={styles.card}>
               <div className={styles.imageOverlay}>
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className={styles.img}
                 />
                 <div className={styles.gradient}></div>

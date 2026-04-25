@@ -181,3 +181,43 @@
     word-break: break-word;
   }
 }
+
+.detailedContent {
+  margin-top: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.detailTitle {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+  text-transform: uppercase;
+}
+
+.htmlContent {
+  line-height: 1.8;
+  color: #444;
+}
+
+.htmlContent ul, .htmlContent ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.htmlContent li {
+  margin-bottom: 8px;
+}
+
+.htmlContent p {
+  margin-bottom: 15px;
+}
+
+.htmlContent h2, .htmlContent h3 {
+  color: #111;
+  margin: 30px 0 15px;
+}

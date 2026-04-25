@@ -1,0 +1,161 @@
+.heroSlider {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  overflow: hidden;
+  background-color: #f8f9fa; /* Nền nhạt để hiện rõ ảnh contain */
+}
+
+.sliderContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease-in-out, visibility 1.2s;
+  z-index: 1;
+  background-color: #fff; /* Đảm bảo che nền bên dưới */
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+  visibility: visible;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  z-index: 3;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.heroContent h1 span {
+  color: var(--secondary-color);
+}
+
+.heroContent p {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 20px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.btnOutline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.btnOutline:hover {
+  background: white;
+  color: var(--primary-color);
+}
+
+.dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 5;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dotActive {
+  background-color: var(--secondary-color);
+  width: 30px;
+  border-radius: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroSlider {
+    height: 60vh;
+  }
+  .heroContent h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSlider {
+    height: 50vh;
+    min-height: 400px;
+  }
+  .heroContent {
+    align-items: center;
+    text-align: center;
+  }
+  .heroContent h1 {
+    font-size: 2.2rem;
+  }
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+  .heroBtns {
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+  }
+}

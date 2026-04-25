@@ -86,8 +86,8 @@
 }
 
 .phoneBox {
-  background: white;
-  color: #e62117;
+  background: #e62117;
+  color: white;
   animation: phoneRing 0.5s infinite;
 }
 
@@ -177,7 +177,6 @@
 
   .phoneBtn {
     padding: 0;
-    background: transparent;
     box-shadow: none;
   }
 }

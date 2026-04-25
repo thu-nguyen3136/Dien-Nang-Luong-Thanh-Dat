@@ -43,6 +43,7 @@ export default function Testimonials() {
               src={featured.avatar}
               alt={featured.name}
               fill
+              sizes="(max-width: 768px) 150px, 200px"
               style={{ objectFit: 'cover' }}
             />
           </div>
@@ -66,6 +67,7 @@ export default function Testimonials() {
                     src={review.avatar}
                     alt={review.name}
                     fill
+                    sizes="80px"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>

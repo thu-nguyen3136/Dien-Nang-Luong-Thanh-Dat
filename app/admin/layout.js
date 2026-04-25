@@ -31,7 +31,7 @@ export default function AdminLayout({ children }) {
             <span>Xin chào, <strong>Admin</strong>!</span>
           </div>
           <div style={{ display: 'flex', gap: '20px' }}>
-            <Link href="/" target="_blank">🌐 Vào trang web</Link>
+            <Link href="/" target="_blank" rel="noopener noreferrer">🌐 Vào trang web</Link>
             <Link href="/admin/login">🔓 Đăng xuất</Link>
           </div>
         </div>

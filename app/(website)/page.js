@@ -10,6 +10,9 @@ import BatteryStorageGrid from '@/app/components/BatteryStorageGrid';
 import CommitmentSection from '@/app/components/CommitmentSection';
 import Testimonials from '@/app/components/Testimonials';
 import NewsSection from '@/app/components/NewsSection';
+import HeroSlider from '@/app/components/HeroSlider';
+
+import SystemProductGrid from '@/app/components/SystemProductGrid';
 
 export default function Home() {
   const data = getData();
@@ -19,24 +22,17 @@ export default function Home() {
 
   return (
     <div className={styles.home}>
-      {/* Hero Section */}
-      <section className={styles.hero}>
-        <div className={styles.heroImage}>
-          <Image
-            src="/images/hero.png"
-            alt="Thành Đạt Solar"
-            fill
-            style={{ objectFit: 'contain' }}
-            priority
-          />
-          <div className={styles.heroOverlay}></div>
-        </div>
-        <div className={`container ${styles.heroContent}`}>
-          <h1>ĐIỆN NĂNG LƯỢNG MẶT TRỜI <br /><span>THÀNH ĐẠT</span></h1>
-          <p>Giải pháp năng lượng xanh cho tương lai bền vững. Tiết kiệm chi phí điện năng lên đến 90%.</p>
-          <div className={styles.heroBtns}>
-            <Link href="/san-pham" className="btn-primary">XEM SẢN PHẨM</Link>
-            <Link href="/lien-he" className={styles.btnOutline}>NHẬN TƯ VẤN</Link>
+      <HeroSlider />
+
+      <section className={styles.welcomeSection}>
+        <div className="container">
+          <div className={styles.welcomeContent}>
+            <h1>ĐIỆN NĂNG LƯỢNG MẶT TRỜI <span>THÀNH ĐẠT</span></h1>
+            <p>Giải pháp năng lượng xanh cho tương lai bền vững. Tiết kiệm chi phí điện năng lên đến 90%, bảo vệ môi trường và tối ưu hóa tài chính cho gia đình & doanh nghiệp.</p>
+            <div className={styles.welcomeBtns}>
+              <Link href="/san-pham" className="btn-primary">KHÁM PHÁ SẢN PHẨM</Link>
+              <Link href="/lien-he" className={styles.btnOutline}>TƯ VẤN MIỄN PHÍ</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -45,27 +41,7 @@ export default function Home() {
 
       <AboutSection />
 
-      {/* Products Grid */}
-      <section className={styles.services}>
-        <div className="container">
-          <h2 className="section-title">CÁC GÓI <span>HỆ THỐNG ĐIỆN MẶT TRỜI</span></h2>
-          <div className={styles.grid}>
-            {systemProducts.map((product) => (
-              <div key={product.id} className={styles.card}>
-                <div className={styles.cardImgContainer}>
-                  <img src={product.image} alt={product.title} className={styles.cardImg} />
-                </div>
-                <div className={styles.cardBody}>
-                  <h3>{product.title}</h3>
-                  <p className={styles.price}>{product.price}</p>
-                  <p className={styles.feature}>{product.feature}</p>
-                  <Link href={`/san-pham/${product.slug}`} className={styles.readMore}>Xem chi tiết &rarr;</Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SystemProductGrid products={systemProducts} />
 
       <SolarPanelGrid />
 

@@ -39,6 +39,24 @@
       "image": "/images/gioi-thieu-thanh-dat.png",
       "date": "2024-04-15",
       "status": "published"
+    },
+    {
+      "id": "post-3",
+      "slug": "phan-biet-cac-he-thong-dien-nang-luong-mat-troi",
+      "title": "Phân Biệt Các Hệ Thống Điện Năng Lượng Mặt Trời",
+      "date": "22/04/2026",
+      "excerpt": "Hệ thống điện mặt trời gồm 3 hệ thống: Điện mặt trời hòa lưới không lưu trữ, điện mặt trời hòa lưới có lưu trữ và điện mặt trời độc lập.",
+      "image": "/images/news-placeholder-3.jpg",
+      "content": "Hệ thống điện mặt trời đang dần phổ biến hơn với các hộ gia đình, tòa nhà văn phòng, cơ sở sản xuất. Điện mặt trời gồm 3 hệ thống chính:\n\n### 1. Điện mặt trời hòa lưới không lưu trữ\nLà hệ thống sử dụng năng lượng mặt trời để tạo ra điện năng, sau đó được hòa trực tiếp vào lưới điện quốc gia. Hệ thống này không sử dụng pin lưu trữ.\n- **Ưu điểm:** Chi phí đầu tư thấp, hiệu quả kinh tế cao.\n- **Hạn chế:** Không sử dụng được khi mất điện lưới hoặc vào ban đêm.\n\n### 2. Điện mặt trời hòa lưới có lưu trữ (Hybrid)\nLà hệ thống kết hợp ưu điểm của hệ thống hòa lưới và độc lập. Sử dụng pin lưu trữ để dự phòng khi mất điện hoặc dùng vào ban đêm.\n- **Ưu điểm:** Tự cung cấp điện 24/7, ít phụ thuộc lưới điện.\n- **Hạn chế:** Chi phí đầu tư cao hơn.\n\n### 3. Điện mặt trời độc lập (Off-grid)\nLà hệ thống hoạt động hoàn toàn độc lập với lưới điện quốc gia. Thường dùng ở vùng sâu vùng xa.\n- **Ưu điểm:** Hoàn toàn tự chủ nguồn điện.\n- **Hạn chế:** Chi phí lưu trữ lớn, cần bảo trì thường xuyên."
+    },
+    {
+      "id": "post-4",
+      "slug": "tong-quan-ve-cac-hinh-thuc-lap-dat-he-thong-dien-mat-troi",
+      "title": "Tổng Quan Về Các Hình Thức Lắp Đặt Hệ Thống Điện Mặt Trời",
+      "date": "21/04/2026",
+      "excerpt": "Hiện nay, có 03 hình thức lắp đặt hệ thống điện mặt trời bao gồm: Hệ thống điện mặt trời hòa lưới (On Grid), hệ thống điện mặt trời độc lập (Off Grid) và hệ thống điện mặt trời kết hợp (Hybrid).",
+      "image": "/images/news-placeholder-4.jpg",
+      "content": "### 1. Hệ thống điện mặt trời hòa lưới (On grid)\nHệ thống này đấu nối trực tiếp với lưới điện Điện lực. Cấu tạo gồm tấm pin, inverter hòa lưới và công tơ 2 chiều. Đây là hình thức phổ biến nhất nhờ chi phí thấp và hiệu quả cao.\n\n### 2. Hệ thống điện mặt trời độc lập (Off grid)\nMô hình này không kết nối với lưới điện. Phù hợp cho vùng sâu vùng xa, hải đảo. Cần có bộ lưu trữ điện dung lượng lớn để đảm bảo hoạt động liên tục.\n\n### 3. Hệ thống điện mặt trời kết hợp (Hybrid)\nSự kết hợp hoàn hảo giữa hòa lưới và độc lập. Ưu tiên dùng điện mặt trời, dư thừa sạc vào pin, khi thiếu hụt mới dùng điện lưới. Đảm bảo nguồn điện 24/24 ngay cả khi mất điện lưới."
     }
   ],
   "services": [],
@@ -454,101 +472,8 @@
       "features": [
         "Pin lưu trữ lithium BETTENERGY 16kWh điện áp thấp sở hữu thiết kế nguyên khối cao cấp, sang trọng.",
         "Lõi pin Lithium Sắt Photphat đảm bảo tuổi thọ cao, bền bỉ và an toàn trên 10.000 lần sạc xả.",
-        "Pin lưu trữ BETTENERGY 51.2V-314Ah 16kW cung cấp nguồn điện ổn định cho các hệ thống Điện mặt trời dân dụng và thương mại có nhu cầu sử dụng điện năng cao.",
-        "Model: ELESHELL-16K / ELESHELL-16.3K-T",
-        "Kích thước: 1169.5*640*197 mm",
-        "Trọng lượng: 158 Kgs",
-        "Chỉ số bảo vệ: IP65",
-        "Nhiệt độ hoạt động: 0 đến 55℃ / 0 đến 131℉",
-        "Chu kỳ sống (80% DoD @0,5C, 25℃): ≥ 10000 lần",
-        "Cổng giao tiếp: RS232 / RS485 / CAN",
-        "Độ cao hoạt động: ＜3000 m",
-        "Điều kiện độ ẩm: 5% đến 95%",
-        "Bảo hành: 5/10 năm",
-        "Lắp đặt: Gắn trên mặt đất / Treo tường",
-        "Công suất năng lượng danh nghĩa: 16.07kWh",
-        "Điện áp danh định: 51,2V",
-        "Phạm vi điện áp hoạt động: 48 – 57V",
-        "Dòng điện sạc/xả tối đa: 280A",
-        "Dòng điện sạc/xả liên tục: 200A",
-        "Độ sâu xả (DoD): 80%",
-        "Vật liệu pin: Lithium (LiFePO4)"
-      ],
-      "feature": "Thương hiệu: BETTENERGY",
-      "image": "/images/tampinluutru-4.jpg",
-      "images": [
-        "/images/tampinluutru-4.jpg"
-      ]
-    },
-    {
-      "id": "battery-lifepo4-200ah",
-      "slug": "pin-luu-tru-lifepo4-51-2v-200ah",
-      "title": "Pin Lưu Trữ LIFEPO4 51,2V 200AH",
-      "price": "Giá: Liên Hệ",
-      "features": [
-        "Pin 51,2V 200AH, thiết kế dạng pin giá đỡ máy chủ, bảo hành 5 năm.",
-        "Tùy chọn điện áp: Có sẵn ở điện áp chuẩn 48V DC và 51,2V DC.",
-        "Lựa chọn dung lượng: Các tùy chọn 100Ah, 200Ah và 280Ah đáp ứng nhu cầu năng lượng đa dạng.",
-        "Hiệu suất năng lượng: Đạt mức ấn tượng 98% ở 0,5 độ C, đảm bảo sử dụng năng lượng tối ưu.",
-        "Giao thức truyền thông: Hỗ trợ kết nối đa dạng bao gồm CAN, RS485, RS232, WIFI, 4G và Bluetooth giúp giám sát và kiểm soát nâng cao.",
-        "Tuổi thọ chu kỳ dài: Đạt 6000 chu kỳ ở độ sâu xả (DoD) 80%, mang lại độ bền bỉ và tuổi thọ kéo dài.",
-        "Bảo vệ mạnh mẽ: Cơ chế bảo vệ toàn diện chống quá nhiệt, quá dòng, ngắn mạch, sạc quá mức, xả quá mức và điện áp thấp.",
-        "Thông số kỹ thuật sạc và xả: Cho phép điều chỉnh mức sử dụng năng lượng theo dòng điện và điện áp sạc/xả tối đa được khuyến nghị.",
-        "Cơ học và thiết kế: Kết cấu sắt cấp công nghiệp siêu bền, thiết kế gắn trên giá đỡ giúp dễ dàng lắp đặt gọn gàng trong tủ.",
-        "Chứng nhận và tuân thủ: Đạt chuẩn CE, FCC, CCC và tuân thủ UN 38.3, UN 3480 (Lớp 9) đảm bảo an toàn vận chuyển và sử dụng.",
-        "Nhiệt độ hoạt động: Hoạt động ổn định trong dải nhiệt độ rộng từ -20°C đến 65°C."
-      ],
-      "feature": "Hiệu suất ấn tượng 98%",
-      "image": "/images/tampinluutru-5.jpg",
-      "images": [
-        "/images/tampinluutru-5.jpg"
-      ]
-    },
-    {
-      "id": "battery-lvtopsun",
-      "slug": "pin-lithium-lvtopsun-51-2v-300ah",
-      "title": "Pin Lithium LVTOPSUN 51.2V-300AH (LVTS 512300)",
-      "price": "Giá: Liên Hệ",
-      "features": [
-        "Điện áp danh định: 51,2 Vdc",
-        "Dung lượng: 300 Ah",
-        "Tổng năng lượng: 15,12 kWh",
-        "Loại cell: Pin LiFePO₄ 3.2V – Hãng EVE",
-        "Dòng sạc/xả tiêu chuẩn: 100A (Tối đa lên đến 150A)",
-        "Số lượng kết nối song song tối đa: 15 bộ",
-        "Giao tiếp: RS485 / CAN",
-        "Tương thích Inverter: Deye, Luxpower, Growatt, Goodwe, Sofar…",
-        "Chu kỳ sạc/xả: ≥ 6000 lần (90% DOD)",
-        "Tuổi thọ thiết kế: Trên 10 năm",
-        "Nhiệt độ hoạt động: -20°C đến 60°C",
-        "Kiểu lắp đặt: Treo tường / Để sàn",
-        "Kích thước: 680 × 480 × 180 mm (tham khảo)",
-        "Trọng lượng: ~48kg",
-        "Bảo hành: 5 năm chính hãng"
-      ],
-      "feature": "Thương hiệu: LVTOPSUN",
-      "image": "/images/tampinluutru-6.jpg",
-      "images": [
-        "/images/tampinluutru-6.jpg"
-      ]
-    },
-    {
-      "id": "battery-ja625",
-      "slug": "pin-JA625",
-      "title": "Pin JA625",
-      "price": "Giá: Liên Hệ",
-      "features": [],
-      "feature": "Thương hiệu: Khác",
-      "image": "/images/pin-JA625.jpg",
-      "images": [
-        "/images/pin-JA625.jpg"
+        "Pin lưu trữ BETTENERGY 51.2V-314Ah 16kW cung cấp nguồn điện ổn định cho các hệ thống Điện mặt trời dân dụng và thương mại có nhu cầu sử dụng điện n\n�o hành sản phẩm**\nHãy chọn những nhà sản xuất có chính sách bảo hành rõ ràng, bao gồm thời gian bảo hành và điều kiện áp dụng.\n\n### 2. Kinh nghiệm mua pin năng lượng mặt trời chất lượng nhất\n\n**2.1 Lựa chọn mua loại pin năng lượng mặt trời phù hợp**\n- Pin Mono: Hiệu suất cao, hoạt động tốt ở mọi điều kiện thời tiết.\n- Pin Poly: Giá cả hợp lý, phổ biến.\n- Thin-film: Tiết kiệm chi phí, phù hợp diện tích lớn.\n\n**2.2 Lựa chọn mua pin mặt trời dựa theo tế bào quang điện**\nChất lượng tế bào quang điện (Solar Cell) loại A là tốt nhất, không có lỗi kỹ thuật.\n\n**2.3 Lựa chọn mua pin mặt trời dựa vào chất lượng khung giá đỡ, mặt kính**\nCần có khung nhôm chắc chắn và kính cường lực bảo vệ độ bền cao.\n\n**2.4 Lựa chọn mua pin mặt trời dựa theo kích cỡ**\nDựa trên hệ thống năng lượng của gia đình để lựa chọn kích cỡ, công suất phù hợp.\n\n**2.5 Lựa chọn mua pin năng lượng mặt trời dựa theo hệ số nhiệt độ**\nSản phẩm có tỷ lệ % thấp hơn trên mỗi nhiệt độ sẽ giúp cải thiện hiệu suất hoạt động."
       ]
     }
-  ],
-  "config": {
-    "siteName": "Thành Đạt Solar",
-    "hotline": "0368.444.567",
-    "email": "ctythanhdat6886@gmail.com",
-    "address": "Thôn Liễu Trì, Mê Linh, Hà Nội"
-  }
+  ]
 }

@@ -49,7 +49,7 @@ export default function BatteryStorageGrid() {
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="pin-luu-tru">
       <div className="container">
         <h2 className="section-title">PIN <span>LƯU TRỮ LITHIUM</span></h2>
 
@@ -62,6 +62,7 @@ export default function BatteryStorageGrid() {
                   src={battery.image}
                   alt={battery.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   style={{ objectFit: 'contain' }}
                   className={styles.img}
                 />

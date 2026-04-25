@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import Image from 'next/image';
 import styles from './ProductGallery.module.css';
 
 export default function ProductGallery({ images, title }) {
@@ -49,7 +50,16 @@ export default function ProductGallery({ images, title }) {
           </button>
         )}
         
-        <img src={images[currentIndex]} alt={`${title} - ảnh ${currentIndex + 1}`} className={styles.mainImage} />
+        <div className={styles.imageBox}>
+          <Image 
+            src={images[currentIndex]} 
+            alt={`${title} - ảnh ${currentIndex + 1}`} 
+            fill
+            style={{ objectFit: 'contain' }}
+            className={styles.mainImage} 
+            priority
+          />
+        </div>
         
         {images.length > 1 && (
           <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={handleNext} aria-label="Next image">
@@ -66,7 +76,15 @@ export default function ProductGallery({ images, title }) {
               className={`${styles.thumbnailWrapper} ${currentIndex === idx ? styles.activeThumbnail : ''}`}
               onClick={() => setCurrentIndex(idx)}
             >
-              <img src={img} alt={`${title} ${idx + 1}`} className={styles.thumbnail} />
+              <div className={styles.thumbBox}>
+                <Image 
+                  src={img} 
+                  alt={`${title} ${idx + 1}`} 
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className={styles.thumbnail} 
+                />
+              </div>
             </div>
           ))}
         </div>

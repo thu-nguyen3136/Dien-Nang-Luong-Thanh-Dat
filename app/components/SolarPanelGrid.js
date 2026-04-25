@@ -47,7 +47,7 @@ export default function SolarPanelGrid() {
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="tam-pin">
       <div className="container">
         <h2 className="section-title">TẤM PIN <span>NĂNG LƯỢNG MẶT TRỜI</span></h2>
 
@@ -60,6 +60,7 @@ export default function SolarPanelGrid() {
                   src={panel.image}
                   alt={panel.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ objectFit: 'contain' }}
                   className={styles.img}
                 />

@@ -112,6 +112,16 @@ export default async function ProductDetail({ params }) {
               </div>
             </div>
 
+            {product.content && (
+              <div className={styles.detailedContent}>
+                <h2 className={styles.detailTitle}>Chi Tiết Sản Phẩm</h2>
+                <div 
+                  className={styles.htmlContent}
+                  dangerouslySetInnerHTML={{ __html: product.content }} 
+                />
+              </div>
+            )}
+
           </div>
 
           <Sidebar recentPosts={data.posts} />
