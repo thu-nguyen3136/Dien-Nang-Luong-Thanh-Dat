@@ -112,8 +112,8 @@ export default function Features() {
     <section className={styles.features}>
       <div className="container">
         <div className={styles.featuresGrid}>
-          {features.map((item, index) => (
-            <div key={index} className={styles.featureItem}>
+          {features.map((item) => (
+            <div key={item.title} className={styles.featureItem}>
               <div className={styles.iconWrapper}>
                 {item.icon}
               </div>
@@ -124,8 +124,8 @@ export default function Features() {
         </div>
 
         <div className={styles.statsRow}>
-          {stats.map((stat, index) => (
-            <div key={index} className={styles.statItem}>
+          {stats.map((stat) => (
+            <div key={stat.label} className={styles.statItem}>
               <div className={styles.statValue}>
                 <Counter end={stat.value} suffix={stat.suffix} />
               </div>

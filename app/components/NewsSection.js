@@ -20,7 +20,13 @@ export default function NewsSection({ posts }) {
           {recentPosts.map((post) => (
             <article key={post.id} className={styles.card}>
               <Link href={`/tin-tuc/${post.slug}`} className={styles.imageWrapper}>
-                <img src={post.image} alt={post.title} />
+                <Image 
+                  src={post.image} 
+                  alt={post.title} 
+                  fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  style={{ objectFit: 'cover' }}
+                />
               </Link>
               <div className={styles.content}>
                 <span className={styles.date}>{post.date}</span>

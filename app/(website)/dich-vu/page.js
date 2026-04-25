@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { getData } from '@/lib/db';
 import styles from './dich-vu.module.css';
+import FeaturedServices from '@/app/components/FeaturedServices';
+import SystemProductGrid from '@/app/components/SystemProductGrid';
 
 export const metadata = {
   title: 'Dịch Vụ Lắp Đặt Điện Mặt Trời | Thành Đạt Solar',
@@ -10,32 +12,45 @@ export const metadata = {
 export default function ServicesPage() {
   const data = getData();
   const services = data.services || [];
+  const products = data.products || [];
+  // Lấy các gói hệ thống
+  const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-'));
 
   return (
     <div className={styles.servicesPage}>
       <section className={styles.pageHeader}>
         <div className="container">
-          <h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
-          <p>Giải pháp năng lượng tối ưu cho gia đình và doanh nghiệp</p>
+          <h1>DỊCH VỤ & GIẢI PHÁP</h1>
+          <p>Cung cấp giải pháp năng lượng tối ưu cho gia đình và doanh nghiệp</p>
         </div>
       </section>
 
-      <div className="container">
-        <div className={styles.servicesGrid}>
-          {services.map((service) => (
-            <div key={service.id} className={styles.serviceCard}>
-              <div className={styles.imageBox}>
-                <img src={service.image} alt={service.title} />
+      {/* 1. Grid CÁC GÓI HỆ THỐNG ĐIỆN MẶT TRỜI */}
+      <SystemProductGrid products={systemProducts} />
+
+      {/* 2. Grid DỊCH VỤ NỔI BẬT */}
+      <FeaturedServices />
+
+      {/* 3. Danh sách dịch vụ chi tiết (Design Wide Card) */}
+      <section style={{ padding: '80px 0' }}>
+        <div className="container">
+          <h2 className="section-title">DỰ ÁN <span>TIÊU BIỂU</span></h2>
+          <div className={styles.servicesGrid}>
+            {services.map((service) => (
+              <div key={service.id} className={styles.serviceCard}>
+                <div className={styles.imageBox}>
+                  <img src={service.image} alt={service.title} />
+                </div>
+                <div className={styles.infoBox}>
+                  <h2>{service.title}</h2>
+                  <p>{service.content.substring(0, 200)}...</p>
+                  <Link href={`/dich-vu/${service.slug}`} className={styles.detailBtn}>Chi tiết dự án &rarr;</Link>
+                </div>
               </div>
-              <div className={styles.infoBox}>
-                <h2>{service.title}</h2>
-                <p>{service.content.substring(0, 200)}...</p>
-                <Link href={`/dich-vu/${service.slug}`} className={styles.detailBtn}>Chi tiết dự án &rarr;</Link>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
       <section className={styles.whyUs}>
         <div className="container">

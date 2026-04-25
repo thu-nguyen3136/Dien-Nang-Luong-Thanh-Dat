@@ -1,0 +1,134 @@
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.mainImageWrapper {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mainImage {
+  transition: transform 0.3s ease;
+}
+
+.mainImageWrapper:hover .mainImage {
+  transform: scale(1.03);
+}
+
+.thumbnailList {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.thumbnailList::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnailList::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 4px;
+}
+ 
+.thumbnailList::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius: 4px;
+}
+
+.thumbnailList::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+.thumbnailWrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.thumbBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+}
+
+.activeThumbnail {
+  border-color: var(--primary-color);
+  opacity: 1;
+}
+
+.thumbnailWrapper:not(.activeThumbnail) {
+  opacity: 0.6;
+}
+
+.thumbnailWrapper:not(.activeThumbnail):hover {
+  opacity: 0.9;
+  border-color: #ddd;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navBtn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .navBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}

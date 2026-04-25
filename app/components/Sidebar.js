@@ -4,11 +4,6 @@ import styles from './Sidebar.module.css';
 const Sidebar = ({ categories, recentPosts }) => {
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.searchBox}>
-        <input type="text" placeholder="Tìm kiếm..." />
-        <button>🔍</button>
-      </div>
-
       <div className={styles.widget}>
         <h3>Danh mục</h3>
         <ul className={styles.navList}>

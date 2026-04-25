@@ -117,24 +117,23 @@
   margin-right: 10px;
 }
 
-.btn {
+.contactTextWrapper {
   margin-top: auto;
-  display: block;
   text-align: center;
-  padding: 14px;
-  background: #111827;
-  color: white;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  border: 2px solid transparent;
+  padding-top: 15px;
+  border-top: 1px dashed #eee;
 }
 
-.btn:hover {
-  background: transparent;
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+.contactText {
+  color: var(--accent-color, red);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.card:hover .contactText {
+  color: #cc0000;
 }
 
 @media (max-width: 768px) {

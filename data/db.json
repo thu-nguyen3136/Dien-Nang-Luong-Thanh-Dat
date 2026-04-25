@@ -39,6 +39,24 @@
       "image": "/images/gioi-thieu-thanh-dat.png",
       "date": "2024-04-15",
       "status": "published"
+    },
+    {
+      "id": "post-3",
+      "slug": "phan-biet-cac-he-thong-dien-nang-luong-mat-troi",
+      "title": "Phân Biệt Các Hệ Thống Điện Năng Lượng Mặt Trời",
+      "date": "22/04/2026",
+      "excerpt": "Hệ thống điện mặt trời gồm 3 hệ thống: Điện mặt trời hòa lưới không lưu trữ, điện mặt trời hòa lưới có lưu trữ và điện mặt trời độc lập.",
+      "image": "/images/news-placeholder-3.jpg",
+      "content": "Hệ thống điện mặt trời đang dần phổ biến hơn với các hộ gia đình, tòa nhà văn phòng, cơ sở sản xuất. Điện mặt trời gồm 3 hệ thống chính:\n\n### 1. Điện mặt trời hòa lưới không lưu trữ\nLà hệ thống sử dụng năng lượng mặt trời để tạo ra điện năng, sau đó được hòa trực tiếp vào lưới điện quốc gia. Hệ thống này không sử dụng pin lưu trữ.\n- **Ưu điểm:** Chi phí đầu tư thấp, hiệu quả kinh tế cao.\n- **Hạn chế:** Không sử dụng được khi mất điện lưới hoặc vào ban đêm.\n\n### 2. Điện mặt trời hòa lưới có lưu trữ (Hybrid)\nLà hệ thống kết hợp ưu điểm của hệ thống hòa lưới và độc lập. Sử dụng pin lưu trữ để dự phòng khi mất điện hoặc dùng vào ban đêm.\n- **Ưu điểm:** Tự cung cấp điện 24/7, ít phụ thuộc lưới điện.\n- **Hạn chế:** Chi phí đầu tư cao hơn.\n\n### 3. Điện mặt trời độc lập (Off-grid)\nLà hệ thống hoạt động hoàn toàn độc lập với lưới điện quốc gia. Thường dùng ở vùng sâu vùng xa.\n- **Ưu điểm:** Hoàn toàn tự chủ nguồn điện.\n- **Hạn chế:** Chi phí lưu trữ lớn, cần bảo trì thường xuyên."
+    },
+    {
+      "id": "post-4",
+      "slug": "tong-quan-ve-cac-hinh-thuc-lap-dat-he-thong-dien-mat-troi",
+      "title": "Tổng Quan Về Các Hình Thức Lắp Đặt Hệ Thống Điện Mặt Trời",
+      "date": "21/04/2026",
+      "excerpt": "Hiện nay, có 03 hình thức lắp đặt hệ thống điện mặt trời bao gồm: Hệ thống điện mặt trời hòa lưới (On Grid), hệ thống điện mặt trời độc lập (Off Grid) và hệ thống điện mặt trời kết hợp (Hybrid).",
+      "image": "/images/news-placeholder-4.jpg",
+      "content": "### 1. Hệ thống điện mặt trời hòa lưới (On grid)\nHệ thống này đấu nối trực tiếp với lưới điện Điện lực. Cấu tạo gồm tấm pin, inverter hòa lưới và công tơ 2 chiều. Đây là hình thức phổ biến nhất nhờ chi phí thấp và hiệu quả cao.\n\n### 2. Hệ thống điện mặt trời độc lập (Off grid)\nMô hình này không kết nối với lưới điện. Phù hợp cho vùng sâu vùng xa, hải đảo. Cần có bộ lưu trữ điện dung lượng lớn để đảm bảo hoạt động liên tục.\n\n### 3. Hệ thống điện mặt trời kết hợp (Hybrid)\nSự kết hợp hoàn hảo giữa hòa lưới và độc lập. Ưu tiên dùng điện mặt trời, dư thừa sạc vào pin, khi thiếu hụt mới dùng điện lưới. Đảm bảo nguồn điện 24/24 ngay cả khi mất điện lưới."
     }
   ],
   "services": [],
@@ -48,86 +66,414 @@
       "slug": "20kwh-co-luu-tru",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 20Kwh Có Lưu Trữ",
       "price": "270,000,000₫",
+      "features": [
+        "Sản Lượng 2400 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 5-8 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 35 Tấm pin Jinko 590W",
+        "Inverter Deye 20kw",
+        "Pin Lưu Trữ 14.3 Kw"
+      ],
+      "content": "<ul>\n<li>Sản Lượng 2400 kwh/ Tháng</li>\n<li>Phù Hợp Cho Gia Đình sử Dụng từ 5-8 Triệu Đồng mỗi tháng</li>\n<li>Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời</li>\n<li>Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.</li>\n<li>Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.</li>\n<li>Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính</li>\n<li>Không gây ồn ào, độc hại đến sức khỏe của con người.</li>\n<li>Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.</li>\n<li>Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình</li>\n<li>Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm</li>\n<li>Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện</li>\n<li>Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.</li>\n<li>Hệ sử dụng 35 Tấm pin Jinko 590W</li>\n<li>Inverter Deye 20kw</li>\n<li>Pin Lưu Trữ 14.3 Kw</li>\n</ul>",
       "feature": "-Sản Lượng 2400 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "2",
       "slug": "15kwh-co-luu-tru",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 15Kwh Có Lưu Trữ",
       "price": "175,000,000₫",
+      "features": [
+        "Sản Lượng 1800 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 4-5 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 25 Tấm pin Jinko 590W",
+        "Inverter Deye 15kw",
+        "Pin Lưu Trữ 14.3 Kw"
+      ],
       "feature": "-Sản Lượng 1800 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "3",
       "slug": "15kwh-ban-tai",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 15Kwh Bán Tải",
       "price": "115,000,000₫",
+      "features": [
+        "Sản Lượng 1800 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 4-5 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 25 Tấm pin Jinko 590W",
+        "Inverter Deye 15kw"
+      ],
       "feature": "-Sản Lượng 1800 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "4",
       "slug": "12kwh-co-luu-tru",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 12 kWh Có Lưu Trữ",
       "price": "155,000,000₫",
+      "features": [
+        "Sản Lượng 1500 kwh / Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 3.5- 4.5 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 20 Tấm pin Jinko 590W",
+        "Inverter Deye 12kw",
+        "Pin Lưu Trữ 14.3 kw"
+      ],
       "feature": "-Sản Lượng 1500 kwh / Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "5",
       "slug": "12kwp-ban-tai",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 12kWp Bán Tải",
       "price": "100,000,000₫",
+      "features": [
+        "Sản Lượng 1500 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 3.5- 4.5 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 20 Tấm pin Jinko 590W",
+        "Inverter Deye 12kw"
+      ],
       "feature": "-Sản Lượng 1500 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "6",
       "slug": "10kwp-co-luu-tru",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 10 kWp Có Lưu Trữ",
       "price": "145,000,000₫",
+      "features": [
+        "Sản Lượng 1200 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 3- 4 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 20 Tấm pin Jinko 590W",
+        "Inverter Deye 10kw",
+        "Pin Lưu Trữ 14.3 Kw"
+      ],
       "feature": "-Sản Lượng 1200 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "7",
       "slug": "10kwp-ban-tai",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 10 kWp Bán Tải",
       "price": "95,000,000₫",
-      "feature": "-Sản Lượng 1200 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "features": [
+        "Sản Lượng 1200 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 3- 4 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 20 Tấm pin Jinko 590W",
+        "Inverter Deye 10kw"
+      ],
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "8",
       "slug": "8kwp-co-luu-tru",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 8 kWp Có Lưu Trữ",
       "price": "120,000,000₫",
-      "feature": "-Sản Lượng 1000 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "features": [
+        "Sản Lượng 1000 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 2- 3 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 16 Tấm pin Jinko 590W",
+        "Inverter Deye 8kw",
+        "Pin Lưu Trữ 14.3 Kw"
+      ],
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "9",
       "slug": "8kwp-ban-tai",
       "title": "Lắp Đặt Điện Năng Lượng Mặt Trời 8 kWp Bán Tải",
       "price": "75,000,000₫",
-      "feature": "-Sản Lượng 800 kwh/ Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "features": [
+        "Sản Lượng 800 kwh/ Tháng",
+        "Phù Hợp Cho Gia Đình sử Dụng từ 2- 3 Triệu Đồng mỗi tháng",
+        "Sử dụng nguồn năng lượng tái tạo vô hạn từ bức xạ mặt trời",
+        "Lắp đặt dễ dàng, dễ vận hành, dễ dàng nâng cấp mở rộng.",
+        "Vận hành hoàn toàn tự động, ổn định liên tục 24/24, tự chủ về nguồn năng lượng điện giảm phụ thuộc vào lưới điện quốc gia.",
+        "Hệ thống giám sát và theo dõi từ xa thông minh qua điện thoại, máy tính",
+        "Không gây ồn ào, độc hại đến sức khỏe của con người.",
+        "Không gây ô nhiễm, giảm thiểu lượng khí thải CO2 cho môi trường.",
+        "Tiết kiệm hóa đơn tiền điện hàng tháng cho gia đình",
+        "Thời gian hoàn vốn nhanh, chỉ từ 3-4 năm. Sử dụng miễn phí trên 20 năm",
+        "Chi phí đầu tư ban đầu khá cao nhưng sẽ đổi lại giá trị rất lớn về điện",
+        "Nâng cao đẳng cấp và giá trị cho ngôi nhà của bạn.",
+        "Hệ sử dụng 16 Tấm pin Jinko 590W",
+        "Inverter Deye 8kw"
+      ],
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
     },
     {
       "id": "10",
       "slug": "6kwp-co-luu-tru",
       "title": "Lắp Đặt điện Năng Lượng Mặt Trời 6kWp Có Lưu Trữ",
       "price": "75,000,000₫",
-      "feature": "-Sản Lượng 700 kWh/Tháng",
-      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      "features": [
+        "Sản Lượng 700 kWh/Tháng",
+        "Phù Hợp Gia Đình Sử Dụng Từ 1,5 - 2 triệu đồng mỗi tháng",
+        "Giảm Tiền Điện Hàng Tháng",
+        "Giảm Nhiệt Cho Ngôi Nhà Của Bạn",
+        "Giảm Phát Thải CO2 Hiệu Ứng Nhà Kính",
+        "Hệ Dùng 12 Tấm Pin Jinko 590w",
+        "Inverter Deye 6kw",
+        "Pin Lưu Trữ Lithium 5.12kw"
+      ],
+      "image": "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg",
+      "images": [
+        "/images/lap-he-thong-dien-nang-luong-mat-troi.jpg"
+      ]
+    },
+    {
+      "id": "solar-canadian",
+      "slug": "canadian-550w-780w",
+      "title": "Tấm Pin CANADIAN 550W - 780W",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Hiệu suất cao vượt trội",
+        "Công nghệ Mono half-cell",
+        "Bảo hành 25 năm"
+      ],
+      "feature": "Thương hiệu: Canadian Solar",
+      "image": "/images/8841z6394868637238-bdc3e09702ccfbc1266d7c9d32931a5-300x300.webp",
+      "images": [
+        "/images/8841z6394868637238-bdc3e09702ccfbc1266d7c9d32931a5-300x300.webp"
+      ]
+    },
+    {
+      "id": "solar-longi",
+      "slug": "longi-600w-670w",
+      "title": "Tấm Pin Longi 600W - 670W",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Hiệu suất ổn định",
+        "Kháng PID tuyệt vời",
+        "Chịu tải gió & tuyết cao"
+      ],
+      "feature": "Thương hiệu: Longi Solar",
+      "image": "/images/316z6394868802320-23cba65007c885cd52703c0dcea40308-300x300.webp",
+      "images": [
+        "/images/316z6394868802320-23cba65007c885cd52703c0dcea40308-300x300.webp"
+      ]
+    },
+    {
+      "id": "solar-jinko",
+      "slug": "jinko-tiger-pro-550w-700w",
+      "title": "Tấm Pin Jinko Tiger Pro 550W - 700W",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Công nghệ Tiger Pro",
+        "Độ bền cực cao",
+        "Hiệu suất quang năng tối ưu"
+      ],
+      "feature": "Thương hiệu: Jinko Solar",
+      "image": "/images/2537z6394868543983-8d5ed988fa8b84ba240ff66ebde6d06-300x300.webp",
+      "images": [
+        "/images/2537z6394868543983-8d5ed988fa8b84ba240ff66ebde6d06-300x300.webp"
+      ]
+    },
+    {
+      "id": "solar-full-cell",
+      "slug": "tam-pin-nang-luong-full-cell",
+      "title": "Tấm Pin Năng Lượng Full-Cell",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Diện tích hấp thụ tối đa",
+        "Độ bền khung nhôm cao",
+        "Phù hợp mọi địa hình"
+      ],
+      "feature": "Thương hiệu: Công Nghệ Mới",
+      "image": "/images/z6713411960215-db4d9fe8f6b945a3f060784f8b35cb6f-300x300.jpg",
+      "images": [
+        "/images/z6713411960215-db4d9fe8f6b945a3f060784f8b35cb6f-300x300.jpg"
+      ]
+    },
+    {
+      "id": "solar-half-cell",
+      "slug": "tam-pin-nang-luong-half-cell",
+      "title": "Tấm Pin Năng Lượng Half-Cell",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Giảm tổn hao dòng điện",
+        "Hoạt động tốt khi bị che bóng",
+        "Tối ưu hóa nhiệt độ"
+      ],
+      "feature": "Thương hiệu: Hiệu Suất Cao",
+      "image": "/images/z6713414403022-c170ad8bf404fc7b52171464ff4d3107.jpg",
+      "images": [
+        "/images/z6713414403022-c170ad8bf404fc7b52171464ff4d3107.jpg"
+      ]
+    },
+    {
+      "id": "battery-143k",
+      "slug": "pin-luu-tru-143k-bh-10-nam",
+      "title": "Pin lưu trữ 14,3k BH 10 năm",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Bảo hành: 10 năm"
+      ],
+      "feature": "Pin lưu trữ 14,3k",
+      "image": "/images/tampinluutru-1.jpg",
+      "images": [
+        "/images/tampinluutru-1.jpg"
+      ]
+    },
+    {
+      "id": "battery-powerbox-512kwh",
+      "slug": "lithium-powerbox-512kwh",
+      "title": "Lithium POWERBOX 5.12kWH, model ES-BOX12 PLUS",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Thương hiệu: POWERBOX",
+        "Mã sản phẩm: ES-BOX12 PLUS – WIFI",
+        "Công suất: 5.12KWH",
+        "Dung Lượng: 51,2V 100Ah",
+        "Trọng Lượng: 63kg",
+        "Số lượng tế bào: 16 cell",
+        "Giám sát: WIFI – ỨNG DỤNG",
+        "Bảo Hành Vật Lý: 05 năm",
+        "Vòng đời sản phẩm: 15 năm",
+        "Dòng pin lưu trữ áp thấp 51,2V – 16 cell thế hệ mới nhất, kiểu dáng treo tường hiện đại, dòng sạc – xả đến 1C.",
+        "Cho phép kết nối song song đến 16 packs/chuỗi, công suất lưu trữ đến 5120Ah.",
+        "Tương thích hầu hết biến tần HYBRID qua BMS thông minh.",
+        "Vòng đời 6000 lần sạc xả tại DOD 80%, đạt chứng nhận CE, TUV, UL."
+      ],
+      "feature": "Thương hiệu: POWERBOX",
+      "image": "/images/tampinluutru-2.jpg",
+      "images": [
+        "/images/tampinluutru-2.jpg"
+      ]
+    },
+    {
+      "id": "battery-powerbox-1034kwh",
+      "slug": "lithium-powerbox-1034kwh",
+      "title": "Lithium POWERBOX 10,34kWh model ES-BOX12 PLUS",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Mô tả chi tiết: Dòng Pin lưu trữ áp thấp 51,2V – 16 cell thế hệ mới nhất với tính năng nổi trội, kiểu dáng treo tường hiện đại, dòng sạc – xả đến 1C.",
+        "Mở rộng: Cho phép kết nối song song đến 16 packs/chuỗi, công suất lưu trữ lên đến 4480Ah.",
+        "Tương thích: Phù hợp với hầu hết các loại biến tần HYBRID trên thị trường qua hệ thống giao tiếp BMS thông minh.",
+        "Độ bền: Dòng đời sản phẩm lên tới 6000 lần sạc xả tại DOD 80%. Đạt nhiều chứng nhận chất lượng CE, TUV, UL."
+      ],
+      "feature": "Thương hiệu: POWERBOX",
+      "image": "/images/tampinluutru-3.jpg",
+      "images": [
+        "/images/tampinluutru-3.jpg"
+      ]
+    },
+    {
+      "id": "battery-bettenergy-16kwh",
+      "slug": "pin-luu-tru-16kwh-pin-lithium-bettenergy-51-2v-314ah",
+      "title": "Pin Lưu Trữ 16KWH | PIN LITHIUM BETTENERGY 51.2V-314AH",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Pin lưu trữ lithium BETTENERGY 16kWh điện áp thấp sở hữu thiết kế nguyên khối cao cấp, sang trọng.",
+        "Lõi pin Lithium Sắt Photphat đảm bảo tuổi thọ cao, bền bỉ và an toàn trên 10.000 lần sạc xả.",
+        "Pin lưu trữ BETTENERGY 51.2V-314Ah 16kW cung cấp nguồn điện ổn định cho các hệ thống Điện mặt trời dân dụng và thương mại có nhu cầu sử dụng điện n\n�o hành sản phẩm**\nHãy chọn những nhà sản xuất có chính sách bảo hành rõ ràng, bao gồm thời gian bảo hành và điều kiện áp dụng.\n\n### 2. Kinh nghiệm mua pin năng lượng mặt trời chất lượng nhất\n\n**2.1 Lựa chọn mua loại pin năng lượng mặt trời phù hợp**\n- Pin Mono: Hiệu suất cao, hoạt động tốt ở mọi điều kiện thời tiết.\n- Pin Poly: Giá cả hợp lý, phổ biến.\n- Thin-film: Tiết kiệm chi phí, phù hợp diện tích lớn.\n\n**2.2 Lựa chọn mua pin mặt trời dựa theo tế bào quang điện**\nChất lượng tế bào quang điện (Solar Cell) loại A là tốt nhất, không có lỗi kỹ thuật.\n\n**2.3 Lựa chọn mua pin mặt trời dựa vào chất lượng khung giá đỡ, mặt kính**\nCần có khung nhôm chắc chắn và kính cường lực bảo vệ độ bền cao.\n\n**2.4 Lựa chọn mua pin mặt trời dựa theo kích cỡ**\nDựa trên hệ thống năng lượng của gia đình để lựa chọn kích cỡ, công suất phù hợp.\n\n**2.5 Lựa chọn mua pin năng lượng mặt trời dựa theo hệ số nhiệt độ**\nSản phẩm có tỷ lệ % thấp hơn trên mỗi nhiệt độ sẽ giúp cải thiện hiệu suất hoạt động."
+      ]
     }
-  ],
-  "config": {
-    "siteName": "Thành Đạt Solar",
-    "hotline": "0368.444.567",
-    "email": "ctythanhdat6886@gmail.com",
-    "address": "Thôn Liễu Trì, Mê Linh, Hà Nội"
-  }
+  ]
 }
