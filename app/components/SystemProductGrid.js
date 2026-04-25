@@ -30,7 +30,7 @@ export default function SystemProductGrid({ products }) {
                 
                 {product.features && (
                   <ul className={styles.features}>
-                    {product.features.slice(0, 3).map((feat, idx) => (
+                    {product.features.slice(0, 1).map((feat, idx) => (
                       <li key={idx}>{feat}</li>
                     ))}
                   </ul>

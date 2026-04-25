@@ -37,7 +37,13 @@ const FloatingContact = () => {
         >
           <div className={`${styles.pulsingEffect} ${styles.smsPulse}`}></div>
           <div className={`${styles.iconBox} ${styles.smsBox}`}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.svgIcon}><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <Image
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f0/SMS_MESSAGE_ICON.png"
+              alt="SMS"
+              width={30}
+              height={30}
+              style={{ objectFit: 'contain' }}
+            />
           </div>
         </a>
       </div>

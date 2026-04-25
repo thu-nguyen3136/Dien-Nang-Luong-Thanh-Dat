@@ -5,7 +5,7 @@
       "slug": "kinh-nghiem-mua-pin-nang-luong-mat-troi-tot-va-chat-luong",
       "title": "KINH NGHIỆM MUA PIN NĂNG LƯỢNG MẶT TRỜI TỐT VÀ CHẤT LƯỢNG",
       "excerpt": "Nắm rõ những kinh nghiệm quan trọng khi mua pin năng lượng mặt trời giúp bạn có hệ thống hiệu suất cao.",
-      "content": "Để mua được pin mặt trời tốt, bạn cần lưu ý đến thương hiệu sản phẩm (Jinko, Longi, Canadian), công nghệ tế bào quang điện (Mono half-cell), hiệu suất tấm pin và uy tín của đơn vị thi công...",
+      "content": "Để mua được pin mặt trời tốt, bạn cần lưu ý đến thương hiệu sản phẩm (Jinko, Longi, Canadian), công nghệ tế bào quang điện (Mono half-cell), hiệu suất tấm pin and uy tín của đơn vị thi công...",
       "image": "/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp",
       "date": "2024-04-18",
       "status": "published"
@@ -472,7 +472,55 @@
       "features": [
         "Pin lưu trữ lithium BETTENERGY 16kWh điện áp thấp sở hữu thiết kế nguyên khối cao cấp, sang trọng.",
         "Lõi pin Lithium Sắt Photphat đảm bảo tuổi thọ cao, bền bỉ và an toàn trên 10.000 lần sạc xả.",
-        "Pin lưu trữ BETTENERGY 51.2V-314Ah 16kW cung cấp nguồn điện ổn định cho các hệ thống Điện mặt trời dân dụng và thương mại có nhu cầu sử dụng điện n\n�o hành sản phẩm**\nHãy chọn những nhà sản xuất có chính sách bảo hành rõ ràng, bao gồm thời gian bảo hành và điều kiện áp dụng.\n\n### 2. Kinh nghiệm mua pin năng lượng mặt trời chất lượng nhất\n\n**2.1 Lựa chọn mua loại pin năng lượng mặt trời phù hợp**\n- Pin Mono: Hiệu suất cao, hoạt động tốt ở mọi điều kiện thời tiết.\n- Pin Poly: Giá cả hợp lý, phổ biến.\n- Thin-film: Tiết kiệm chi phí, phù hợp diện tích lớn.\n\n**2.2 Lựa chọn mua pin mặt trời dựa theo tế bào quang điện**\nChất lượng tế bào quang điện (Solar Cell) loại A là tốt nhất, không có lỗi kỹ thuật.\n\n**2.3 Lựa chọn mua pin mặt trời dựa vào chất lượng khung giá đỡ, mặt kính**\nCần có khung nhôm chắc chắn và kính cường lực bảo vệ độ bền cao.\n\n**2.4 Lựa chọn mua pin mặt trời dựa theo kích cỡ**\nDựa trên hệ thống năng lượng của gia đình để lựa chọn kích cỡ, công suất phù hợp.\n\n**2.5 Lựa chọn mua pin năng lượng mặt trời dựa theo hệ số nhiệt độ**\nSản phẩm có tỷ lệ % thấp hơn trên mỗi nhiệt độ sẽ giúp cải thiện hiệu suất hoạt động."
+        "Pin lưu trữ BETTENERGY 51.2V-314Ah 16kW cung cấp nguồn điện ổn định cho các hệ thống Điện mặt trời dân dụng và thương mại."
+      ],
+      "image": "/images/tampinluutru-4.jpg",
+      "images": [
+        "/images/tampinluutru-4.jpg"
+      ]
+    },
+    {
+      "id": "battery-lifepo4-200ah",
+      "slug": "pin-luu-tru-lifepo4-51-2v-200ah",
+      "title": "Pin Lưu Trữ Lifepo4 51,2v 200ah",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Dung lượng: 51.2V 200Ah",
+        "Hiệu suất: 98%",
+        "Công nghệ: LifePo4"
+      ],
+      "image": "/images/tampinluutru-5.jpg",
+      "images": [
+        "/images/tampinluutru-5.jpg"
+      ]
+    },
+    {
+      "id": "battery-lvtopsun-300ah",
+      "slug": "pin-lithium-lvtopsun-51-2v-300ah",
+      "title": "Pin Lithium Lvtopsun 51.2V-300AH (LVTS 512300)",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Thương hiệu: Lvtopsun",
+        "Mã sản phẩm: LVTS 512300",
+        "Công suất: 51.2V 300Ah"
+      ],
+      "image": "/images/tampinluutru-6.jpg",
+      "images": [
+        "/images/tampinluutru-6.jpg"
+      ]
+    },
+    {
+      "id": "battery-ja625",
+      "slug": "pin-ja625",
+      "title": "Pin JA625",
+      "price": "Giá: Liên Hệ",
+      "features": [
+        "Model: JA625",
+        "Hiệu suất cao"
+      ],
+      "image": "/images/pin-JA625.jpg",
+      "images": [
+        "/images/pin-JA625.jpg"
       ]
     }
   ]
