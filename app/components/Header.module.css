@@ -42,12 +42,15 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: -80px;
 }
 
+/*..fix here*/
 .logoImageContainer {
   background-color: white;
-  padding: 2px 4px;
-  border-radius: 8px;
+  padding: 0 70px;
+  height: 75px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +64,7 @@
 
 .logoImg {
   width: auto;
-  height: 50px;
+  height: 75px;
   object-fit: contain;
 }
 
@@ -303,7 +306,8 @@
 @media (max-width: 1024px) {
   .hamburger {
     display: flex;
-    margin-left: auto; /* Đẩy nút menu về phía ngoài cùng bên phải */
+    margin-left: auto;
+    /* Đẩy nút menu về phía ngoài cùng bên phải */
   }
 
   .nav {
@@ -437,13 +441,35 @@
   }
 }
 
-@media (max-width: 480px) {
-  .header {
-    height: 75px;
+@media (max-width: 1024px) {
+  .logoWrapper {
+    margin-left: 0;
+  }
+
+  .logoImageContainer {
+    padding: 0 25px;
+    height: 60px;
+    border-radius: 10px;
   }
 
   .logoImg {
-    height: 32px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 65px;
+  }
+
+  .logoImageContainer {
+    padding: 0 15px;
+    height: 45px;
+    border-radius: 8px;
+  }
+
+  .logoImg {
+    height: 35px;
   }
 }
 
