@@ -4,7 +4,7 @@
   --accent-color: #e31e24;
   --text-color: #333;
   --bg-color: #fff;
-  --header-height: 70px;
+  --header-height: 85px;
   --container-width: 1200px;
   --transition: all 0.3s ease;
 }
@@ -20,6 +20,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   line-height: 1.6;
+  padding-top: var(--header-height);
 }
 
 a {
@@ -106,6 +107,9 @@ button {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
   section {
     padding: 30px 0;
   }
@@ -117,6 +121,9 @@ button {
 }
 
 @media (max-width: 480px) {
+  :root {
+    --header-height: 65px;
+  }
   .section-title {
     font-size: 1.5rem;
   }

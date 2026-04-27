@@ -1,8 +1,10 @@
 /* Kế thừa màu từ globals.css, không khai báo cứng nữa */
 
 .headerWrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
@@ -55,7 +57,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .logoWrapper:hover .logoImageContainer {
@@ -64,7 +66,7 @@
 
 .logoImg {
   width: auto;
-  height: 75px;
+  height: 55px; /* Đảm bảo logo nhỏ hơn container một chút */
   object-fit: contain;
 }
 
