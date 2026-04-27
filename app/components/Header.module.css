@@ -1,15 +1,18 @@
 /* Kế thừa màu từ globals.css, không khai báo cứng nữa */
 
 .headerWrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: var(--transition);
 }
 
+/* Xóa hiệu ứng đổi chiều cao khi scroll để tránh giật lag hoặc lỗi hiển thị logo */
 .scrolled .header {
-  height: 70px;
+  height: 85px;
 }
 
 
@@ -42,20 +45,19 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-left: -80px;
 }
 
 /*..fix here*/
 .logoImageContainer {
   background-color: white;
-  padding: 0 70px;
-  height: 75px;
-  border-radius: 12px;
+  padding: 0 15px;
+  height: 65px; /* Giảm chiều cao để logo nằm trọn trong header 85px */
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .logoWrapper:hover .logoImageContainer {
@@ -64,7 +66,7 @@
 
 .logoImg {
   width: auto;
-  height: 75px;
+  height: 55px; /* Đảm bảo logo nhỏ hơn container một chút */
   object-fit: contain;
 }
 

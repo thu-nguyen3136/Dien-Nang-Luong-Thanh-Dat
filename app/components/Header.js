@@ -53,8 +53,8 @@ const Header = () => {
                 <Image
                   src="/images/logo.png"
                   alt="Thành Đạt Solar"
-                  width={140}
-                  height={50}
+                  width={250}
+                  height={80}
                   className={styles.logoImg}
                   priority
                 />
