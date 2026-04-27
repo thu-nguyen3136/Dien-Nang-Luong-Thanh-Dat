@@ -128,9 +128,13 @@
 }
 
 @media (max-width: 992px) {
+  .about {
+    padding-top: 10px;
+  }
+
   .aboutGrid {
     grid-template-columns: 1fr;
-    gap: 80px;
+    gap: 40px;
   }
 
   .aboutContent {
@@ -157,10 +161,15 @@
 
   .experienceBadge {
     right: 0;
-    padding: 15px 20px;
+    padding: 10px 15px;
+    bottom: -10px;
   }
 
   .years {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .expText {
+    font-size: 0.65rem;
   }
 }

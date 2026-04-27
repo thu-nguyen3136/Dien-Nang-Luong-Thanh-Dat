@@ -173,7 +173,15 @@ export default function LapDatHeThongPage() {
           <p style={{ background: '#fffbeb', padding: '15px', borderRadius: '5px', color: '#b45309', fontWeight: 'bold', textAlign: 'center', margin: '30px 0' }}>
             Bạn thuộc một trong những trường hợp trên? Đừng bỏ lỡ cơ hội đầu tư thông minh – tiết kiệm chi phí, nâng cao giá trị công trình và góp phần bảo vệ môi trường cùng Thành Đạt!
           </p>
-
+          <div className="imageBox">
+            <Image
+              src="/images/lap-va-ban-dien-nang-luong-mat-t.png"
+              alt="Lắp đặt hệ thống điện mặt trời"
+              fill
+              sizes="(max-width: 1024px) 100vw, 800px"
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
           <h3 className="blueTitle">Giảm áp lực hóa đơn điện mỗi tháng</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Không còn lo lắng mỗi lần đến kỳ thanh toán tiền điện. Hệ thống điện mặt trời sẽ tự sản sinh nguồn điện miễn phí từ ánh nắng, giúp giảm đến 50–90% chi phí điện – đặc biệt hiệu quả với các hộ tiêu thụ điện cao như nhà xưởng, văn phòng, khách sạn, trường học…</p>
 

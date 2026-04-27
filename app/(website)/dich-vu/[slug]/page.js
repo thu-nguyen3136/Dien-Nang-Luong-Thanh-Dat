@@ -3,10 +3,23 @@ import styles from './service-detail.module.css';
 import { notFound } from 'next/navigation';
 import Sidebar from '@/app/components/Sidebar';
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const data = getData();
+  const service = data.services.find(s => s.slug.toLowerCase() === slug.toLowerCase());
+
+  if (!service) return { title: 'Dịch vụ không tồn tại' };
+
+  return {
+    title: `${service.title} | Thành Đạt Solar`,
+    description: service.desc || `Dịch vụ ${service.title} uy tín, chuyên nghiệp tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu cho bạn.`,
+  };
+}
+
 export default async function ServiceDetail({ params }) {
   const { slug } = await params;
   const data = getData();
-  const service = data.services.find(s => s.slug === slug);
+  const service = data.services.find(s => s.slug.toLowerCase() === slug.toLowerCase());
 
   if (!service) {
     notFound();

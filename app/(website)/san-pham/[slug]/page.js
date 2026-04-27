@@ -4,10 +4,23 @@ import { notFound } from 'next/navigation';
 import Sidebar from '@/app/components/Sidebar';
 import ProductGallery from '@/app/components/ProductGallery';
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const data = getData();
+  const product = data.products.find(p => p.slug.toLowerCase() === slug.toLowerCase());
+
+  if (!product) return { title: 'Sản phẩm không tồn tại' };
+
+  return {
+    title: `${product.title} | Thành Đạt Solar`,
+    description: product.features?.join(', ').substring(0, 160) || `Mua ${product.title} uy tín, chất lượng tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu.`,
+  };
+}
+
 export default async function ProductDetail({ params }) {
   const { slug } = await params;
   const data = getData();
-  const product = data.products.find(p => p.slug === slug);
+  const product = data.products.find(p => p.slug.toLowerCase() === slug.toLowerCase());
 
   if (!product) {
     notFound();
@@ -34,17 +47,17 @@ export default async function ProductDetail({ params }) {
                 <p className={styles.price}>{product.price}</p>
                 <div className={styles.shortDesc}>
                   <ul className={styles.featureList}>
-                    {product.features 
+                    {product.features
                       ? product.features.map((feature, idx) => (
-                          <li key={idx}>✅ {feature}</li>
-                        ))
+                        <li key={idx}>✅ {feature}</li>
+                      ))
                       : (product.excerpt ? product.excerpt.split('\n') : []).map((item, idx) => (
-                          <li key={idx}>✅ {item.replace(/^- /, '')}</li>
-                        ))
+                        <li key={idx}>✅ {item.replace(/^- /, '')}</li>
+                      ))
                     }
                   </ul>
                 </div>
-                
+
                 <div className={styles.actions}>
                   <a href="tel:0368444567" className={styles.orderBtn}>GỌI TƯ VẤN: 0368.444.567</a>
                 </div>
@@ -63,7 +76,7 @@ export default async function ProductDetail({ params }) {
                       <p>Cam kết giá tốt nhất cho Khách hàng</p>
                     </div>
                   </div>
-                  
+
                   <div className={styles.advItem}>
                     <div className={styles.advIconWrapper}>
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={styles.advIcon}>
@@ -76,7 +89,7 @@ export default async function ProductDetail({ params }) {
                       <p>Thời gian bảo hành dài lâu</p>
                     </div>
                   </div>
-                  
+
                   <div className={styles.advItem}>
                     <div className={styles.advIconWrapper}>
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={styles.advIcon}>
@@ -92,7 +105,7 @@ export default async function ProductDetail({ params }) {
                       <p>Đảm bảo sản phẩm chất lượng</p>
                     </div>
                   </div>
-                  
+
                   <div className={styles.advItem}>
                     <div className={styles.advIconWrapper}>
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={styles.advIcon}>
@@ -121,7 +134,6 @@ export default async function ProductDetail({ params }) {
                 />
               </div>
             )}
-
           </div>
 
           <Sidebar recentPosts={data.posts} />

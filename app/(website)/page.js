@@ -14,6 +14,11 @@ import HeroSlider from '@/app/components/HeroSlider';
 
 import SystemProductGrid from '@/app/components/SystemProductGrid';
 
+export const metadata = {
+  title: 'Thành Đạt Solar | Điện Năng Lượng Mặt Trời Hà Nội Uy Tín #1',
+  description: 'Thành Đạt Solar chuyên cung cấp giải pháp điện năng lượng mặt trời áp mái, thiết kế thi công trọn gói cho gia đình & doanh nghiệp tại Hà Nội. Tiết kiệm 90% chi phí điện.',
+};
+
 export default function Home() {
   const data = getData();
   const products = data.products || [];
@@ -27,7 +32,7 @@ export default function Home() {
       <section className={styles.welcomeSection}>
         <div className="container">
           <div className={styles.welcomeContent}>
-            <h1>ĐIỆN NĂNG LƯỢNG MẶT TRỜI <span>THÀNH ĐẠT</span></h1>
+            <h1>ĐIỆN NĂNG LƯỢNG MẶT TRỜI <span>THÀNH ĐẠT</span> - LẮP ĐẶT TRỌN GÓI UY TÍN</h1>
             <p>Giải pháp năng lượng xanh cho tương lai bền vững. Tiết kiệm chi phí điện năng lên đến 90%, bảo vệ môi trường và tối ưu hóa tài chính cho gia đình & doanh nghiệp.</p>
             <div className={styles.welcomeBtns}>
               <Link href="/san-pham" className="btn-primary">KHÁM PHÁ SẢN PHẨM</Link>
