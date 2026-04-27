@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://thietbidienmattroivietnam.com/sitemap.xml',
+    sitemap: 'https://lapdatdiennangluongmattroi.com/sitemap.xml',
   };
 }
