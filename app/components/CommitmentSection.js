@@ -28,8 +28,8 @@ export default function CommitmentSection() {
         <div className={styles.flexWrapper}>
           <div className={styles.content}>
             <div className={styles.list}>
-              {commitments.map((item, index) => (
-                <div key={index} className={styles.item}>
+              {commitments.map((item) => (
+                <div key={item.title} className={styles.item}>
                   <div className={styles.iconWrapper}>{item.icon}</div>
                   <div className={styles.itemContent}>
                     <h3>{item.title}</h3>
@@ -47,7 +47,7 @@ export default function CommitmentSection() {
                 alt="Thi công điện mặt trời Thành Đạt" 
                 width={600} 
                 height={400}
-                style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
+                style={{ height: 'auto' }}
               />
             </div>
             <div className={styles.experienceBox}>

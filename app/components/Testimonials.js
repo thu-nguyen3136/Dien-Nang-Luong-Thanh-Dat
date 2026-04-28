@@ -50,7 +50,7 @@ export default function Testimonials() {
           <div className={styles.featuredContent}>
             <div className={styles.rating}>★★★★★</div>
             <h3 className={styles.featuredTitle}>{featured.title}</h3>
-            <p className={styles.featuredText}>"{featured.feedback}"</p>
+            <p className={styles.featuredText}>&quot;{featured.feedback}&quot;</p>
             <div className={styles.featuredUser}>
               <h4>{featured.name} <span>- {featured.location}</span></h4>
             </div>
@@ -59,8 +59,8 @@ export default function Testimonials() {
 
         {/* Grid of Other Reviews */}
         <div className={styles.grid}>
-          {reviews.map((review, index) => (
-            <div key={index} className={styles.card}>
+          {reviews.map((review) => (
+            <div key={review.name} className={styles.card}>
               <div className={styles.cardTop}>
                 <div className={styles.avatarWrapper}>
                   <Image
@@ -77,7 +77,7 @@ export default function Testimonials() {
                   <span>{review.location}</span>
                 </div>
               </div>
-              <p className={styles.feedback}>"{review.feedback}"</p>
+              <p className={styles.feedback}>&quot;{review.feedback}&quot;</p>
             </div>
           ))}
         </div>

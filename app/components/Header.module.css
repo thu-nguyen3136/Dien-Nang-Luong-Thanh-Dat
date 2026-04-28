@@ -67,7 +67,7 @@
 .logoImg {
   --logo-h: 55px;
   width: auto;
-  height: var(--logo-h);
+  /* height handled in JS to fix Next.js warning */
   object-fit: contain;
 }
 

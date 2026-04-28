@@ -42,9 +42,9 @@ const HeroSlider = () => {
       </div>
 
       <div className={styles.dots}>
-        {slides.map((_, index) => (
+        {slides.map((slide, index) => (
           <span 
-            key={index} 
+            key={slide.image} 
             className={`${styles.dot} ${index === currentSlide ? styles.dotActive : ''}`}
             onClick={() => setCurrentSlide(index)}
           ></span>

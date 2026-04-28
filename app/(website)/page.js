@@ -32,6 +32,7 @@ export default function Home() {
       <section className={styles.welcomeSection}>
         <div className="container">
           <div className={styles.welcomeContent}>
+            <div className={styles.welcomeBadge}>CHUYÊN GIA ĐIỆN MẶT TRỜI TẠI HÀ NỘI</div>
             <h1>ĐIỆN NĂNG LƯỢNG MẶT TRỜI <span>THÀNH ĐẠT</span> - LẮP ĐẶT TRỌN GÓI UY TÍN</h1>
             <p>Giải pháp năng lượng xanh cho tương lai bền vững. Tiết kiệm chi phí điện năng lên đến 90%, bảo vệ môi trường và tối ưu hóa tài chính cho gia đình & doanh nghiệp.</p>
             <div className={styles.welcomeBtns}>

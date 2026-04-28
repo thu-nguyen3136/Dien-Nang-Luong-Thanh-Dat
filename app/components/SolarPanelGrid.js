@@ -56,8 +56,8 @@ export default function SolarPanelGrid() {
         </p>
 
         <div className={styles.grid}>
-          {panels.map((panel, index) => (
-            <Link href={`/san-pham/${panel.slug}`} key={index} className={styles.card}>
+          {panels.map((panel) => (
+            <Link href={`/san-pham/${panel.slug}`} key={panel.slug} className={styles.card}>
               <div className={styles.imageWrapper}>
                 {panel.tag && <span className={styles.tag}>{panel.tag}</span>}
                 <Image
@@ -73,8 +73,8 @@ export default function SolarPanelGrid() {
                 <span className={styles.brand}>{panel.brand}</span>
                 <h3>{panel.title}</h3>
                 <ul className={styles.features}>
-                  {panel.features.map((feature, fIndex) => (
-                    <li key={fIndex}>{feature}</li>
+                  {panel.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
                   ))}
                 </ul>
                 <div className={styles.contactTextWrapper}>

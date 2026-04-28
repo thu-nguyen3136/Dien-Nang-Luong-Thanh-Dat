@@ -23,8 +23,7 @@
 }
 
 .img {
-  width: 100%;
-  height: auto;
+  /* width and height handled in JS to fix Next.js warning */
   display: block;
 }
 

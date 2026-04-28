@@ -57,7 +57,7 @@ const Header = () => {
                   width={172}
                   height={55}
                   className={styles.logoImg}
-                  style={{ width: 'auto' }}
+                  style={{ width: 'auto', height: 'var(--logo-h)' }}
                   priority
                 />
               </div>
