@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
+import styles from '@/app/components/ServiceLayout.module.css';
 
 export const metadata = {
   title: 'Lắp Đặt Hệ Thống Điện Năng Lượng Mặt Trời | Thành Đạt Solar',
@@ -46,30 +47,18 @@ export default function LapDatHeThongPage() {
         </div>
       </section>
 
-      <style>{`
-        .serviceLayout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
-        .serviceContent { background-color: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .blueTitle { color: var(--primary-color); font-weight: bold; margin-bottom: 20px; }
-        .section-margin { margin-top: 40px; }
-        .imageBox { position: relative; width: 100%; height: 400px; margin: 30px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        @media (max-width: 992px) { 
-          .serviceLayout { grid-template-columns: 1fr; }
-          .serviceContent { padding: 20px; }
-          .imageBox { height: 250px; }
-        }
-      `}</style>
 
-      <div className="container serviceLayout" style={{ marginTop: '40px' }}>
-        <div className="serviceContent">
+      <div className={`container ${styles.serviceLayout}`} style={{ marginTop: '40px' }}>
+        <div className={styles.serviceContent}>
           <p style={{ marginBottom: '20px', lineHeight: '1.8', textAlign: 'justify', fontSize: '1.1rem' }}>
             Thành Đạt Solar cung cấp dịch vụ lắp điện năng lượng mặt trời tại Hà Nội và các tỉnh thành Miền Bắc, giúp tiết kiệm chi phí điện năng, nâng cao hiệu suất sử dụng và bảo vệ môi trường. Giải pháp phù hợp cho hộ gia đình, doanh nghiệp và công trình công nghiệp.
           </p>
 
-          <h2 className="blueTitle" style={{ fontSize: '1.8rem' }}>Giải Pháp Điện Năng Lượng Mặt Trời Cho Gia Đình & Doanh Nghiệp</h2>
+          <h2 className={styles.blueTitle} style={{ fontSize: '1.8rem' }}>Giải Pháp Điện Năng Lượng Mặt Trời Cho Gia Đình & Doanh Nghiệp</h2>
           <p style={{ marginBottom: '20px', lineHeight: '1.8', textAlign: 'justify' }}>
             Bạn cần một giải pháp tiết kiệm điện hiệu quả, bền vững và thân thiện với môi trường? Bạn muốn giảm hóa đơn tiền điện mỗi tháng mà vẫn đảm bảo nguồn điện ổn định cho gia đình, doanh nghiệp hay nhà xưởng?
           </p>
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/dich-vu-lap-dat-he-thong-dien-mt.png"
               alt="Lắp đặt hệ thống điện mặt trời"
@@ -79,9 +68,9 @@ export default function LapDatHeThongPage() {
             />
           </div>
 
-          <h2 className="blueTitle" style={{ fontSize: '1.8rem' }}>Dự Toán Chi Phí Lắp Điện Năng Lượng Mặt Trời Cho Hộ Gia Đình Và Công Trình:</h2>
+          <h2 className={styles.blueTitle} style={{ fontSize: '1.8rem' }}>Dự Toán Chi Phí Lắp Điện Năng Lượng Mặt Trời Cho Hộ Gia Đình Và Công Trình:</h2>
 
-          <h3 className="blueTitle" style={{ fontSize: '1.5rem' }}>1. Bảng chi phí lắp Hệ thống điện mặt trời hòa lưới bán tải (On-grid)</h3>
+          <h3 className={styles.blueTitle} style={{ fontSize: '1.5rem' }}>1. Bảng chi phí lắp Hệ thống điện mặt trời hòa lưới bán tải (On-grid)</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hệ thống này áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban ngày. Hệ thống giúp giảm chi phí tiền điện. Lưu ý không thể dùng được khi mất điện lưới.
           </p>
@@ -110,7 +99,7 @@ export default function LapDatHeThongPage() {
             Nếu không chắc chắn, việc tham khảo ý kiến của các chuyên gia trong lĩnh vực điện năng lượng mặt trời và yêu cầu báo giá từ các nhà cung cấp sẽ giúp gia đình đưa ra quyết định đúng đắn nhất. Hãy liên hệ ngay hotline Thành Đạt Solar: <a href="tel:0368444567" style={{ color: 'red', fontWeight: 'bold' }}>0368.444.567</a>
           </p>
 
-          <h3 className="blueTitle" style={{ fontSize: '1.5rem', marginTop: '40px' }}>2. Bảng chi phí lắp Hệ thống điện năng lượng mặt trời có lưu trữ (Hybrid)</h3>
+          <h3 className={styles.blueTitle} style={{ fontSize: '1.5rem', marginTop: '40px' }}>2. Bảng chi phí lắp Hệ thống điện năng lượng mặt trời có lưu trữ (Hybrid)</h3>
 
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hệ thống này áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban đêm, mang lại sự tiện nghi vì có thể dùng được khi mất điện lưới.
@@ -144,9 +133,9 @@ export default function LapDatHeThongPage() {
             </ul>
           </div>
 
-          <h3 className="blueTitle">Hộ gia đình có hóa đơn điện cao mỗi tháng</h3>
+          <h3 className={styles.blueTitle}>Hộ gia đình có hóa đơn điện cao mỗi tháng</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Nếu gia đình bạn thường xuyên có hóa đơn tiền điện từ 1 triệu đồng trở lên, việc lắp đặt hệ thống điện mặt trời sẽ giúp tiết kiệm đáng kể chi phí hàng tháng. Đồng thời, đây cũng là bước đầu để gia đình tiếp cận với nguồn năng lượng xanh, sạch và bền vững.</p>
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png"
               alt="Lắp đặt hệ thống điện mặt trời"
@@ -155,25 +144,25 @@ export default function LapDatHeThongPage() {
               style={{ objectFit: 'cover' }}
             />
           </div>
-          <h3 className="blueTitle">Nhà xưởng, cơ sở sản xuất hoạt động liên tục</h3>
+          <h3 className={styles.blueTitle}>Nhà xưởng, cơ sở sản xuất hoạt động liên tục</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Các cơ sở sản xuất tiêu thụ điện lớn và hoạt động nhiều vào ban ngày là đối tượng cực kỳ phù hợp. Việc tận dụng nguồn năng lượng mặt trời không chỉ giúp giảm chi phí vận hành mà còn nâng cao hình ảnh doanh nghiệp trong việc sử dụng năng lượng tái tạo.</p>
 
-          <h3 className="blueTitle">Tòa nhà văn phòng, khách sạn, trung tâm thương mại</h3>
+          <h3 className={styles.blueTitle}>Tòa nhà văn phòng, khách sạn, trung tâm thương mại</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Các công trình thương mại có diện tích mái rộng và nhu cầu sử dụng điện liên tục trong giờ hành chính sẽ tận dụng rất tốt nguồn điện từ mặt trời. Ngoài ra, việc lắp điện mặt trời còn giúp nâng cao giá trị bất động sản và tạo điểm nhấn "thân thiện môi trường".</p>
 
-          <h3 className="blueTitle">Trang trại nông nghiệp, chăn nuôi ở vùng xa</h3>
+          <h3 className={styles.blueTitle}>Trang trại nông nghiệp, chăn nuôi ở vùng xa</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Ở các khu vực điện lưới yếu hoặc không ổn định, hệ thống điện mặt trời kết hợp pin lưu trữ (battery) sẽ giúp đảm bảo nguồn điện liên tục cho các thiết bị tưới tiêu, quạt làm mát, camera, đèn chiếu sáng,... mà không phụ thuộc vào điện lưới.</p>
 
-          <h3 className="blueTitle">Công trình có mái nhà, mái tôn tiếp xúc nắng tốt</h3>
+          <h3 className={styles.blueTitle}>Công trình có mái nhà, mái tôn tiếp xúc nắng tốt</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Bất kỳ công trình nào có mái hướng nắng, thông thoáng, không bị che khuất đều có thể tận dụng để lắp hệ thống điện mặt trời. Đây là một cách đầu tư “biến mái nhà thành tài sản sinh lợi lâu dài”.</p>
 
-          <h3 className="blueTitle">Doanh nghiệp muốn giảm chi phí và nâng cao thương hiệu xanh</h3>
+          <h3 className={styles.blueTitle}>Doanh nghiệp muốn giảm chi phí và nâng cao thương hiệu xanh</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Không chỉ giúp giảm chi phí điện, việc sử dụng năng lượng mặt trời còn thể hiện trách nhiệm xã hội và cam kết phát triển bền vững của doanh nghiệp – điều ngày càng được đánh giá cao trong mắt đối tác, khách hàng và cộng đồng.</p>
 
           <p style={{ background: '#fffbeb', padding: '15px', borderRadius: '5px', color: '#b45309', fontWeight: 'bold', textAlign: 'center', margin: '30px 0' }}>
             Bạn thuộc một trong những trường hợp trên? Đừng bỏ lỡ cơ hội đầu tư thông minh – tiết kiệm chi phí, nâng cao giá trị công trình và góp phần bảo vệ môi trường cùng Thành Đạt!
           </p>
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/lap-va-ban-dien-nang-luong-mat-t.png"
               alt="Lắp đặt hệ thống điện mặt trời"
@@ -182,18 +171,18 @@ export default function LapDatHeThongPage() {
               style={{ objectFit: 'contain' }}
             />
           </div>
-          <h3 className="blueTitle">Giảm áp lực hóa đơn điện mỗi tháng</h3>
+          <h3 className={styles.blueTitle}>Giảm áp lực hóa đơn điện mỗi tháng</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Không còn lo lắng mỗi lần đến kỳ thanh toán tiền điện. Hệ thống điện mặt trời sẽ tự sản sinh nguồn điện miễn phí từ ánh nắng, giúp giảm đến 50–90% chi phí điện – đặc biệt hiệu quả với các hộ tiêu thụ điện cao như nhà xưởng, văn phòng, khách sạn, trường học…</p>
 
-          <h3 className="blueTitle">Hiệu quả đầu tư bền vững</h3>
+          <h3 className={styles.blueTitle}>Hiệu quả đầu tư bền vững</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Chỉ cần đầu tư một lần, bạn có thể khai thác lợi ích trong suốt 25–30 năm. Thời gian hoàn vốn nhanh (khoảng 4–6 năm) và sau đó là nguồn lợi nhuận thuần túy từ việc tiết kiệm chi phí điện mỗi tháng.</p>
 
-          <h3 className="blueTitle">Góp phần bảo vệ hành tinh xanh</h3>
+          <h3 className={styles.blueTitle}>Góp phần bảo vệ hành tinh xanh</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Điện mặt trời là năng lượng tái tạo, sạch và không gây phát thải. Việc sử dụng hệ thống này đồng nghĩa với việc bạn đang góp phần giảm ô nhiễm khí hậu và bảo vệ môi trường sống cho thế hệ mai sau.</p>
 
-          <h3 className="blueTitle">Tự chủ nguồn điện – sẵn sàng mọi tình huống</h3>
+          <h3 className={styles.blueTitle}>Tự chủ nguồn điện – sẵn sàng mọi tình huống</h3>
           <p style={{ marginBottom: '40px', lineHeight: '1.8' }}>Không còn phụ thuộc hoàn toàn vào điện lưới. Bạn có thể tích hợp thêm hệ thống lưu trữ điện (battery) để sử dụng vào ban đêm hoặc khi mất điện, đảm bảo dòng điện luôn ổn định cho sinh hoạt và sản xuất.</p>
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/aa.png"
               alt="Lắp đặt hệ thống điện mặt trời"
@@ -203,7 +192,7 @@ export default function LapDatHeThongPage() {
             />
           </div>
 
-          <h2 className="blueTitle" style={{ fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Quy Trình Làm Việc Tại Thành Đạt Solar</h2>
+          <h2 className={styles.blueTitle} style={{ fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Quy Trình Làm Việc Tại Thành Đạt Solar</h2>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>Để đảm bảo mỗi công trình đạt hiệu quả tối ưu cả về kỹ thuật lẫn kinh tế, Thành Đạt xây dựng quy trình làm việc bài bản, rõ ràng và minh bạch từ khâu khảo sát đến hậu mãi sau thi công. Dưới đây là các bước cụ thể:</p>
 
           {[
@@ -220,7 +209,7 @@ export default function LapDatHeThongPage() {
             </div>
           ))}
 
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/lap-dat-nang-luong-mat-troi-giai.png"
               alt="Lắp đặt hệ thống điện mặt trời"

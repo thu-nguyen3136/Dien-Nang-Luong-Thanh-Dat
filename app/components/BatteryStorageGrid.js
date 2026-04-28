@@ -52,6 +52,10 @@ export default function BatteryStorageGrid() {
     <section className={styles.section} id="pin-luu-tru">
       <div className="container">
         <h2 className="section-title">PIN <span>LƯU TRỮ LITHIUM</span></h2>
+        <p className={styles.introText}>
+          Hệ thống pin lưu trữ Lithium (ESS) là thành phần quan trọng trong giải pháp điện mặt trời Hybrid, giúp lưu trữ năng lượng dư thừa để sử dụng vào ban đêm hoặc khi mất điện. 
+          Thành Đạt Solar cung cấp các dòng pin Lithium chất lượng cao, an toàn, tuổi thọ cao với hàng nghìn lần sạc xả.
+        </p>
 
         <div className={styles.grid}>
           {batteries.map((battery, index) => (

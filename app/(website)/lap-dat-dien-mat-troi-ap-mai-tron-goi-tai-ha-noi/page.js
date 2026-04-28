@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
+import styles from '@/app/components/ServiceLayout.module.css';
 
 export const metadata = {
   title: 'Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội | Thành Đạt Solar',
@@ -28,17 +29,8 @@ export default function LapDatApMaiHaNoiPage() {
         </div>
       </section>
 
-      <style>{`
-        .serviceLayout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
-        .serviceContent { background-color: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        @media (max-width: 992px) { 
-          .serviceLayout { grid-template-columns: 1fr; }
-          .serviceContent { padding: 20px; }
-        }
-      `}</style>
-
-      <div className="container serviceLayout" style={{ marginTop: '40px' }}>
-        <div className="serviceContent">
+      <div className={`container ${styles.serviceLayout}`} style={{ marginTop: '40px' }}>
+        <div className={styles.serviceContent}>
           <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Dịch Vụ Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội</h2>
 
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>

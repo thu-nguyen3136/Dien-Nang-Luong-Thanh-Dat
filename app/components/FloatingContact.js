@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './FloatingContact.module.css';
 
 const FloatingContact = () => {
@@ -19,12 +18,11 @@ const FloatingContact = () => {
         >
           <div className={`${styles.pulsingEffect} ${styles.zaloPulse}`}></div>
           <div className={`${styles.iconBox} ${styles.zaloBox}`}>
-            <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
-              alt="Zalo"
-              width={30}
-              height={30}
-              style={{ objectFit: 'contain' }}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" 
+              alt="Zalo" 
+              width="24" 
+              height="24" 
             />
           </div>
         </a>
@@ -37,12 +35,11 @@ const FloatingContact = () => {
         >
           <div className={`${styles.pulsingEffect} ${styles.smsPulse}`}></div>
           <div className={`${styles.iconBox} ${styles.smsBox}`}>
-            <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/f/f0/SMS_MESSAGE_ICON.png"
-              alt="SMS"
-              width={30}
-              height={30}
-              style={{ objectFit: 'contain' }}
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f0/SMS_MESSAGE_ICON.png" 
+              alt="SMS" 
+              width="24" 
+              height="24" 
             />
           </div>
         </a>

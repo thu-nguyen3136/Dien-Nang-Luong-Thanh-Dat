@@ -7,6 +7,10 @@ export default function SystemProductGrid({ products }) {
     <section className={styles.section}>
       <div className="container">
         <h2 className="section-title">CÁC GÓI <span>HỆ THỐNG ĐIỆN MẶT TRỜI</span></h2>
+        <p className={styles.introText}>
+          Thành Đạt Solar cung cấp các gói hệ thống điện năng lượng mặt trời trọn gói, được thiết kế tối ưu cho hộ gia đình và doanh nghiệp. 
+          Từ hệ thống hòa lưới (On-grid) đến hệ thống Hybrid có lưu trữ, chúng tôi cam kết thiết bị chính hãng và thi công chuyên nghiệp.
+        </p>
         <div className={styles.grid}>
           {products.map((product) => (
             <Link key={product.id} href={`/san-pham/${product.slug}`} className={styles.card}>

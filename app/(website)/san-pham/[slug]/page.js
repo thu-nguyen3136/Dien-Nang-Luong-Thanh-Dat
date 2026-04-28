@@ -125,7 +125,7 @@ export default async function ProductDetail({ params }) {
               </div>
             </div>
 
-            {product.content && (
+            {product.content && (/<img|<iframe|<video|<table/.test(product.content) || product.content.replace(/<[^>]*>|&nbsp;/g, '').trim() !== '') && (
               <div className={styles.detailedContent}>
                 <h2 className={styles.detailTitle}>Chi Tiết Sản Phẩm</h2>
                 <div 

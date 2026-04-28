@@ -3,6 +3,16 @@
   background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
 }
 
+.introText {
+  max-width: 800px;
+  width: 90%;
+  margin: -10px auto 30px;
+  text-align: center;
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

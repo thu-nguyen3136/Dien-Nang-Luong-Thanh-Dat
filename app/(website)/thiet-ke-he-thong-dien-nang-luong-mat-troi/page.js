@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
+import styles from '@/app/components/ServiceLayout.module.css';
 
 export const metadata = {
   title: 'Thiết Kế Hệ Thống Điện Năng Lượng Mặt Trời Tối Ưu | Thành Đạt Solar',
@@ -46,25 +47,15 @@ export default function ThietKeHeThongPage() {
         </div>
       </section>
 
-      <style>{`
-        .serviceLayout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
-        .serviceContent { background-color: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .imageBox { position: relative; width: 100%; height: 400px; margin: 30px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        @media (max-width: 992px) { 
-          .serviceLayout { grid-template-columns: 1fr; }
-          .serviceContent { padding: 20px; }
-          .imageBox { height: 250px; }
-        }
-      `}</style>
 
-      <div className="container serviceLayout" style={{ marginTop: '40px' }}>
-        <div className="serviceContent">
+      <div className={`container ${styles.serviceLayout}`} style={{ marginTop: '40px' }}>
+        <div className={styles.serviceContent}>
 
           <p style={{ marginBottom: '20px', marginTop: '10px', lineHeight: '1.8', textAlign: 'justify' }}>
             Trong bối cảnh chi phí điện sinh hoạt và sản xuất ngày càng gia tăng, điện năng lượng mặt trời đang trở thành xu hướng tất yếu giúp tiết kiệm chi phí và hỗ trợ bảo vệ môi trường. Tuy nhiên, nhiều hộ gia đình và doanh nghiệp vẫn chưa tối ưu hóa hệ thống để đạt được hiệu suất tốt nhất. Đó chính là lý do <strong>Thành Đạt Solar</strong> ra đời để cung cấp giải pháp thiết kế và <Link href="/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi" style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>thi công hệ thống điện mặt trời</Link> đồng bộ, tối ưu, ăn khớp với từng nhu cầu của khách hàng.
           </p>
 
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp"
               alt="Thiết kế hệ thống điện mặt trời"
@@ -89,7 +80,7 @@ export default function ThietKeHeThongPage() {
             <li><strong>Phù hợp với khí hậu Việt Nam:</strong> Việt Nam nằm trong khu vực nhiệt đới, trung bình có từ 4 – 5 giờ nắng hiệu quả mỗi ngày, rất phù hợp để khai thác năng lượng mặt trời.</li>
           </ul>
 
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-2.png"
               alt="Lý do chọn điện mặt trời"
@@ -111,7 +102,7 @@ export default function ThietKeHeThongPage() {
             <li><strong>Hỗ trợ vận hành – bảo hành tận nơi:</strong> Hệ thống được bàn giao cùng hướng dẫn chi tiết, kèm chính sách bảo hành dài hạn.</li>
           </ul>
 
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-7.webp"
               alt="Lý do chọn điện mặt trời"
@@ -139,7 +130,7 @@ export default function ThietKeHeThongPage() {
             <li><strong>Hệ thống cho chung cư, tòa nhà:</strong> Thiết kế phù hợp cho các công trình cao tầng, có khả năng cung cấp điện cho khu vực chung như thang máy, chiếu sáng hành lang…</li>
           </ul>
 
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png"
               alt="Thiết kế hệ thống điện mặt trời"
@@ -159,7 +150,7 @@ export default function ThietKeHeThongPage() {
             <li style={{ marginBottom: '15px' }}><strong>Có thể giám sát hệ thống từ xa không?</strong><br />Hoàn toàn có thể. Thành Đạt trang bị ứng dụng giám sát thông minh qua điện thoại, giúp khách hàng theo dõi sản lượng điện, tình trạng hệ thống mọi lúc.</li>
           </ol>
 
-          <div className="imageBox">
+          <div className={styles.imageBox}>
             <Image
               src="/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-1.jpg"
               alt="Thiết kế hệ thống điện mặt trời"

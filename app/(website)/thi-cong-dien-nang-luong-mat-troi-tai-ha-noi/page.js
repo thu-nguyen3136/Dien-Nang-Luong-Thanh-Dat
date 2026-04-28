@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
+import styles from '@/app/components/ServiceLayout.module.css';
 
 export const metadata = {
   title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội | Thành Đạt Solar',
@@ -28,21 +29,9 @@ export default function ThiCongDienMatTroiHaNoiPage() {
         </div>
       </section>
 
-      <style>{`
-        .serviceLayout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
-        .serviceContent { background-color: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .card { background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-color); }
-        .card h4 { margin-bottom: 10px; color: #1f2937; font-weight: bold; }
-        .card p { font-size: 0.95rem; color: #4b5563; }
-        @media (max-width: 992px) { 
-          .serviceLayout { grid-template-columns: 1fr; }
-          .serviceContent { padding: 20px; }
-        }
-      `}</style>
 
-      <div className="container serviceLayout" style={{ marginTop: '40px' }}>
-        <div className="serviceContent">
+      <div className={`container ${styles.serviceLayout}`} style={{ marginTop: '40px' }}>
+        <div className={styles.serviceContent}>
           <h2 style={{ color: 'var(--primary-color)', marginBottom: '20px', fontSize: '1.8rem', borderBottom: '2px solid var(--primary-color)', paddingBottom: '10px' }}>Dịch Vụ Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội Uy Tín</h2>
 
           <p style={{ marginBottom: '15px', lineHeight: '1.8' }}>
@@ -188,28 +177,28 @@ export default function ThiCongDienMatTroiHaNoiPage() {
           {/* Kết thúc phần chèn Ảnh Lợi ích */}
 
           <h3 style={{ marginTop: '30px', marginBottom: '15px', color: '#111827' }}>Quy Trình Thi Công Lắp Đặt Tại Thành Đạt Solar</h3>
-          <div className="grid-cards">
-            <div className="card">
+          <div className={styles.gridCards}>
+            <div className={styles.card}>
               <h4>1. Khảo sát & Tư vấn</h4>
               <p>Khảo sát trực tiếp địa điểm đánh giá hướng nắng, diện tích mái, kết cấu công trình để tư vấn công suất hệ thống tối ưu nhất.</p>
             </div>
-            <div className="card">
+            <div className={styles.card}>
               <h4>2. Thiết kế Kỹ thuật</h4>
               <p>Tính toán tỉ mỉ lựa chọn loại tấm pin, inverter và bố trí bản vẽ hệ thống đảm bảo hiệu suất khai thác cao nhất.</p>
             </div>
-            <div className="card">
+            <div className={styles.card}>
               <h4>3. Báo giá Minh bạch</h4>
               <p>Mọi khoản đầu tư được giải thích cặn kẽ, cam kết không có chi phí phát sinh bất ngờ, chi tiết theo từng hạng mục vật tư.</p>
             </div>
-            <div className="card">
+            <div className={styles.card}>
               <h4>4. Thi công Chuyên nghiệp</h4>
               <p>Đội ngũ kỹ thuật viên tay nghề cao tuân thủ nghiêm ngặt các tiêu chuẩn an toàn điện, đảm bảo triển khai đúng tiến độ cam kết.</p>
             </div>
-            <div className="card">
+            <div className={styles.card}>
               <h4>5. Vận hành & Hướng dẫn</h4>
               <p>Chạy thử nghiệm hệ thống kỹ lưỡng. Chuyên viên sẽ hướng dẫn chi tiết cách vận hành và theo dõi sản lượng điện cho khách hàng.</p>
             </div>
-            <div className="card">
+            <div className={styles.card}>
               <h4>6. Bảo trì Định kỳ 24/7</h4>
               <p>Cung cấp dịch vụ bảo trì định kỳ, kiểm tra hiệu suất và hỗ trợ kỹ thuật nhanh chóng 24/7 trong suốt vòng đời hệ thống.</p>
             </div>
