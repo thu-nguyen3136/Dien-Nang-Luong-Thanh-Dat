@@ -58,8 +58,8 @@ export default function BatteryStorageGrid() {
         </p>
 
         <div className={styles.grid}>
-          {batteries.map((battery, index) => (
-            <Link href={`/san-pham/${battery.slug}`} key={index} className={styles.card}>
+          {batteries.map((battery) => (
+            <Link href={`/san-pham/${battery.slug}`} key={battery.slug} className={styles.card}>
               <div className={styles.imageWrapper}>
                 {battery.tag && <span className={styles.tag}>{battery.tag}</span>}
                 <Image

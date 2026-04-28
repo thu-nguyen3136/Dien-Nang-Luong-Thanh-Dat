@@ -15,7 +15,7 @@ export default function AboutSection() {
                 width={600} 
                 height={400}
                 className={styles.img}
-                style={{ height: 'auto' }}
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
             <div className={styles.experienceBadge}>
