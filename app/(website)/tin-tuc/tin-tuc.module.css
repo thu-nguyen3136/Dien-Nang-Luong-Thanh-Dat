@@ -4,7 +4,8 @@
 }
 
 .pageHeader {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/lap-he-thong-dien-nang-luong-mat-troi.jpg');
+  position: relative;
+  background-image: linear-gradient(rgba(0, 31, 63, 0.75), rgba(0, 31, 63, 0.75)), url('/images/dien-nang-luong-mt-kn.png');
   background-size: cover;
   background-position: center;
   padding: 100px 0;

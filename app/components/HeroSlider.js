@@ -34,7 +34,7 @@ const HeroSlider = () => {
               alt={slide.alt}
               fill
               sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              className={styles.img}
               priority={slides.indexOf(slide) === 0}
             />
           </div>

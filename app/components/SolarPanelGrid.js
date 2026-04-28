@@ -50,6 +50,10 @@ export default function SolarPanelGrid() {
     <section className={styles.section} id="tam-pin">
       <div className="container">
         <h2 className="section-title">TẤM PIN <span>NĂNG LƯỢNG MẶT TRỜI</span></h2>
+        <p className={styles.introText}>
+          Thành Đạt Solar cung cấp các dòng tấm pin năng lượng mặt trời chính hãng từ các thương hiệu hàng đầu thế giới như Jinko, Longi, Canadian Solar... 
+          Với công nghệ Mono Half-cell tiên tiến, sản phẩm của chúng tôi đảm bảo hiệu suất cao, bền bỉ và bảo hành dài hạn lên đến 25 năm.
+        </p>
 
         <div className={styles.grid}>
           {panels.map((panel, index) => (

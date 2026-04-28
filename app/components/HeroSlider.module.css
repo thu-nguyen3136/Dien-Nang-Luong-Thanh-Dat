@@ -139,18 +139,29 @@
   }
 }
 
+.img {
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .heroSlider {
     height: auto;
     min-height: auto;
-    aspect-ratio: 25 / 10;
-    background-color: transparent;
+    aspect-ratio: 2.5 / 1;
+    background-color: #fff;
     padding: 0;
   }
   
-  .slide img {
-    object-fit: contain !important;
-    object-position: top !important;
+  .img {
+    object-fit: cover !important;
+  }
+
+  .dots {
+    bottom: 25px;
+  }
+
+  .heroOverlay {
+    background: rgba(0, 0, 0, 0.1); /* Even lighter on mobile */
   }
   .heroContent {
     align-items: center;

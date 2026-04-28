@@ -65,8 +65,9 @@
 }
 
 .logoImg {
+  --logo-h: 55px;
   width: auto;
-  height: 55px; /* Đảm bảo logo nhỏ hơn container một chút */
+  height: var(--logo-h);
   object-fit: contain;
 }
 
@@ -467,7 +468,7 @@
   }
 
   .logoImg {
-    height: 45px;
+    --logo-h: 45px;
   }
 }
 
@@ -483,7 +484,7 @@
   }
 
   .logoImg {
-    height: 35px;
+    --logo-h: 35px;
   }
 }
 

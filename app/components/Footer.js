@@ -6,10 +6,10 @@ import Image from 'next/image';
 import styles from './Footer.module.css';
 
 const Footer = () => {
-  const [currentYear, setCurrentYear] = useState('');
+  const [currentYear, setCurrentYear] = useState('2026');
 
   useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
+    setCurrentYear(new Date().getFullYear().toString());
   }, []);
 
   return (
