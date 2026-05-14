@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
 import styles from '@/app/components/ServiceLayout.module.css';
@@ -147,11 +148,13 @@ export default function LapDatHeThongHubPage() {
             }}
               className="hub-card"
             >
-              <Link href={item.link} style={{ height: '300px', position: 'relative', overflow: 'hidden', display: 'block' }}>
-                <img
+              <Link href={item.link} className={styles.hubCardImage}>
+                <Image
                   src={item.image}
                   alt={item.title}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover' }}
                 />
               </Link>
               <div style={{ padding: '25px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
@@ -188,16 +191,7 @@ export default function LapDatHeThongHubPage() {
         </div>
       </div>
 
-      <style dangerouslySetInnerHTML={{
-        __html: `
-        .hub-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        .hub-card:hover img {
-          transform: scale(1.1);
-        }
-      ` }} />
+
     </div>
   );
 }
