@@ -32,23 +32,68 @@ export default function ServicesPage() {
       <FeaturedServices />
 
       {/* 3. Danh sách dịch vụ chi tiết (Design Wide Card) */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '40px 0', backgroundColor: '#fff' }}>
         <div className="container">
           <h2 className="section-title">DỰ ÁN <span>TIÊU BIỂU</span></h2>
-          <div className={styles.servicesGrid}>
-            {services.map((service) => (
-              <div key={service.id} className={styles.serviceCard}>
-                <div className={styles.imageBox}>
-                  <img src={service.image} alt={service.title} />
-                </div>
-                <div className={styles.infoBox}>
-                  <h2>{service.title}</h2>
-                  <p>{service.content.substring(0, 200)}...</p>
-                  <Link href={`/dich-vu/${service.slug}`} className={styles.detailBtn}>Chi tiết dự án &rarr;</Link>
+          
+          <div className={styles.provinceGrid}>
+            {[
+              {
+                title: 'Thi công điện năng lượng mặt trời tại Hà Nội',
+                desc: 'Giải pháp năng lượng sạch tối ưu cho hộ gia đình và doanh nghiệp tại Thủ đô.',
+                image: '/images/lap-va-ban-dien-nang-luong-mat-t.png',
+                link: '/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi'
+              },
+              {
+                title: 'Thi công điện năng lượng mặt trời tại Hưng Yên',
+                desc: 'Lắp đặt hệ thống điện mặt trời áp mái chuyên nghiệp, tiết kiệm chi phí tại Hưng Yên.',
+                image: '/images/lap-dat-he-thong-dien-nang-luong-mat-troi.png',
+                link: '/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen'
+              },
+              {
+                title: 'Thi công điện năng lượng mặt trời tại Bắc Giang',
+                desc: 'Tư vấn và lắp đặt hệ thống điện năng lượng mặt trời hiệu suất cao tại Bắc Giang.',
+                image: '/images/dien-nang-luong-mt-kn.png',
+                link: '/thi-cong-dien-nang-luong-mat-troi-tai-bac-giang'
+              },
+              {
+                title: 'Thi công điện năng lượng mặt trời tại Phú Thọ',
+                desc: 'Dịch vụ thi công điện mặt trời trọn gói, bảo hành dài hạn tại khu vực Phú Thọ.',
+                image: '/images/thiet-ke-he-thong-dien-nang-luong-mat-troi.png',
+                link: '/thi-cong-dien-nang-luong-mat-troi-tai-phu-tho'
+              }
+            ].map((province) => (
+              <div key={province.link} className={styles.provinceCard}>
+                <Link href={province.link}>
+                  <img src={province.image} alt={province.title} className={styles.provinceImage} />
+                </Link>
+                <div className={styles.provinceInfo}>
+                  <h3>{province.title}</h3>
+                  <p>{province.desc}</p>
+                  <Link href={province.link} className={styles.provinceLink}>Chi tiết &rarr;</Link>
                 </div>
               </div>
             ))}
           </div>
+
+          {services.length > 0 && (
+            <div className={styles.servicesGrid} style={{ marginTop: '40px' }}>
+              {services.map((service) => (
+                <div key={service.id} className={styles.serviceCard}>
+                  <div className={styles.imageBox}>
+                    <Link href={`/dich-vu/${service.slug}`}>
+                      <img src={service.image} alt={service.title} />
+                    </Link>
+                  </div>
+                  <div className={styles.infoBox}>
+                    <h2>{service.title}</h2>
+                    <p>{service.content.substring(0, 200)}...</p>
+                    <Link href={`/dich-vu/${service.slug}`} className={styles.detailBtn}>Chi tiết dự án &rarr;</Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

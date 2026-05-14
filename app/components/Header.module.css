@@ -67,7 +67,7 @@
 .logoImg {
   --logo-h: 55px;
   width: auto;
-  /* height handled in JS to fix Next.js warning */
+  height: var(--logo-h);
   object-fit: contain;
 }
 
@@ -458,17 +458,18 @@
 
 @media (max-width: 1024px) {
   .logoWrapper {
-    margin-left: 0;
+    margin-left: 10px;
   }
 
   .logoImageContainer {
-    padding: 0 15px;
-    height: 60px;
-    border-radius: 10px;
+    padding: 0 12px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .logoImg {
-    --logo-h: 45px;
+    --logo-h: 38px;
   }
 }
 
@@ -478,13 +479,13 @@
   }
 
   .logoImageContainer {
-    padding: 0 10px;
-    height: 45px;
-    border-radius: 8px;
+    padding: 0 8px;
+    height: 42px;
+    border-radius: 6px;
   }
 
   .logoImg {
-    --logo-h: 35px;
+    --logo-h: 32px;
   }
 }
 
@@ -552,6 +553,7 @@
   }
 
   20%,
+  40%,
   40%,
   60%,
   80% {

@@ -25,8 +25,70 @@ export default function Home() {
   const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-'));
   const posts = data.posts?.slice(0, 4) || [];
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Thành Đạt Solar",
+    "url": "https://lapdatdiennangluongmattroi.com",
+    "logo": "https://lapdatdiennangluongmattroi.com/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "0368444567",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://www.facebook.com/thanhdatsolar"
+    ]
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://lapdatdiennangluongmattroi.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://lapdatdiennangluongmattroi.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Lắp điện mặt trời tại Hà Nội giá bao nhiêu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chi phí lắp đặt điện mặt trời tại Hà Nội dao động từ 10-15 triệu đồng/kWp cho hệ hòa lưới và khoảng 15-25 triệu đồng cho hệ Hybrid có lưu trữ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Thành Đạt Solar có bảo hành không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Thành Đạt Solar cam kết bảo hành tấm pin 12 năm, hiệu suất 25 năm và inverter từ 5-10 năm tùy thương hiệu."
+        }
+      }
+    ]
+  };
+
   return (
     <div className={styles.home}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <HeroSlider />
 
       <section className={styles.welcomeSection}>

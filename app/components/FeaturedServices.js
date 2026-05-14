@@ -32,7 +32,7 @@ export default function FeaturedServices() {
         <div className={styles.grid}>
           {services.map((service) => (
             <div key={service.link} className={styles.card}>
-              <div className={styles.imageOverlay}>
+              <Link href={service.link} className={styles.imageOverlay}>
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -41,7 +41,7 @@ export default function FeaturedServices() {
                   className={styles.img}
                 />
                 <div className={styles.gradient}></div>
-              </div>
+              </Link>
               <div className={styles.content}>
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>

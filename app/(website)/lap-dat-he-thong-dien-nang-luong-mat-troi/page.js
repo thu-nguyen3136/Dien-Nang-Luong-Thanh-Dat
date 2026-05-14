@@ -70,7 +70,7 @@ export default function LapDatHeThongPage() {
 
           <h2 className={styles.blueTitle} style={{ fontSize: '1.8rem' }}>Dự Toán Chi Phí Lắp Điện Năng Lượng Mặt Trời Cho Hộ Gia Đình Và Công Trình:</h2>
 
-          <h3 className={styles.blueTitle} style={{ fontSize: '1.5rem' }}>1. Bảng chi phí lắp Hệ thống điện mặt trời hòa lưới bán tải (On-grid)</h3>
+          <h3 id="hoa-luoi" className={styles.blueTitle} style={{ fontSize: '1.5rem' }}>1. Bảng chi phí lắp Hệ thống điện mặt trời hòa lưới bán tải (On-grid)</h3>
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hệ thống này áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban ngày. Hệ thống giúp giảm chi phí tiền điện. Lưu ý không thể dùng được khi mất điện lưới.
           </p>
@@ -99,7 +99,7 @@ export default function LapDatHeThongPage() {
             Nếu không chắc chắn, việc tham khảo ý kiến của các chuyên gia trong lĩnh vực điện năng lượng mặt trời và yêu cầu báo giá từ các nhà cung cấp sẽ giúp gia đình đưa ra quyết định đúng đắn nhất. Hãy liên hệ ngay hotline Thành Đạt Solar: <a href="tel:0368444567" style={{ color: 'red', fontWeight: 'bold' }}>0368.444.567</a>
           </p>
 
-          <h3 className={styles.blueTitle} style={{ fontSize: '1.5rem', marginTop: '40px' }}>2. Bảng chi phí lắp Hệ thống điện năng lượng mặt trời có lưu trữ (Hybrid)</h3>
+          <h3 id="hybrid" className={styles.blueTitle} style={{ fontSize: '1.5rem', marginTop: '40px' }}>2. Bảng chi phí lắp Hệ thống điện năng lượng mặt trời có lưu trữ (Hybrid)</h3>
 
           <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
             Hệ thống này áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban đêm, mang lại sự tiện nghi vì có thể dùng được khi mất điện lưới.
