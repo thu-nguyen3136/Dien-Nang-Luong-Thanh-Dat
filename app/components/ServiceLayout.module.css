@@ -66,6 +66,23 @@
   margin-bottom: 20px;
 }
 
+
 .sectionMargin {
   margin-top: 40px;
 }
+
+.hubCardImage {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.hubCardImage img {
+  transition: transform 0.5s ease;
+}
+
+.hubCardImage:hover img {
+  transform: scale(1.1);
+}
+
