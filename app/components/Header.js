@@ -8,8 +8,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -57,7 +59,7 @@ const Header = () => {
                   width={172}
                   height={55}
                   className={styles.logoImg}
-                  style={{ width: 'auto', height: 'var(--logo-h)' }}
+                  style={{ height: '100%', width: 'auto' }}
                   priority
                 />
               </div>
@@ -111,7 +113,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/lap-dat-he-thong-dien-nang-luong-mat-troi" onClick={closeMenu}>
+                    <Link href="/lap-dat-he-thong" onClick={closeMenu}>
                       {icons.tool} LẮP ĐẶT HỆ THỐNG
                     </Link>
                   </li>

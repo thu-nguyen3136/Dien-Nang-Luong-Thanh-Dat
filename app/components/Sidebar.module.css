@@ -114,26 +114,28 @@
 }
 
 .recentList li {
-  margin-bottom: 16px;
-  font-size: 14.5px;
-  line-height: 1.5;
-  border-bottom: 1px dashed #eee;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
 }
 
-.recentList li:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.recentList li:hover {
+  background-color: #f1f5f9;
+  transform: translateX(4px);
 }
 
 .recentList li a {
-  color: #555;
-  transition: color 0.3s ease;
+  color: #334155;
+  font-weight: 500;
+  text-decoration: none;
   display: block;
 }
 
-.recentList li a:hover {
+.recentList li:hover a {
   color: var(--primary-color);
 }
 

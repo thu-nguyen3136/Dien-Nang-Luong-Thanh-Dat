@@ -5,28 +5,28 @@ import { getData } from '@/lib/db';
 import styles from '@/app/components/ServiceLayout.module.css';
 
 export const metadata = {
-  title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội | Thành Đạt Solar',
-  description: 'Thành Đạt Solar cung cấp dịch vụ thi công điện năng lượng mặt trời tại Hà Nội trọn gói, từ tư vấn, thiết kế đến lắp đặt và bảo trì. Giải pháp năng lượng sạch tối ưu.',
+  title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hưng Yên | Thành Đạt Solar',
+  description: 'Thành Đạt Solar cung cấp dịch vụ thi công điện năng lượng mặt trời tại Hưng Yên trọn gói, từ tư vấn, thiết kế đến lắp đặt và bảo trì. Tiết kiệm 50-90% hóa đơn điện.',
   alternates: {
-    canonical: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi',
+    canonical: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
   },
   openGraph: {
-    title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội | Thành Đạt Solar',
-    description: 'Dịch vụ lắp đặt điện mặt trời áp mái chuyên nghiệp tại Hà Nội. Tiết kiệm 50-90% chi phí điện mỗi tháng.',
-    images: ['/images/lap-va-ban-dien-nang-luong-mat-t.png'],
-    url: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi',
+    title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hưng Yên | Thành Đạt Solar',
+    description: 'Giải pháp điện mặt trời áp mái tối ưu cho gia đình và doanh nghiệp tại Hưng Yên. Tiết kiệm chi phí, chủ động nguồn điện.',
+    images: ['/images/lap-dat-he-thong-dien-nang-luong-mat-troi.png'],
+    url: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
     type: 'article',
   },
 };
 
-export default function ThiCongDienMatTroiHaNoiPage() {
+export default function ThiCongDienMatTroiHungYenPage() {
   const data = getData();
   const recentPosts = data.posts || [];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Thi công điện năng lượng mặt trời tại Hà Nội",
+    "name": "Thi công điện năng lượng mặt trời tại Hưng Yên",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Thành Đạt Solar",
@@ -34,12 +34,12 @@ export default function ThiCongDienMatTroiHaNoiPage() {
       "telephone": "0368.444.567",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Hà Nội",
+        "addressLocality": "Hưng Yên",
         "addressCountry": "VN"
       }
     },
-    "description": "Giải pháp thi công điện mặt trời trọn gói tại Hà Nội cho hộ gia đình và doanh nghiệp. Tiết kiệm chi phí điện, bảo hành dài hạn.",
-    "areaServed": "Hà Nội",
+    "description": "Dịch vụ thi công điện năng lượng mặt trời tại Hưng Yên trọn gói cho gia đình và doanh nghiệp. Tiết kiệm chi phí điện, bảo vệ môi trường.",
+    "areaServed": "Hưng Yên",
     "serviceType": "Solar Energy Installation"
   };
 
@@ -62,8 +62,8 @@ export default function ThiCongDienMatTroiHaNoiPage() {
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Thi công tại Hà Nội",
-        "item": "https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi"
+        "name": "Thi công tại Hưng Yên",
+        "item": "https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen"
       }
     ]
   };
@@ -74,18 +74,26 @@ export default function ThiCongDienMatTroiHaNoiPage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Lắp điện mặt trời tại Hà Nội loại nào tốt nhất?",
+        "name": "Giá lắp điện mặt trời tại Hưng Yên là bao nhiêu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tùy nhu cầu, nếu bạn muốn tiết kiệm điện ban ngày thì hệ Hòa lưới là tối ưu. Nếu muốn dự phòng khi mất điện, hệ Hybrid có lưu trữ là lựa chọn hàng đầu."
+          "text": "Chi phí lắp đặt trọn gói tại Hưng Yên dao động từ 10-15 triệu/kWp đối với hệ hòa lưới và 15-25 triệu/kWp đối với hệ Hybrid có pin lưu trữ."
         }
       },
       {
         "@type": "Question",
-        "name": "Thành Đạt Solar có hỗ trợ thủ tục với EVN Hà Nội không?",
+        "name": "Thời gian thi công hệ thống điện mặt trời tại Hưng Yên mất bao lâu?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Có, chúng tôi hỗ trợ trọn gói thủ tục khảo sát, đấu nối và thay đồng hồ 2 chiều với EVN Hà Nội cho khách hàng."
+          "text": "Với các hộ gia đình, thời gian thi công thường từ 1-3 ngày. Với doanh nghiệp và nhà xưởng, thời gian từ 7-15 ngày tùy công suất hệ thống."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hệ thống điện mặt trời có hoạt động khi trời mưa không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hệ thống vẫn hoạt động khi trời mưa hoặc mây mù nhưng sản lượng điện sẽ thấp hơn so với khi trời nắng to."
         }
       }
     ]
@@ -125,7 +133,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             textTransform: 'uppercase',
             letterSpacing: '1px'
           }}>
-            Thi Công Điện Năng Lượng Mặt Trời Tại Hà Nội
+            Thi Công Điện Năng Lượng Mặt Trời Tại Hưng Yên
           </h1>
           <p style={{ 
             fontSize: '1.25rem', 
@@ -134,7 +142,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             margin: '0 auto',
             lineHeight: '1.6'
           }}>
-            Tiên phong cung cấp giải pháp năng lượng sạch bền vững tại Thủ đô.
+            Giải pháp tiết kiệm điện thông minh, bền vững cho tương lai.
           </p>
         </div>
       </section>
@@ -150,36 +158,40 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             paddingBottom: '12px',
             fontWeight: '700'
           }}>
-            Thi công điện năng lượng mặt trời tại Hà Nội
+            Thi công điện năng lượng mặt trời tại Hưng Yên
           </h2>
 
           <div style={{ lineHeight: '1.8', color: '#374151' }}>
             <p style={{ marginBottom: '15px' }}>
-              Là đơn vị tiên phong trong lĩnh vực năng lượng tái tạo tại Hà Nội, <strong>Thành Đạt Solar</strong> chuyên cung cấp dịch vụ trọn gói từ tư vấn, thiết kế, thi công lắp đặt đến bảo trì hệ thống điện năng lượng mặt trời cho hộ gia đình, doanh nghiệp và nhà máy. Thành Đạt Solar tự hào là đơn vị hàng đầu chuyên cung cấp dịch vụ thi công lắp đặt điện năng lượng mặt trời tại Hà Nội, Chúng tôi cam kết mang đến những giải pháp năng lượng sạch tối ưu, giúp khách hàng tiết kiệm chi phí điện năng, nâng cao hiệu suất sử dụng và chung tay bảo vệ môi trường.
+              Trong bối cảnh chi phí điện ngày càng tăng, nhiều hộ gia đình và doanh nghiệp đang chuyển sang giải pháp <strong>lắp đặt điện năng lượng mặt trời tại Hưng Yên</strong> nhằm giảm chi phí và chủ động nguồn điện sử dụng. Với lợi thế về diện tích mái và điều kiện nắng ổn định, Hưng Yên là khu vực phù hợp để triển khai các hệ thống điện mặt trời áp mái.
             </p>
-            <p style={{ marginBottom: '15px' }}>
-              Thành Đạt Solar nhận thi công hệ thống điện năng lượng mặt trời đa dạng theo nhu cầu sử dụng thực tế của khách hàng, bao gồm:
+            <p style={{ marginBottom: '25px' }}>
+              <strong>Thành Đạt Solar</strong> cung cấp dịch vụ thi công điện năng lượng mặt trời tại Hưng Yên trọn gói, từ tư vấn, thiết kế đến lắp đặt và bảo trì, giúp khách hàng tối ưu hiệu quả sử dụng điện và tiết kiệm chi phí lâu dài.
             </p>
+
+            <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '15px', fontWeight: '700' }}>
+              Giải Pháp Điện Năng Lượng Mặt Trời Cho Gia Đình & Doanh Nghiệp
+            </h3>
+            <p style={{ marginBottom: '15px' }}>Các giải pháp điện năng lượng mặt trời tại Hưng Yên</p>
+            <p style={{ marginBottom: '15px' }}>Tùy theo nhu cầu sử dụng, khách hàng có thể lựa chọn các hệ thống điện mặt trời phù hợp:</p>
             <ul style={{ listStyleType: 'none', paddingLeft: '0', marginBottom: '25px' }}>
-              <li style={{ padding: '10px 15px', background: '#eff6ff', borderLeft: '4px solid #2563eb', marginBottom: '10px', borderRadius: '4px' }}>
-                <strong>Thi công hệ thống điện năng lượng mặt trời có lưu trữ (Hybrid)</strong>
-              </li>
               <li style={{ padding: '10px 15px', background: '#f0fdf4', borderLeft: '4px solid #16a34a', marginBottom: '10px', borderRadius: '4px' }}>
-                <strong>Thi công hệ thống điện năng lượng mặt trời không lưu trữ (Hòa lưới – On-grid)</strong>
+                <strong>Hệ thống điện mặt trời hòa lưới:</strong> Giúp giảm chi phí điện hàng tháng, phù hợp với hộ gia đình và doanh nghiệp sử dụng điện ban ngày.
+              </li>
+              <li style={{ padding: '10px 15px', background: '#eff6ff', borderLeft: '4px solid #2563eb', marginBottom: '10px', borderRadius: '4px' }}>
+                <strong>Hệ thống điện mặt trời có lưu trữ:</strong> Có thể sử dụng khi mất điện, phù hợp với khu vực điện không ổn định.
               </li>
               <li style={{ padding: '10px 15px', background: '#fffbeb', borderLeft: '4px solid #d97706', marginBottom: '10px', borderRadius: '4px' }}>
-                <strong>Thi công hệ thống điện năng lượng mặt trời độc lập (Off-grid)</strong>
+                <strong>Hệ thống điện mặt trời độc lập:</strong> Dành cho khu vực chưa có điện lưới hoặc nhu cầu sử dụng riêng biệt.
               </li>
             </ul>
-            <p style={{ marginBottom: '30px' }}>
-              Với mỗi loại hệ thống, chúng tôi đều tối ưu thiết kế theo mục tiêu sử dụng điện, ngân sách đầu tư và điều kiện công trình, giúp khách hàng đạt hiệu quả tiết kiệm điện tối đa và vận hành ổn định lâu dài.
-            </p>
+            <p style={{ marginBottom: '30px' }}>Mỗi giải pháp đều được thiết kế phù hợp với điều kiện thực tế tại Hưng Yên.</p>
 
             {/* Middle Image */}
             <div style={{ margin: '40px 0', textAlign: 'center' }}>
               <img
                 src="/images/lap-va-ban-dien-nang-luong-mat-t.png"
-                alt="Thi công điện năng lượng mặt trời tại Hà Nội"
+                alt="Thi công điện năng lượng mặt trời tại Hưng Yên"
                 style={{
                   width: '100%',
                   maxWidth: '850px',
@@ -191,13 +203,10 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             </div>
 
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '15px', fontWeight: '700' }}>
-              Giải Pháp Điện Năng Lượng Mặt Trời Cho Gia Đình & Doanh Nghiệp
+              Các hệ thống điện năng lượng mặt trời theo công suất tại Hưng Yên
             </h3>
-            <h4 style={{ fontSize: '1.2rem', color: '#1f2937', marginBottom: '15px', fontWeight: '600' }}>
-              Các hệ thống điện năng lượng mặt trời theo công suất
-            </h4>
             <p style={{ marginBottom: '20px' }}>
-              Thành Đạt Solar cung cấp và thi công đa dạng các hệ thống điện năng lượng mặt trời theo nhiều mức công suất khác nhau, phù hợp cho hộ gia đình, doanh nghiệp và nhà xưởng:
+              Tại Hưng Yên, các hệ thống điện năng lượng mặt trời được triển khai với nhiều mức công suất khác nhau, đáp ứng nhu cầu sử dụng điện từ dân dụng đến sản xuất.
             </p>
             <div style={{ 
               display: 'grid', 
@@ -227,18 +236,18 @@ export default function ThiCongDienMatTroiHaNoiPage() {
               ))}
             </div>
             <p style={{ marginBottom: '30px' }}>
-              <i>Mỗi mức công suất sẽ được Thành Đạt Solar tư vấn thiết kế riêng biệt, đảm bảo phù hợp với nhu cầu sử dụng điện thực tế, diện tích mái và khả năng đầu tư của khách hàng.</i>
+              Việc lựa chọn công suất phù hợp sẽ giúp tối ưu chi phí đầu tư và hiệu quả sử dụng điện lâu dài.
             </p>
 
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '15px', fontWeight: '700' }}>
-              Dự Toán Chi Phí Lắp Điện Năng Lượng Mặt Trời Cho Hộ Gia Đình Và Công Trình Tại Hà Nội:
+              Dự Toán Chi Phí Lắp Điện Năng Lượng Mặt Trời Cho Hộ Gia Đình Và Công Trình Tại Hưng Yên:
             </h3>
             
             <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontWeight: '600' }}>
               1. Bảng chi phí lắp Hệ thống điện mặt trời hòa lưới bán tải (On-grid)
             </h4>
             <p style={{ marginBottom: '20px' }}>
-              Hệ thống điện năng lượng mặt trời tại Hà Nội hòa lưới được thiết kế tối ưu cho các đối tượng khách hàng có nhu cầu sử dụng điện lớn vào ban ngày, giúp tối đa hóa hiệu quả giảm thiểu chi phí điện năng.
+              Hệ thống điện năng lượng mặt trời tại Hưng Yên hòa lưới được thiết kế tối ưu cho các đối tượng khách hàng có nhu cầu sử dụng điện lớn vào ban ngày, giúp tối đa hóa hiệu quả giảm thiểu chi phí điện năng.
             </p>
             <div style={{ background: '#fef2f2', padding: '15px', borderRadius: '8px', borderLeft: '4px solid #ef4444', marginBottom: '25px' }}>
               <strong>Lưu ý quan trọng:</strong> Đây là hệ thống hòa lưới, do đó sẽ không có khả năng phát điện khi xảy ra sự cố mất điện lưới.
@@ -248,7 +257,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             <div style={{ margin: '30px 0', textAlign: 'center' }}>
               <img
                 src="/images/image-bang-chi-phi-1.png"
-                alt="Bảng chi phí lắp điện mặt trời hòa lưới tại Hà Nội"
+                alt="Bảng chi phí lắp điện mặt trời hòa lưới tại Hưng Yên"
                 style={{
                   width: '100%',
                   maxWidth: '900px',
@@ -263,14 +272,14 @@ export default function ThiCongDienMatTroiHaNoiPage() {
               2. Bảng chi phí lắp Hệ thống điện năng lượng mặt trời có lưu trữ (Hybrid)
             </h4>
             <p style={{ marginBottom: '20px' }}>
-              Bảng giá điện mặt trời tại Hà Nội áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban đêm, mang lại sự tiện nghi vì có thể dùng được khi mất điện lưới.
+              Bảng giá điện mặt trời tại Hưng Yên áp dụng cho các khách hàng có nhu cầu dùng điện chủ yếu vào ban đêm, mang lại sự tiện nghi vì có thể dùng được khi mất điện lưới.
             </p>
 
             {/* Price Table Image 2 */}
             <div style={{ margin: '30px 0', textAlign: 'center' }}>
               <img
                 src="/images/bang-chi-phi-2-new.png"
-                alt="Bảng chi phí lắp điện mặt trời Hybrid tại Hà Nội"
+                alt="Bảng chi phí lắp điện mặt trời Hybrid tại Hưng Yên"
                 style={{
                   width: '100%',
                   maxWidth: '900px',
@@ -291,23 +300,36 @@ export default function ThiCongDienMatTroiHaNoiPage() {
             </div>
 
             <p style={{ marginBottom: '30px' }}>
-              Thành Đạt Solar cung cấp các gói lắp đặt điện mặt trời áp mái tại Hà Nội và các tỉnh khu vực phía Bắc. Các gói lắp đặt điện mặt trời được chúng tôi phân phối bao gồm các thiết bị chính là: Tấm pin năng lượng mặt trời, Biến tần hoà lưới (Grid-Inverter) hoặc Inverter Hybrid và các phụ kiện khác (tủ điện, dây điện DC, ốc vít,…).
+              Thành Đạt Solar cung cấp các gói lắp đặt điện mặt trời áp mái tại Hưng Yên và các tỉnh khu vực phía Bắc. Các gói lắp đặt điện mặt trời được chúng tôi phân phối bao gồm các thiết bị chính là: Tấm pin năng lượng mặt trời, Biến tần hoà lưới (Grid-Inverter) hoặc Inverter Hybrid và các phụ kiện khác (tủ điện, dây điện DC, ốc vít,…).
             </p>
 
-            {/* Các yếu tố ảnh hưởng section */}
+            {/* Kinh nghiem section */}
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '15px', fontWeight: '700' }}>
-              Các yếu tố ảnh hưởng đến chi phí lắp điện năng lượng mặt trời
+              Kinh nghiệm khi lắp đặt điện mặt trời tại Hưng Yên
             </h3>
-            <p style={{ marginBottom: '30px' }}>
-              Công suất hệ thống là yếu tố quan trọng nhất ảnh hưởng đến giá, hệ có công suất càng lớn thì chi phí càng cao . Loại tấm pin quyết định hiệu suất và giá thành, trên thị trường có nhiều loại với hiệu suất và giá cả khác nhau. Ngoài ra, thiết bị đi kèm bao gồm inverter, khung giá đỡ, dây cáp và tủ điện cũng tác động đến tổng chi phí. Chi phí lắp đặt thay đổi tùy độ phức tạp công trình, vị trí địa lý và đơn vị thi công. Thương hiệu và xuất xứ sản phẩm từ các nhà sản xuất uy tín có giá cao hơn nhưng chất lượng được đảm bảo.
+            <p style={{ marginBottom: '20px' }}>
+              Để hệ thống điện mặt trời hoạt động ổn định và mang lại hiệu quả lâu dài, khách hàng tại Hưng Yên nên lưu ý một số kinh nghiệm sau:
             </p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px' }}>
+              {[
+                'Lựa chọn công suất phù hợp với mức tiêu thụ điện hàng tháng',
+                'Ưu tiên thiết bị chính hãng để đảm bảo độ bền và hiệu suất',
+                'Tận dụng tối đa diện tích mái để tăng sản lượng điện',
+                'Hợp tác với đơn vị thi công uy tín để hạn chế rủi ro'
+              ].map((item, idx) => (
+                <div key={idx} style={{ padding: '15px', background: 'white', borderRadius: '8px', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ color: '#10b981', marginRight: '10px', fontSize: '1.2rem' }}>✓</span>
+                  <span style={{ fontSize: '0.95rem' }}>{item}</span>
+                </div>
+              ))}
+            </div>
 
             {/* Quy trinh section */}
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '20px', fontWeight: '700' }}>
               Quy trình Thi công Lắp đặt Điện Năng Lượng Mặt Trời tại Thành Đạt
             </h3>
             <p style={{ marginBottom: '25px' }}>
-              Để đảm bảo mỗi công trình tại Hà Nội đạt hiệu quả tối ưu về cả kỹ thuật và kinh tế, Thành Đạt Solar đã xây dựng một quy trình làm việc chuyên nghiệp, minh bạch và khoa học.
+              Để đảm bảo mỗi công trình tại Hưng Yên đạt hiệu quả tối ưu về cả kỹ thuật và kinh tế, Thành Đạt Solar đã xây dựng một quy trình làm việc chuyên nghiệp, minh bạch và khoa học.
             </p>
             
             <div className={styles.gridCards}>
@@ -325,7 +347,7 @@ export default function ThiCongDienMatTroiHaNoiPage() {
               </div>
               <div className={styles.card}>
                 <h4>4. Thi công Chuyên nghiệp</h4>
-                <p>Tiến hành thi công lắp đặt tại Hà Nội theo đúng tiến độ cam kết, tuân thủ nghiêm ngặt các tiêu chuẩn an toàn điện.</p>
+                <p>Tiến hành thi công lắp đặt tại Hưng Yên theo đúng tiến độ cam kết, tuân thủ nghiêm ngặt các tiêu chuẩn an toàn điện.</p>
               </div>
               <div className={styles.card}>
                 <h4>5. Vận hành & Hướng dẫn</h4>
@@ -339,10 +361,10 @@ export default function ThiCongDienMatTroiHaNoiPage() {
 
             {/* Lợi ích section */}
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '20px', fontWeight: '700' }}>
-              Lợi ích khi lắp đặt điện mặt trời tại Hà Nội
+              Lợi ích khi lắp đặt điện mặt trời tại Hưng Yên
             </h3>
             <p style={{ marginBottom: '25px' }}>
-              Đầu tư điện mặt trời mang lại lợi ích kinh tế và môi trường vượt trội cho cả hộ gia đình lẫn doanh nghiệp tại Hà Nội.
+              Đầu tư điện mặt trời mang lại lợi ích kinh tế và môi trường vượt trội cho cả hộ gia đình lẫn doanh nghiệp tại Hưng Yên.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '40px' }}>
@@ -364,18 +386,38 @@ export default function ThiCongDienMatTroiHaNoiPage() {
               </div>
             </div>
 
+            {/* Truong hop section */}
+            <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '20px', fontWeight: '700' }}>
+              Các trường hợp nên lắp điện năng lượng mặt trời tại Hưng Yên
+            </h3>
+            <ul style={{ listStyleType: 'none', paddingLeft: '0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '15px', marginBottom: '40px' }}>
+              {[
+                { t: 'Hộ gia đình có tiền điện cao', d: 'Hóa đơn từ 2–3 triệu/tháng trở lên.' },
+                { t: 'Sử dụng điện nhiều vào ban ngày', d: 'Dùng điều hòa, máy bơm, thiết bị sản xuất.' },
+                { t: 'Doanh nghiệp, xưởng sản xuất', d: 'Tiết kiệm chi phí vận hành đáng kể.' },
+                { t: 'Khu vực điện không ổn định', d: 'Cần nguồn điện liên tục (hệ Hybrid).' },
+                { t: 'Nhà có mái rộng, ít bị che bóng', d: 'Đạt hiệu suất phát điện cao nhất.' },
+                { t: 'Muốn đầu tư lâu dài', d: 'Giải pháp tiết kiệm bền vững 20-25 năm.' }
+              ].map((item, i) => (
+                <li key={i} style={{ padding: '15px', background: '#f8fafc', borderRadius: '8px' }}>
+                  <strong style={{ display: 'block', marginBottom: '5px', color: '#1e293b' }}>{item.t}</strong>
+                  <span style={{ fontSize: '0.9rem', color: '#64748b' }}>{item.d}</span>
+                </li>
+              ))}
+            </ul>
+
             {/* Tại sao chọn Thành Đạt section */}
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '20px', fontWeight: '700' }}>
-              Lý do khách hàng lựa chọn Thành Đạt Solar khi có nhu cầu thi công điện năng lượng mặt trời tại Hà Nội
+              Lý do khách hàng lựa chọn Thành Đạt Solar khi có nhu cầu thi công điện năng lượng mặt trời tại Hưng Yên
             </h3>
             <div style={{ marginBottom: '30px' }}>
               {[
-                { t: 'Đã triển khai thực tế tại nhiều khu vực Hà Nội', d: 'Kinh nghiệm tại Cầu Giấy, Hà Đông, Đống Đa… giúp hiểu rõ đặc điểm mái nhà và điều kiện lắp đặt tại Thủ đô.' },
+                { t: 'Kinh nghiệm thi công thực tế tại Hưng Yên', d: 'Đã thực hiện nhiều công trình cho hộ gia đình, doanh nghiệp và nhà xưởng tại địa phương.' },
                 { t: 'Tư vấn đúng nhu cầu, không phát sinh chi phí', d: 'Tư vấn công suất phù hợp, tránh đầu tư dư thừa.' },
-                { t: 'Hiệu quả tiết kiệm điện rõ ràng', d: 'Giảm 50-90% hóa đơn tiền điện hàng tháng cho hộ gia đình và doanh nghiệp.' },
-                { t: 'Thi công nhanh, đảm bảo an toàn', d: 'Quy trình bài bản, đúng kỹ thuật, an toàn điện và kết cấu công trình.' },
-                { t: 'Bảo hành rõ ràng, hỗ trợ lâu dài', d: 'Chính sách minh bạch, bảo trì định kỳ ổn định.' },
-                { t: 'Giá thành hợp lý, tối ưu đầu tư', d: 'Cân bằng hoàn hảo giữa chất lượng thiết bị và chi phí đầu tư.' }
+                { t: 'Hiệu quả tiết kiệm điện rõ ràng', d: 'Giảm 50-90% hóa đơn tiền điện hàng tháng.' },
+                { t: 'Thi công nhanh, đảm bảo an toàn', d: 'Quy trình bài bản, đúng kỹ thuật, an toàn tuyệt đối.' },
+                { t: 'Bảo hành rõ ràng, hỗ trợ lâu dài', d: 'Chính sách minh bạch, bảo trì định kỳ.' },
+                { t: 'Giá thành hợp lý, tối ưu đầu tư', d: 'Cân bằng giữa chất lượng thiết bị và chi phí.' }
               ].map((item, idx) => (
                 <div key={idx} style={{ marginBottom: '15px', paddingBottom: '15px', borderBottom: '1px solid #f1f5f9' }}>
                   <h4 style={{ color: '#111827', fontSize: '1.05rem', fontWeight: '700', marginBottom: '5px' }}>● {item.t}</h4>
@@ -386,38 +428,33 @@ export default function ThiCongDienMatTroiHaNoiPage() {
 
             {/* Pham vi section */}
             <h3 style={{ fontSize: '1.5rem', color: '#111827', marginTop: '35px', marginBottom: '15px', fontWeight: '700' }}>
-              Khu vực Thành Đạt Solar nhận thi công điện năng lượng mặt trời tại Hà Nội
+              Phạm vi thi công điện năng lượng mặt trời tại Hưng Yên
             </h3>
             <p style={{ marginBottom: '20px' }}>
-              Thành Đạt Solar nhận thi công trên toàn bộ các quận, huyện tại Hà Nội, đảm bảo khảo sát nhanh chóng và triển khai phù hợp.
+              Thành Đạt Solar nhận thi công trên toàn bộ khu vực tỉnh Hưng Yên, bao gồm thành phố và các huyện:
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '40px' }}>
-              <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '12px' }}>
-                <h4 style={{ color: '#1e293b', marginBottom: '10px' }}>📍 Khu vực nội thành</h4>
-                <ul style={{ listStyleType: 'none', padding: 0, fontSize: '0.9rem', color: '#475569' }}>
-                  {[
-                    'Ba Đình', 'Hoàn Kiếm', 'Đống Đa', 'Hai Bà Trưng', 
-                    'Cầu Giấy', 'Thanh Xuân', 'Hoàng Mai', 'Hà Đông', 
-                    'Tây Hồ', 'Long Biên'
-                  ].map(a => <li key={a} style={{ marginBottom: '4px' }}>• {a}</li>)}
-                </ul>
-              </div>
-              <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '12px' }}>
-                <h4 style={{ color: '#1e293b', marginBottom: '10px' }}>🗺️ Khu vực ngoại thành</h4>
-                <ul style={{ listStyleType: 'none', padding: 0, fontSize: '0.9rem', color: '#475569' }}>
-                  {[
-                    'Đông Anh', 'Gia Lâm', 'Thanh Trì', 'Hoài Đức', 
-                    'Thanh Oai', 'Thường Tín', 'Phú Xuyên', 'Sóc Sơn', 
-                    'Mê Linh', 'Quốc Oai', 'Thạch Thất', 'Chương Mỹ', 
-                    'Ứng Hòa', 'Mỹ Đức', 'Ba Vì', 'Đan Phượng'
-                  ].map(a => <li key={a} style={{ marginBottom: '4px' }}>• {a}</li>)}
-                </ul>
-              </div>
+            <div style={{ 
+              display: 'flex', 
+              flexWrap: 'wrap', 
+              gap: '10px', 
+              marginBottom: '40px' 
+            }}>
+              {[
+                'TP Hưng Yên', 'Mỹ Hào', 'Văn Lâm', 'Văn Giang', 'Yên Mỹ', 
+                'Khoái Châu', 'Kim Động', 'Ân Thi', 'Tiên Lữ', 'Phù Cừ'
+              ].map(area => (
+                <span key={area} style={{ 
+                  padding: '6px 15px', 
+                  background: '#f1f5f9', 
+                  borderRadius: '20px', 
+                  fontSize: '0.9rem',
+                  color: '#475569',
+                  border: '1px solid #e2e8f0'
+                }}>
+                  {area}
+                </span>
+              ))}
             </div>
-
-            <p style={{ marginBottom: '30px' }}>
-              <strong>Thành Đạt Solar</strong> là đơn vị chuyên thi công điện năng lượng mặt trời tại Hà Nội uy tín, cung cấp giải pháp lắp đặt trọn gói. Nếu bạn đang tìm kiếm đơn vị giá tốt, hiệu quả cao và bảo hành dài hạn, chúng tôi chính là lựa chọn đáng tin cậy.
-            </p>
 
             {/* Footer Contact */}
             <div style={{ 
@@ -428,42 +465,46 @@ export default function ThiCongDienMatTroiHaNoiPage() {
               textAlign: 'center',
               boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
             }}>
-              <h3 style={{ fontSize: '1.8rem', marginBottom: '20px', fontWeight: '700' }}>Liên hệ thi công điện năng lượng mặt trời tại Hà Nội</h3>
+              <h3 style={{ fontSize: '1.8rem', marginBottom: '20px', fontWeight: '700' }}>Liên hệ thi công điện năng lượng mặt trời tại Hưng Yên</h3>
               <p style={{ marginBottom: '25px', opacity: 0.9, lineHeight: '1.8' }}>
-                Hãy liên hệ với Thành Đạt ngay hôm nay để nhận được tư vấn chuyên sâu về giải pháp năng lượng sạch và bền vững cho tương lai.
+                Nếu bạn đang tìm kiếm đơn vị thi công uy tín, Thành Đạt Solar là lựa chọn đáng tin cậy với nhiều năm kinh nghiệm. 
+                Chúng tôi cam kết mang đến giải pháp tối ưu, phù hợp nhu cầu và ngân sách của bạn.
               </p>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-                <style dangerouslySetInnerHTML={{ __html: `
-                  .cta-button { transition: transform 0.2s; }
-                  .cta-button:hover { transform: scale(1.05); }
-                ` }} />
-                <a href="tel:0368444567" className="cta-button" style={{ 
-                  display: 'inline-block', 
-                  backgroundColor: '#fbbf24', 
-                  color: '#92400e', 
-                  padding: '16px 35px', 
-                  borderRadius: '50px', 
-                  fontWeight: '800', 
-                  fontSize: '1.25rem', 
-                  textDecoration: 'none',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.2)'
-                }}>
-                  Hotline: 0368.444.567
-                </a>
-                <a href="https://zalo.me/0368444567" target="_blank" rel="nofollow" className="cta-button" style={{ 
-                  display: 'inline-block', 
-                  backgroundColor: '#0068ff', 
-                  color: 'white', 
-                  padding: '16px 35px', 
-                  borderRadius: '50px', 
-                  fontWeight: '800', 
-                  fontSize: '1.25rem', 
-                  textDecoration: 'none',
-                  boxShadow: '0 4px 6px rgba(0,0,0,0.2)'
-                }}>
-                  Chat Zalo
-                </a>
-              </div>
+              <p style={{ fontSize: '1.2rem', marginBottom: '30px', fontWeight: '600' }}>
+                Hãy liên hệ với Thành Đạt ngay hôm nay để nhận được tư vấn chuyên sâu!
+              </p>
+            <style dangerouslySetInnerHTML={{ __html: `
+              .cta-button { transition: transform 0.2s; }
+              .cta-button:hover { transform: scale(1.05); }
+            ` }} />
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+              <a href="tel:0368444567" className="cta-button" style={{ 
+                display: 'inline-block', 
+                backgroundColor: '#fbbf24', 
+                color: '#92400e', 
+                padding: '16px 35px', 
+                borderRadius: '50px', 
+                fontWeight: '800', 
+                fontSize: '1.25rem', 
+                textDecoration: 'none',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.2)'
+              }}>
+                Hotline: 0368.444.567
+              </a>
+              <a href="https://zalo.me/0368444567" target="_blank" rel="nofollow" className="cta-button" style={{ 
+                display: 'inline-block', 
+                backgroundColor: '#0068ff', 
+                color: 'white', 
+                padding: '16px 35px', 
+                borderRadius: '50px', 
+                fontWeight: '800', 
+                fontSize: '1.25rem', 
+                textDecoration: 'none',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.2)'
+              }}>
+                Chat Zalo
+              </a>
+            </div>
             </div>
           </div>
         </div>

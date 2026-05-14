@@ -6,9 +6,11 @@ import Image from 'next/image';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+  const [mounted, setMounted] = useState(false);
   const [currentYear, setCurrentYear] = useState('2026');
 
   useEffect(() => {
+    setMounted(true);
     setCurrentYear(new Date().getFullYear().toString());
   }, []);
 
@@ -101,7 +103,7 @@ const Footer = () => {
         <div className="container">
           <div className={styles.bottomInner}>
             <p className={styles.copyright}>
-              © {currentYear} <span>Thành Đạt Solar</span>. Tất cả quyền được bảo lưu.
+              © {mounted ? currentYear : '2026'} <span>Thành Đạt Solar</span>. Tất cả quyền được bảo lưu.
             </p>
           </div>
         </div>

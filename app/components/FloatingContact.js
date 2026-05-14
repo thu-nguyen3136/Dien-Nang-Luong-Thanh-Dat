@@ -1,8 +1,17 @@
+'use client';
+import { useState, useEffect } from 'react';
 import styles from './FloatingContact.module.css';
 
 const FloatingContact = () => {
+  const [mounted, setMounted] = useState(false);
   const phone = "0368.444.567";
   const phoneRaw = "0368444567";
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <div className={styles.wrapper}>

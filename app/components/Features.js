@@ -50,7 +50,7 @@ const Counter = ({ end, duration = 2000, suffix = "" }) => {
     requestAnimationFrame(animate);
   }, [isVisible, end, duration]);
 
-  return <span ref={countRef}>{count}{suffix}</span>;
+  return <span ref={countRef} suppressHydrationWarning>{count}{suffix}</span>;
 };
 
 export default function Features() {
