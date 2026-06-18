@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Sidebar from '@/app/components/Sidebar';
+import Script from 'next/script';
 import { getData } from '@/lib/db';
 import styles from '@/app/components/ServiceLayout.module.css';
 
@@ -94,15 +95,18 @@ export default function ThiCongDienMatTroiBacGiangPage() {
 
   return (
     <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>
-      <script
+      <Script
+        id="json-ld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <script
+      <Script
+        id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <script
+      <Script
+        id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
