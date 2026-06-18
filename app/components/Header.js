@@ -46,7 +46,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`${styles.headerWrapper} ${scrolled ? styles.scrolled : ''}`}>
+    <div className={`${styles.headerWrapper} ${mounted && scrolled ? styles.scrolled : ''}`}>
       {/* Main Header - Nền Trắng Sáng */}
       <header className={styles.header}>
         <div className={`container ${styles.headerContainer}`}>
