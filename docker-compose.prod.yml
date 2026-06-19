@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   web-production:
     image: ghcr.io/adminvpshub/dien-nang-luong-thanh-dat:latest
