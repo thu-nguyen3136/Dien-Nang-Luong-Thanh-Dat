@@ -12,7 +12,7 @@ export default function AdminLogin() {
   const handleLogin = (e) => {
     e.preventDefault();
     // Simple mock authentication
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'admin' && password === 'thanhdatsolar@sms2026') {
       localStorage.setItem('isAdmin', 'true');
       router.push('/admin/dashboard');
     } else {
@@ -29,20 +29,20 @@ export default function AdminLogin() {
           {error && <div className={styles.error}>{error}</div>}
           <div className={styles.inputGroup}>
             <label>Tên đăng nhập</label>
-            <input 
-              type="text" 
-              value={username} 
-              onChange={(e) => setUsername(e.target.value)} 
-              required 
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
             />
           </div>
           <div className={styles.inputGroup}>
             <label>Mật khẩu</label>
-            <input 
-              type="password" 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              required 
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
           <button type="submit" className={styles.loginBtn}>ĐĂNG NHẬP</button>

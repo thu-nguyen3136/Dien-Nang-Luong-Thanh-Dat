@@ -22,8 +22,8 @@ export const metadata = {
 export default function Home() {
   const data = getData();
   const products = data.products || [];
-  const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-'));
-  const posts = data.posts?.slice(0, 4) || [];
+  const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-') && p.showOnHome !== false && p.status !== 'draft');
+  const homePosts = (data.posts || []).filter(p => p.showOnHome !== false && p.status !== 'draft');
 
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -123,7 +123,7 @@ export default function Home() {
 
       <Testimonials />
 
-      <NewsSection posts={data.posts || []} />
+      <NewsSection posts={homePosts} />
 
     </div>
   );

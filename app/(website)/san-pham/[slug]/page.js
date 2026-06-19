@@ -9,11 +9,11 @@ export async function generateMetadata({ params }) {
   const data = getData();
   const product = data.products.find(p => p.slug.toLowerCase() === slug.toLowerCase());
 
-  if (!product) return { title: 'Sản phẩm không tồn tại' };
+  if (!product || product.status === 'draft') return { title: 'Sản phẩm không tồn tại' };
 
   return {
-    title: `${product.title} | Thành Đạt Solar`,
-    description: product.features?.join(', ').substring(0, 160) || `Mua ${product.title} uy tín, chất lượng tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu.`,
+    title: product.seoTitle || `${product.title} | Thành Đạt Solar`,
+    description: product.metaDesc || product.features?.join(', ').substring(0, 160) || `Mua ${product.title} uy tín, chất lượng tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu.`,
   };
 }
 
@@ -22,7 +22,7 @@ export default async function ProductDetail({ params }) {
   const data = getData();
   const product = data.products.find(p => p.slug.toLowerCase() === slug.toLowerCase());
 
-  if (!product) {
+  if (!product || product.status === 'draft') {
     notFound();
   }
 

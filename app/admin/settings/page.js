@@ -34,6 +34,7 @@ export default function AdminSettings() {
     }
   };
 
+  return (
     <>
       <h2>CẤU HÌNH WEBSITE</h2>
       <p style={{ marginBottom: '30px', color: '#666' }}>Thay đổi thông tin liên hệ và các thiết lập chung của hệ thống.</p>
@@ -82,4 +83,5 @@ export default function AdminSettings() {
         </section>
       )}
     </>
+  );
 }

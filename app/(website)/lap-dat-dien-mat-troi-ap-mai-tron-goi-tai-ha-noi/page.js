@@ -3,15 +3,61 @@ import Link from 'next/link';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
 import styles from '@/app/components/ServiceLayout.module.css';
+import { notFound } from 'next/navigation';
 
-export const metadata = {
-  title: 'Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội | Thành Đạt Solar',
-  description: 'Dịch vụ lắp đặt điện mặt trời áp mái trọn gói tại Hà Nội. Giải pháp tiết kiệm điện năng cho hộ gia đình và doanh nghiệp với chi phí đầu tư thấp, bảo hành dài hạn.',
-};
+export async function generateMetadata() {
+  const data = getData();
+  const service = (data.services || []).find(s => s.slug === 'lap-dat-dien-mat-troi-ap-mai-tron-goi-tai-ha-noi');
+  if (service && service.status === 'published') {
+    return {
+      title: service.seoTitle || `${service.title} | Thành Đạt Solar`,
+      description: service.metaDesc || service.excerpt || service.title,
+    };
+  }
+  return {
+    title: 'Lắp Đặt Điện Mặt Trời Áp Mái Trọn Gói Tại Hà Nội | Thành Đạt Solar',
+    description: 'Dịch vụ lắp đặt điện mặt trời áp mái trọn gói tại Hà Nội. Giải pháp tiết kiệm điện năng cho hộ gia đình và doanh nghiệp với chi phí đầu tư thấp, bảo hành dài hạn.',
+  };
+}
 
 export default function LapDatApMaiHaNoiPage() {
   const data = getData();
   const recentPosts = data.posts || [];
+  
+  const service = (data.services || []).find(s => s.slug === 'lap-dat-dien-mat-troi-ap-mai-tron-goi-tai-ha-noi');
+  
+  if (service) {
+    if (service.status === 'draft') {
+      notFound();
+    }
+    return (
+      <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>
+        <section style={{
+          background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${service.image || "/images/ap-mai.png"}")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '100px 0',
+          textAlign: 'center',
+          color: 'white'
+        }}>
+          <div className="container">
+            <h1 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '20px', textTransform: 'uppercase' }}>{service.title}</h1>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9 }}>Chuyên nghiệp - Tận tâm - Tiết kiệm tối đa chi phí</p>
+          </div>
+        </section>
+
+        <div className={`container ${styles.serviceLayout}`} style={{ marginTop: '40px' }}>
+          <div className={styles.serviceContent}>
+            <div dangerouslySetInnerHTML={{ __html: service.content }} />
+          </div>
+          <div className="sidebarWrapper">
+            <Sidebar recentPosts={recentPosts} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
 
   return (
     <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>

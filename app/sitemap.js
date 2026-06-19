@@ -3,29 +3,49 @@ import { getData } from '@/lib/db';
 export default async function sitemap() {
   const baseUrl = 'https://lapdatdiennangluongmattroi.com'; 
   const data = getData();
+  const dbServices = data.services || [];
 
-  const posts = (data.posts || []).map((post) => ({
-    url: `${baseUrl}/tin-tuc/${post.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.6,
-  }));
+  const rootServiceSlugs = new Set([
+    'thiet-ke-he-thong-dien-nang-luong-mat-troi',
+    'lap-dat-he-thong-dien-nang-luong-mat-troi',
+    'lap-dat-dien-mat-troi-ap-mai-tron-goi-tai-ha-noi',
+    'thi-cong-dien-nang-luong-mat-troi-tai-ha-noi',
+    'thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
+    'thi-cong-dien-nang-luong-mat-troi-tai-bac-giang',
+    'thi-cong-dien-nang-luong-mat-troi-tai-phu-tho'
+  ]);
 
-  const products = (data.products || []).map((product) => ({
-    url: `${baseUrl}/san-pham/${product.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.7,
-  }));
+  const posts = (data.posts || [])
+    .filter((post) => post.status !== 'draft')
+    .map((post) => ({
+      url: `${baseUrl}/tin-tuc/${post.slug}`,
+      lastModified: post.updatedAt ? new Date(post.updatedAt) : new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    }));
 
-  const services = (data.services || []).map((service) => ({
-    url: `${baseUrl}/dich-vu/${service.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
+  const products = (data.products || [])
+    .filter((product) => product.status !== 'draft')
+    .map((product) => ({
+      url: `${baseUrl}/san-pham/${product.slug}`,
+      lastModified: product.updatedAt ? new Date(product.updatedAt) : new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    }));
 
-  const staticPages = [
+  const services = dbServices
+    .filter((service) => service.status !== 'draft')
+    .map((service) => {
+      const isRoot = rootServiceSlugs.has(service.slug);
+      return {
+        url: isRoot ? `${baseUrl}/${service.slug}` : `${baseUrl}/dich-vu/${service.slug}`,
+        lastModified: service.updatedAt ? new Date(service.updatedAt) : new Date(),
+        changeFrequency: isRoot ? 'weekly' : 'monthly',
+        priority: 0.7,
+      };
+    });
+
+  const baseStaticPages = [
     { url: '', priority: 1.0, changeFrequency: 'daily' },
     { url: '/gioi-thieu', priority: 0.8, changeFrequency: 'monthly' },
     { url: '/lien-he', priority: 0.8, changeFrequency: 'monthly' },
@@ -34,16 +54,23 @@ export default async function sitemap() {
     { url: '/san-pham/tam-pin-mat-troi', priority: 0.8, changeFrequency: 'weekly' },
     { url: '/dich-vu', priority: 0.9, changeFrequency: 'daily' },
     { url: '/tin-tuc', priority: 0.9, changeFrequency: 'daily' },
-    { url: '/lap-dat-he-thong-dien-nang-luong-mat-troi', priority: 0.8, changeFrequency: 'weekly' },
     { url: '/lap-dat-he-thong', priority: 0.8, changeFrequency: 'weekly' },
-    { url: '/thi-cong-dien-nang-luong-mat-troi-tai-ha-noi', priority: 0.8, changeFrequency: 'weekly' },
-    { url: '/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen', priority: 0.8, changeFrequency: 'weekly' },
-    { url: '/thi-cong-dien-nang-luong-mat-troi-tai-bac-giang', priority: 0.8, changeFrequency: 'weekly' },
-    { url: '/thi-cong-dien-nang-luong-mat-troi-tai-phu-tho', priority: 0.8, changeFrequency: 'weekly' },
-    { url: '/lap-dat-dien-mat-troi-ap-mai-tron-goi-tai-ha-noi', priority: 0.8, changeFrequency: 'weekly' },
-    { url: '/thiet-ke-he-thong-dien-nang-luong-mat-troi', priority: 0.8, changeFrequency: 'weekly' },
     { url: '/cung-cap-cac-goi-he-thong-dien-mat-troi', priority: 0.8, changeFrequency: 'weekly' },
-  ].map((route) => ({
+  ];
+
+  // If a root service is not in db.json, still include it as static fallback
+  for (const slug of rootServiceSlugs) {
+    const exists = dbServices.some(s => s.slug === slug);
+    if (!exists) {
+      baseStaticPages.push({
+        url: `/${slug}`,
+        priority: 0.8,
+        changeFrequency: 'weekly'
+      });
+    }
+  }
+
+  const staticPages = baseStaticPages.map((route) => ({
     url: `${baseUrl}${route.url}`,
     lastModified: new Date(),
     changeFrequency: route.changeFrequency,
@@ -52,3 +79,4 @@ export default async function sitemap() {
 
   return [...staticPages, ...posts, ...products, ...services];
 }
+

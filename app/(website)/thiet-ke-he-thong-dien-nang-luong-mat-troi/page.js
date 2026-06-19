@@ -4,15 +4,78 @@ import Image from 'next/image';
 import Sidebar from '@/app/components/Sidebar';
 import { getData } from '@/lib/db';
 import styles from '@/app/components/ServiceLayout.module.css';
+import { notFound } from 'next/navigation';
 
-export const metadata = {
-  title: 'Thiết Kế Hệ Thống Điện Năng Lượng Mặt Trời Tối Ưu | Thành Đạt Solar',
-  description: 'Thành Đạt Solar chuyên thiết kế hệ thống điện mặt trời đồng bộ cho gia đình, nhà xưởng, doanh nghiệp. Tư vấn giải pháp năng lượng sạch, tiết kiệm chi phí tối đa.',
-};
+export async function generateMetadata() {
+  const data = getData();
+  const service = (data.services || []).find(s => s.slug === 'thiet-ke-he-thong-dien-nang-luong-mat-troi');
+  if (service && service.status === 'published') {
+    return {
+      title: service.seoTitle || `${service.title} | Thành Đạt Solar`,
+      description: service.metaDesc || service.excerpt || service.title,
+    };
+  }
+  return {
+    title: 'Thiết Kế Hệ Thống Điện Năng Lượng Mặt Trời Tối Ưu | Thành Đạt Solar',
+    description: 'Thành Đạt Solar chuyên thiết kế hệ thống điện mặt trời đồng bộ cho gia đình, nhà xưởng, doanh nghiệp. Tư vấn giải pháp năng lượng sạch, tiết kiệm chi phí tối đa.',
+  };
+}
 
 export default function ThietKeHeThongPage() {
   const data = getData();
   const recentPosts = data.posts || [];
+  
+  const service = (data.services || []).find(s => s.slug === 'thiet-ke-he-thong-dien-nang-luong-mat-troi');
+  
+  if (service) {
+    if (service.status === 'draft') {
+      notFound();
+    }
+    return (
+      <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>
+        <section style={{
+          position: 'relative',
+          height: '350px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center',
+          color: 'white'
+        }}>
+          <Image
+            src={service.image || "/images/thiet-ke-he-thong-dien-nang-luong-mat-troi-6.webp"}
+            alt={service.title}
+            fill
+            sizes="100vw"
+            style={{ objectFit: 'cover', zIndex: 1 }}
+            priority
+          />
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0,0,0,0.6)',
+            zIndex: 2
+          }}></div>
+          <div className="container" style={{ position: 'relative', zIndex: 3 }}>
+            <h1 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '20px' }}>{service.title.toUpperCase()}</h1>
+          </div>
+        </section>
+
+        <div className={`container ${styles.serviceLayout}`} style={{ marginTop: '40px' }}>
+          <div className={styles.serviceContent}>
+            <div dangerouslySetInnerHTML={{ __html: service.content }} />
+          </div>
+          <div className="sidebarWrapper">
+            <Sidebar recentPosts={recentPosts} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
 
   return (
     <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>
