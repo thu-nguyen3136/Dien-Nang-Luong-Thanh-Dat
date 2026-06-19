@@ -86,3 +86,53 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Manual Deploy
+# Hướng dẫn Kết nối Server và Deploy - Điện Năng Lượng Thành Đạt
+
+Tài liệu này hướng dẫn các bước để kết nối vào máy chủ Production và thực hiện cập nhật (deploy) mã nguồn mới nhất.
+
+## 1. Kết nối SSH vào môi trường Server
+
+Để quản lý server thông qua trình duyệt, chúng ta sử dụng **VPS Hub Terminal**.
+
+- **Truy cập:** [https://terminal.vpshub.vn/app](https://terminal.vpshub.vn/app)
+- **Thiết lập bảo mật:** Nhập **6 số PIN bất kỳ** để tạo khóa mã hóa kết nối (ghi nhớ PIN này để truy cập lại sau này).
+
+![alt text](image-1.png)
+
+### Cấu hình kết nối mới (New Connection):
+Tại màn hình tạo kết nối, nhập các thông tin sau:
+
+![alt text](image-2.png)
+
+| Trường thông tin | Giá trị |
+| :--- | :--- |
+| **Profile Name** | `vm111` |
+| **Hostname** | `ssh.cattiacayxanhvantoan.com` |
+| **User** | `tgh2171` |
+| **Authentication Type** | `SSH Key` |
+| **SSH Private Key** | Lấy nội dung key tại [link file này](https://drive.google.com/open?id=1WyxOBQ2VHU1EKN9nnd-eXC4OflLw-5AM&usp=drive_fs) |
+
+- Sau khi nhập xong, nhấn **Save connection**.
+- Cuối cùng, nhấn **Connect** để bắt đầu phiên làm việc.
+
+---
+
+## 2. Chạy script deploy.sh
+
+Sau khi đã kết nối SSH thành công vào terminal, hãy thực hiện các lệnh sau để tự động cập nhật bản mới nhất từ GitHub:
+
+![alt text](image.png)
+
+```bash
+# Di chuyển vào thư mục dự án
+cd /www/html/lapdatdiennangluongmattroi.com
+
+# Thực thi script deploy
+./deploy.sh
+```
+
+> [!TIP]
+> Script `deploy.sh` sẽ tự động thực hiện việc `git pull`, build lại Docker image (nếu cần) và khởi động lại các container với cấu hình production.
