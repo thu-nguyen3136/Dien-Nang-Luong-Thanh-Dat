@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function NewsPage() {
   const data = getData();
-  const posts = data.posts || [];
+  const posts = (data.posts || []).filter(p => p.status !== 'draft');
 
   return (
     <div className={styles.newsPage}>

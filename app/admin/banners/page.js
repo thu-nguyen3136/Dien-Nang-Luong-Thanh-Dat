@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../dashboard/dashboard.module.css';
 
 export default function AdminBanners() {
+  return (
     <>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' }}>
         <h2>QUẢN LÝ BANNER</h2>
@@ -27,4 +28,5 @@ export default function AdminBanners() {
         </div>
       </section>
     </>
+  );
 }

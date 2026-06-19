@@ -3,12 +3,25 @@ import styles from './post.module.css';
 import { notFound } from 'next/navigation';
 import Sidebar from '@/app/components/Sidebar';
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const data = getData();
+  const post = data.posts.find(p => p.slug === slug);
+
+  if (!post || post.status === 'draft') return { title: 'Bài viết không tồn tại' };
+
+  return {
+    title: post.seoTitle || `${post.title} | Thành Đạt Solar`,
+    description: post.metaDesc || post.excerpt || `Bài viết ${post.title} tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu cho bạn.`,
+  };
+}
+
 export default async function PostDetail({ params }) {
   const { slug } = await params;
   const data = getData();
   const post = data.posts.find(p => p.slug === slug);
 
-  if (!post) {
+  if (!post || post.status === 'draft') {
     notFound();
   }
 

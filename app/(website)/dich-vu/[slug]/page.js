@@ -8,11 +8,11 @@ export async function generateMetadata({ params }) {
   const data = getData();
   const service = data.services.find(s => s.slug.toLowerCase() === slug.toLowerCase());
 
-  if (!service) return { title: 'Dịch vụ không tồn tại' };
+  if (!service || service.status === 'draft') return { title: 'Dịch vụ không tồn tại' };
 
   return {
-    title: `${service.title} | Thành Đạt Solar`,
-    description: service.desc || `Dịch vụ ${service.title} uy tín, chuyên nghiệp tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu cho bạn.`,
+    title: service.seoTitle || `${service.title} | Thành Đạt Solar`,
+    description: service.metaDesc || service.excerpt || service.desc || `Dịch vụ ${service.title} uy tín, chuyên nghiệp tại Thành Đạt Solar. Giải pháp điện năng lượng mặt trời tối ưu cho bạn.`,
   };
 }
 
@@ -21,7 +21,7 @@ export default async function ServiceDetail({ params }) {
   const data = getData();
   const service = data.services.find(s => s.slug.toLowerCase() === slug.toLowerCase());
 
-  if (!service) {
+  if (!service || service.status === 'draft') {
     notFound();
   }
 

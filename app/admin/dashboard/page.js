@@ -36,9 +36,7 @@ export default function AdminDashboard() {
 
       <section style={{ background: 'white', padding: '30px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
         <h3>Chào mừng quay trở lại hệ quản trị!</h3>
-        <p style={{ color: '#666', marginTop: '10px' }}>
-          Hệ thống đã được đồng bộ hóa hoàn toàn. Bạn có thể xem lời chào "Xin chào, Admin!" ở thanh công cụ phía trên.
-        </p>
+
       </section>
     </>
   );

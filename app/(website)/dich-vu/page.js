@@ -11,10 +11,10 @@ export const metadata = {
 
 export default function ServicesPage() {
   const data = getData();
-  const services = data.services || [];
+  const services = (data.services || []).filter(s => s.status !== 'draft');
   const products = data.products || [];
   // Lấy các gói hệ thống
-  const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-'));
+  const systemProducts = products.filter(p => !p.id.startsWith('solar-') && !p.id.startsWith('battery-') && p.status !== 'draft');
 
   return (
     <div className={styles.servicesPage}>

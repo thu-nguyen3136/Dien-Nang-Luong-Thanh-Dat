@@ -4,25 +4,89 @@ import Sidebar from '@/app/components/Sidebar';
 import Script from 'next/script';
 import { getData } from '@/lib/db';
 import styles from '@/app/components/ServiceLayout.module.css';
+import { notFound } from 'next/navigation';
 
-export const metadata = {
-  title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hưng Yên | Thành Đạt Solar',
-  description: 'Thành Đạt Solar cung cấp dịch vụ thi công điện năng lượng mặt trời tại Hưng Yên trọn gói, từ tư vấn, thiết kế đến lắp đặt và bảo trì. Tiết kiệm 50-90% hóa đơn điện.',
-  alternates: {
-    canonical: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
-  },
-  openGraph: {
+export async function generateMetadata() {
+  const data = getData();
+  const service = (data.services || []).find(s => s.slug === 'thi-cong-dien-nang-luong-mat-troi-tai-hung-yen');
+  if (service && service.status === 'published') {
+    return {
+      title: service.seoTitle || `${service.title} | Thành Đạt Solar`,
+      description: service.metaDesc || service.excerpt || service.title,
+    };
+  }
+  return {
     title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hưng Yên | Thành Đạt Solar',
-    description: 'Giải pháp điện mặt trời áp mái tối ưu cho gia đình và doanh nghiệp tại Hưng Yên. Tiết kiệm chi phí, chủ động nguồn điện.',
-    images: ['/images/lap-dat-he-thong-dien-nang-luong-mat-troi.png'],
-    url: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
-    type: 'article',
-  },
-};
+    description: 'Thành Đạt Solar cung cấp dịch vụ thi công điện năng lượng mặt trời tại Hưng Yên trọn gói, từ tư vấn, thiết kế đến lắp đặt and bảo trì. Tiết kiệm 50-90% hóa đơn điện.',
+    alternates: {
+      canonical: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
+    },
+    openGraph: {
+      title: 'Thi Công Điện Năng Lượng Mặt Trời Tại Hưng Yên | Thành Đạt Solar',
+      description: 'Giải pháp điện mặt trời áp mái tối ưu cho gia đình và doanh nghiệp tại Hưng Yên. Tiết kiệm chi phí, chủ động nguồn điện.',
+      images: ['/images/lap-dat-he-thong-dien-nang-luong-mat-troi.png'],
+      url: 'https://lapdatdiennangluongmattroi.com/thi-cong-dien-nang-luong-mat-troi-tai-hung-yen',
+      type: 'article',
+    },
+  };
+}
 
 export default function ThiCongDienMatTroiHungYenPage() {
   const data = getData();
   const recentPosts = data.posts || [];
+  
+  const service = (data.services || []).find(s => s.slug === 'thi-cong-dien-nang-luong-mat-troi-tai-hung-yen');
+  
+  if (service) {
+    if (service.status === 'draft') {
+      notFound();
+    }
+    return (
+      <div style={{ backgroundColor: '#f9fafb', paddingBottom: '60px' }}>
+        {/* Hero Section */}
+        <section style={{
+          background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${service.image || "/images/ap-mai.png"}")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '120px 0',
+          textAlign: 'center',
+          color: 'white',
+          marginBottom: '40px'
+        }}>
+          <div className="container">
+            <h1 style={{ 
+              fontSize: '2.8rem', 
+              fontWeight: '800', 
+              marginBottom: '20px', 
+              textTransform: 'uppercase',
+              letterSpacing: '1px'
+            }}>
+              {service.title}
+            </h1>
+            <p style={{ 
+              fontSize: '1.25rem', 
+              opacity: 0.95, 
+              maxWidth: '800px', 
+              margin: '0 auto',
+              lineHeight: '1.6'
+            }}>
+              Giải pháp tiết kiệm điện thông minh, bền vững cho tương lai.
+            </p>
+          </div>
+        </section>
+
+        <div className={`container ${styles.serviceLayout}`}>
+          <div className={styles.serviceContent}>
+            <div dangerouslySetInnerHTML={{ __html: service.content }} />
+          </div>
+          <div className="sidebarWrapper">
+            <Sidebar recentPosts={recentPosts} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
 
   const jsonLd = {
     "@context": "https://schema.org",
